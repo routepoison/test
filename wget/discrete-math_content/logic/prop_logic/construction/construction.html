@@ -1,0 +1,159 @@
+
+<HTML>
+<HEAD>
+<TITLE> Introduction to Propositional Logic </TITLE>
+</HEAD>
+ 
+<body bgcolor = "white">
+<H5><P align="Right">Propositional Logic --- Level A</P></H5>
+<center>
+<h2>Construction of Complex Propositions</h2>
+</center>
+<BR><BR>
+<h3><font color="green">Subjects to be Learned</font></h3>
+<ul>
+<LI>how to construct complex propositions i.e. syntax of proposition
+</ul>
+
+<h3><font color="green">Contents</font></h3>
+<P> <a name="prop_syn"><font color="red"><b>Syntax of propositions</b></font></a>
+<P>
+First it is informally shown how complex propositions are constructed from simple ones.
+Then more general way of constructing propositions is given.
+<BR>
+<BR>
+In everyday life we often combine propositions to form more complex propositions without
+paying much attention to them. For example combining "Grass is green", and "The sun is red"
+we say something like "Grass is green and the sun is red", "If the sun is red, grass is green",
+"The sun is red and the grass is not green" etc. Here "Grass is green", and "The sun is red"
+are propositions, and form them using connectives "and", "if... then ..." and "not" a little more
+complex propositions are formed. These new propositions can in turn be combined 
+with other propositions to construct more complex propositions. They then can be combined 
+to form even more complex propositions.
+This process of obtaining more and more complex propositions can be described more generally 
+as follows:
+<BR>
+<BR>
+<B>
+Let X and Y represent arbitrary propositions. Then
+<BR>
+[<img src="../../../../symbols/not.gif">  X], &nbsp; [X <img src="../../../../symbols/and.gif">  
+Y],&nbsp;
+ [X <img src="../../../../symbols/or.gif">  Y], &nbsp; [X <img src="../../../../symbols/imp.gif">  
+Y], &nbsp;
+and &nbsp; [X <img src="../../../../symbols/eqv.gif">  Y]
+<BR>
+are <I>propositions</I>.
+</B>
+<BR>
+<BR>
+Note that X and Y here represent an arbitrary proposition. 
+<BR>
+This is actually a part of more rigorous definition of proposition which we see 
+<a href="../../../recursive_def/prop-def/prop-def.html"><r><B><font color="blue">later</font></B></r></a>.
+<BR>
+<BR>
+
+<B>Example :</B> 
+[ P -> [Q V R] ] is a proposition and it is obtained by first constructing [Q V R] 
+by applying [X V Y] to propositions Q and R considering them as X and Y, respectively, then by applying
+[ X -> Y ] to the two propositions P and [Q V R] considering them as X and Y, respectively.
+<BR>
+<BR>
+<BR>
+<font color="blue"><B>Note:</B></font> Rigorously speaking X and Y above are place holders 
+for propositions, and so they are 
+not exactly a
+proposition. They are called a <I>propositional variable</I>, and propositions formed 
+from them using connectives are called a <I>propositional form</I>.
+However, we are not going to distinguish them here, and both specific propositions
+such as "2 is greater than 1" and propositional forms such as (P <img src="../../../../symbols/or.gif">  
+Q) are going to be called a proposition.
+<br>
+<br>
+<br>
+<!--  For Level A --->
+<!--
+<P>
+<B>Definition of Proposition (Propositional Form) --- Syntax Rules for Proposition</B>
+<P>
+Proposition can be described in a more rigorous way using recursive definition as follows:
+<br>
+<br>
+<P>
+A <font color="green"><EM>proposition</EM></font> (also called <font color="green">
+<I>propositional form</I></font>) here is a template for propositions.
+It is a 'legal' form for propositions. Every proposition must take one of these
+forms. It shows how larger more complex propositions can be generated from simpler
+ones in general terms.
+<P>
+1. <B>Basis Clause:</B> The truth values '<B>true</B>' and '<B>false</B>', and all
+propositional variables
+such as <B><I>P</I></B> and <B><I>Q</I></B> are a proposition. Here a <EM>propositional
+variable</EM>
+is a variable that takes
+an individual specific proposition as its value. 
+<BR>
+<BR>
+2. <B>Inductive Claus:</B> If <B><I>E</I></B> and <B><I>F</I></B> are propositions, then
+<IMG WIDTH=38 HEIGHT=30 ALIGN=MIDDLE ALT="tex2html_wrap_inline22" SRC="img1.gif"  > ,
+<IMG WIDTH=61 HEIGHT=30 ALIGN=MIDDLE ALT="tex2html_wrap_inline24" SRC="img2.gif"  > ,
+ <IMG WIDTH=61 HEIGHT=30 ALIGN=MIDDLE ALT="tex2html_wrap_inline26" SRC="img3.gif"  > ,
+ <IMG WIDTH=70 HEIGHT=30 ALIGN=MIDDLE ALT="tex2html_wrap_inline28" SRC="img4.gif"  > , and
+<IMG WIDTH=70 HEIGHT=30 ALIGN=MIDDLE ALT="tex2html_wrap_inline30" SRC="img5.gif"  >  are
+propositions.
+<BR>
+3. <B>Extremal Clause:</B> Nothing is a proposition unless it is obtained by 1. and 2.
+<P>
+<BR>
+<font color="blue"><B>Note : </B></font>As you might have noticed, <B>[ ]</B> and <B>( )</B> 
+are used interchangeably for propositions.
+<BR>
+<P>
+<b>Example</b> <br>
+<br>
+<IMG WIDTH=168 HEIGHT=30 ALIGN=MIDDLE ALT="tex2html_wrap_inline32" SRC="img6.gif"  > , 
+where <B><I>P</I>, <I>Q</I>,
+<I>R</I>, </B>and
+<B><I>S</I></B> are propositional variables, is a proposition because
+it can be obtained by first generating  <IMG WIDTH=61 HEIGHT=30 ALIGN=MIDDLE 
+ALT="tex2html_wrap_inline42" SRC="img7.gif"  > , 
+and  <IMG WIDTH=58 HEIGHT=30 ALIGN=MIDDLE ALT="tex2html_wrap_inline44" SRC="img8.gif"  >
+by applying the inductive clause to the propositional variables <B><I>P</I></B> and <B><I>Q</I></B>,
+and <B><I>R</I></B> and
+<B><I>S</I></B>, respectively, then by combining them with  <IMG WIDTH=17 HEIGHT=10 
+ALIGN=BOTTOM ALT="tex2html_wrap_inline46" SRC="img9.gif"  >
+agian applying the inductive clause.
+
+--->
+<br>
+<br>
+<br>
+<br>
+<h3><font color="green">Test Your Understanding of Construction of Propositions</font></h3>
+<B>Indicate which of the following expressions are propositions and which are not</B>
+<br>
+<br>
+<B>Click Yes or No , then Submit. There are two sets of questions.</B>
+<br>
+<BR>
+<BR>
+<applet code="exercise.class" width=400 height=800>
+</applet>
+<BR>
+<B><a href="../converse/converse_intro.html"><r><font color="blue">
+Next -- Converse and Contrapositive </font></r></a></B>
+<BR>
+<BR>
+<a href="../../../schedule/schedule.html#day3"><r><font color="blue">
+Back to Schedule </font></r></a></B>
+<BR>
+<a href="../../../web_course.html"><r><font color="blue">
+Back to Table of Contents </font></r></a></B>
+
+
+
+</body>
+</html>
+ 
+

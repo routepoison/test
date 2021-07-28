@@ -1,0 +1,151 @@
+
+
+
+
+<HTML>
+<HEAD>
+<TITLE>Well-formed Formula for Predicate Logic</TITLE>
+</HEAD>
+<BODY>
+<DIV ALIGN=right><h5>Predicate Logic</h5></DIV>
+
+<BR>
+<h2>
+<B><P ALIGN="CENTER">Well-Formed Formula for First Order Predicate Logic
+<BR>--- Syntax Rules</P>
+</B></h2>
+<BR><BR>
+<h3><font color="green">Subjects to be Learned</font></h3>
+<UL>
+<LI>wff (well formed formula)
+<li>atomic formula
+<li>syntax of wff
+</ul>
+
+<h3><font color="green">Contents</font></h3>
+Not all strings can represent propositions of the predicate logic. 
+Those which produce a proposition
+when their symbols are interpreted must follow the rules given below, and they are
+called <a name="wff"><font color="red"><B>wffs</B></font></a>(well-formed formulas) of the first order predicate logic.</P>
+
+<br>
+<B>Rules for constructing Wffs</B>
+<br>
+<BR>
+A predicate name followed by a list of variables such as <I>P</I>(<I>x, y</I>), where <I>P</I> is 
+a predicate name, and <I>x</I> and <I>y</I> are variables,
+is called an  <a name="atofor"><font color="red"><B>atomic formula</B></font></a>.
+<BR><BR>
+<B>Wffs are constructed using the following rules:</B>
+<OL>
+<LI> <I>True</I> and <I>False</I> are wffs. <br>
+<LI> Each propositional constant (i.e. specific proposition), and each propositional
+variable (i.e. a variable representing propositions) are wffs.
+<LI> Each atomic formula (i.e. a specific predicate with variables) is a wff.
+<LI> If <I>A, B,</I> and <I>C</I> are wffs, then so are <img src="../symbols/not.gif"> <I>A</I>,
+(<I>A</I> <img src="../symbols/and.gif"> <I>B</I>), (<I>A <img src="../symbols/or.gif"> B)</I>,
+<I>(A <img src="../symbols/imp.gif"> B),</I> and <I>(A <img src="../symbols/eqv.gif"> B)</I>.
+<LI> If <I>x</I> is a variable (representing objects of the universe of discourse), and <I>A</I> is a wff, 
+then so are <img src="../symbols/all.gif"> <I> x A </I> and
+<img src="../symbols/exist.gif"> <I> x A </I>.
+</OL>
+<BR>
+<B>(</B><font color="blue"><B>Note :</B></font> More generally, arguments of predicates are something called 
+a <font color="blue">term</font>. Also variables representing predicate names 
+(called predicate variables) with a list of variables can form atomic
+formulas. But we do not get into that here. Those who are interested 
+<a href="????"><r>click here.</r></a><B>)</B>
+
+<BR><BR>
+For example, "The capital of Virginia is Richmond." is a specific proposition. 
+Hence it is a wff by Rule 2. 
+<BR>
+Let <B><I>B</I></B> 
+be a predicate name representing "being blue" 
+and let 
+<B><I>x</I></B> be a variable. 
+Then <B><I>B</I>(<I>x</I>)</B> is an atomic formula meaning "<B><I>x</I></B> is blue". Thus it is a
+wff by Rule 3. above. By applying Rule 5. to <B><I>B</I>(<I>x</I>)</B>, 
+<B><img src="../symbols/all.gif"><I>x</I><I>B</I>(<I>x</I>)</B> is a wff and so is 
+<B><img src="../symbols/exist.gif"><I>x</I><I>B</I>(<I>x</I>)</B>.
+Then by applying Rule 4. to them 
+<img src="../symbols/all.gif"><B><I>x</I> <I>B</I>(<I>x</I>) <img src="../symbols/and.gif">
+<img src="../symbols/exist.gif"><I>x</I> <I>B</I>(<I>x</I>)</B>
+is seen to be a wff.
+Similarly if <B><I>R</I></B> is a predicate name representing
+"being round". Then 
+<B><I>R</I>(<I>x</I>)</B> is an atomic formula. Hence it is a wff.
+By applying Rule 4 to <B><I>B</I>(<I>x</I>)</B> and <B><I>R</I>(<I>x</I>)</B>,
+a wff <B><I>B</I>(<I>x</I>) <img src="../symbols/and.gif"> <I>R</I>(<I>x</I>)</B> is obtained.
+<BR>
+In this manner, larger and more complex wffs can be constructed following the rules given above.
+<BR>
+Note, however, that strings that can not be constructed by using those rules are not wffs.
+For example, <B><img src="../symbols/all.gif"><I>x</I><I>B</I>(<I>x</I>)<I>R</I>(<I>x</I>)</B>,
+and <B><I>B</I>( <img src="../symbols/exist.gif"><I>x</I> )</B> are <B>NOT</B> wffs,
+<B>NOR</B> are <B><I>B</I>( <I>R</I>(<I>x</I>) )</B>, and 
+<B><I>B</I>( <img src="../symbols/exist.gif"><I>x</I> <I>R</I>(<I>x</I>) ) .</B>
+<BR><BR>
+<B>
+One way to check whether or not an expression is a wff is to try to state it in English.</B>
+If you can translate it into a correct English sentence, then it is a wff.
+
+<BR><BR>
+
+<!--
+The following examples are a little closer to English. 
+--->
+More examples: To express the fact that Tom is taller than John, we can use
+the atomic formula <B><I>taller</I>(Tom, John)</B>, which is a wff.
+This wff can also be part of some compound statement
+such as
+<B>
+<!-- <P ALIGN="JUSTIFY">&#9; --->
+<I>taller</I>(Tom, John) 
+<img src="../symbols/and.gif">
+<img src="../symbols/not.gif">
+<I>taller</I>(John, Tom)</B>,
+which is also a wff.<BR><BR>
+If <I>x</I> is a variable representing people in the world, then <B><I>taller(x</I>,Tom),
+<img src="../symbols/all.gif"><I>x
+taller(x</I>,Tom), 
+<img src="../symbols/exist.gif"><I>x taller(x</I>,Tom),
+<img src="../symbols/exist.gif"><I>x <img src="../symbols/all.gif"> y taller(x,y)</I></B>
+are all wffs among others. <BR>
+<P>However, <I>taller(<img src="../symbols/exist.gif"> x</I>,John) and <I>taller</I>(Tom 
+<img src="../symbols/and.gif"> Mary, Jim), 
+for example, are <B>NOT</B> wffs. 
+<br>
+<br>
+<br>
+<h3><font color="green">Test Your Understanding of Wff Construction</font></h3>
+Indicate which of the following statements are correct and which are not.
+<br>
+<br>
+Click Yes or No , then Submit. There are two sets of questions.
+<BR>
+<BR>
+<BR>
+<B>Below  \A represents the universal and \E the existential quantifiers, respectively.</B>
+<BR>
+<BR>
+<BR>
+
+<applet code="exercise.class" width=800 height=700>
+</applet>
+
+<BR>
+<B><a href="../wff2Proposition/index.html"><r><font color="blue">
+Next -- From Wff to Proposition </font></r></a></B>
+<BR>
+<BR>
+<a href="../../../schedule/schedule.html#day7"><r><font color="blue">
+Back to Schedule </font></r></a></B>
+<BR>
+<a href="../../../web_course.html"><r><font color="blue">
+Back to Table of Contents </font></r></a></B>
+
+
+
+<P ALIGN="JUSTIFY"></P></BODY>
+</HTML>

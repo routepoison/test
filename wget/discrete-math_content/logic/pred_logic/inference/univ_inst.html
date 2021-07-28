@@ -1,0 +1,193 @@
+<HTML>
+<HEAD>
+<TITLE>Inferencing</TITLE>
+
+</HEAD>
+<BODY>
+
+<H5><P align="Right">Predicate Logic</P></H5>
+
+<B><FONT SIZE=4><P ALIGN="CENTER">Universal Instantiation</P>
+</B></FONT>
+<BR><BR>
+<h3><font color="green">Subjects to be Learned </font></h3>
+<UL>
+<LI>universal instantiation rule
+</ul>
+<h3><font color="green">Contents </font></h3>
+<B>Rule:</B>
+<BR>
+<BR>
+<IMG WIDTH=10 HEIGHT=14 ALIGN=BOTTOM SRC="../symbols/all.gif">
+<FONT SIZE=2>
+x P(x)
+</FONT>
+<BR>
+<FONT FACE="Symbol" SIZE=2>&#45;&#45;&#45;&#45;&#45;&#45;&#45;</FONT>
+<BR>
+<FONT SIZE=2>P(c)</FONT>
+<P>where<I> c </I>is some arbitrary element of the universe.
+<BR>
+<BR>
+<B>Restrictions:</B>
+<BR>
+<BR>
+If c is a variable, then it must not already be quantified somewhere 
+in P(x) --- see Explanation and Note below.
+<BR>
+<BR>
+<BR>
+<B>Explanation:</B>
+<BR>
+<BR>
+What this rule says is that from 
+<IMG WIDTH=12 HEIGHT=12 ALIGN=BOTTOM SRC="../symbols/all.gif">
+x P(x)
+one can infer P(c) for any object in the universe represented by the variable c,
+thus stripping off the universal quantifier. It should be noted that P holds for any
+specifc object in the universe in this case. This rule follows because 
+<IMG WIDTH=12 HEIGHT=12 ALIGN=BOTTOM SRC="../symbols/all.gif">
+x P(x) says that P(x) holds
+true for all objects in the universe.
+Note that P(x), in general, may be a compound wff invloving a number of predicates,
+variables, and quantifiers. Thus c in P(c) must not be a variable which is quantified
+within P(x). See Note below for an example of what can happen c is not properly chosen. 
+<BR>
+<BR>
+<BR>
+<B>Example:</B>
+<BR>
+<BR>
+For example, the following argument can be proven correct using the Universal 
+Instantiation:"No humans can fly. John Doe is human. Therefore John Doe can not fly."
+<BR>
+<BR>
+First let us express this using the following notation: 
+<BR>
+F(x) means "x can fly."
+<BR>
+H(x) means "x is human."
+<BR>
+d is a symbol representing John Doe.
+<BR>
+<BR>
+Then the argument is 
+<BR>
+[<IMG WIDTH=12 HEIGHT=12 ALIGN=BOTTOM SRC="../symbols/all.gif">x
+[H(x)
+<IMG WIDTH=12 HEIGHT=12 ALIGN=BOTTOM SRC="../symbols/imp.gif"> 
+<IMG WIDTH=12 HEIGHT=8 ALIGN=BOTTOM SRC="../symbols/not.gif"> 
+F(x)] 
+<IMG WIDTH=12 HEIGHT=12 ALIGN=BOTTOM SRC="../symbols/and.gif"> 
+H(d) ]
+<IMG WIDTH=12 HEIGHT=12 ALIGN=BOTTOM SRC="../symbols/imp.gif"> 
+<IMG WIDTH=12 HEIGHT=8 ALIGN=BOTTOM SRC="../symbols/not.gif"> 
+F(d).
+<BR>
+<BR>
+The proof is 
+<BR>
+<table align=left clospan=20>
+<tr>
+<td>
+1. <IMG WIDTH=12 HEIGHT=12 ALIGN=BOTTOM SRC="../symbols/all.gif">x
+[H(x)
+<IMG WIDTH=12 HEIGHT=12 ALIGN=BOTTOM SRC="../symbols/imp.gif">
+<IMG WIDTH=12 HEIGHT=8 ALIGN=BOTTOM SRC="../symbols/not.gif">
+F(x)] 
+</td>
+<td>
+ Hypothesis
+</td>
+</tr>
+<tr>
+<td>
+2. H(d)
+</td>
+<td>
+Hypothesis
+</td>
+</tr>
+<tr>
+<td>
+3. H(d) 
+<IMG WIDTH=12 HEIGHT=12 ALIGN=BOTTOM SRC="../symbols/imp.gif">
+<IMG WIDTH=12 HEIGHT=8 ALIGN=BOTTOM SRC="../symbols/not.gif">
+F(d)
+</td>
+<td>
+Universal instantiation on 1.
+</td>
+</tr>
+<tr>
+<td>
+4. <IMG WIDTH=12 HEIGHT=8 ALIGN=BOTTOM SRC="../symbols/not.gif">
+F(d)
+</td>
+<td>
+Modus ponens on 2 and 3.
+</td>
+</tr>
+</table>
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+
+<!-- <font color="blue"><b>Note:</B></font>  --->
+<B>Note:</B>
+<BR>
+<BR>
+If the restriction on the Universal Instantiation does not exist, then
+<IMG WIDTH=12 HEIGHT=12 ALIGN=BOTTOM SRC="../symbols/all.gif"> y
+<IMG WIDTH=12 HEIGHT=14 ALIGN=BOTTOM SRC="../symbols/exist.gif"> x P(x,y)
+may become 
+<IMG WIDTH=12 HEIGHT=14 ALIGN=BOTTOM SRC="../symbols/exist.gif"> x P(x,x),
+that is x has been substituted for y by the Universal Instantiation, which is
+not correct.
+<BR>
+<BR>
+<BR>
+
+<h5>
+<a href="univ_gen.html"><r><font color="blue">
+Next --- Universal Generalization
+</font></r></a>
+<BR>
+<a href="exist_inst.html"><r><font color="blue">
+Existential Instantiation
+</font></r></a>
+<BR>
+<a href="exist_gen.html"><r><font color="blue">
+Existential Generalization
+</font></r></a>
+</h5>
+
+<h5><a href="infer_intro.html"><r><font color="blue">
+Back to Inferencing</font></r></a>
+<BR>
+<a href="../intr_to_pred_logic.html"><r><font color="blue">
+Back to Predicate Logic</font></r></a>
+</h5>
+
+</BODY>
+</HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

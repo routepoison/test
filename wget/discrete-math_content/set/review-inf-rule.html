@@ -1,0 +1,336 @@
+
+<HTML>
+<HEAD>
+<TITLE>Review</TITLE>
+
+<!-- Changed by: Toida, 21-Aug-1998 -->
+
+<!-- Examples of use of these ?? -->
+ 
+
+</HEAD>
+<BODY>
+<H5><P align="Right">Set</P></H5>
+<center>
+<h2>Review of Inference Rules</h2>
+</center>
+<BR><BR>
+
+<B>List of Implications:</B>
+<OL>
+ 
+<LI>P <img src=../symbols_sets/ImpT.gif>  (P <img src=../symbols_sets/or.gif> Q)
+ ----- addition</LI>
+<LI>(P <img src=../symbols_sets/and.gif> Q)
+<img src=../symbols_sets/ImpT.gif>
+P ----- simplification</LI>
+</LI>
+<LI>[P <img src=../symbols_sets/and.gif> (P <img src=../symbols_sets/imp.gif> Q]
+<img src=../symbols_sets/ImpT.gif>
+Q ----- modus ponens</LI>
+<LI>[(P <img src=../symbols_sets/imp.gif> Q) <img src=../symbols_sets/and.gif> 
+<img src=../symbols_sets/not.gif> Q]
+<img src=../symbols_sets/ImpT.gif>
+<img src=../symbols_sets/not.gif> P ----- modus tollens</LI>
+<LI>[ <img src=../symbols_sets/not.gif> P <img src=../symbols_sets/and.gif> (P 
+<img src=../symbols_sets/or.gif> Q]
+<img src=../symbols_sets/ImpT.gif>
+Q ----- disjunctive syllogism</LI>
+<LI>[(P <img src=../symbols_sets/imp.gif> Q)
+<img src=../symbols_sets/and.gif>
+(Q <img src=../symbols_sets/imp.gif> R)]
+<img src=../symbols_sets/ImpT.gif>
+(P <img src=../symbols_sets/imp.gif> R)
+----- hypothetical syllogism</LI>
+<LI>(P <img src=../symbols_sets/imp.gif> Q)
+<img src=../symbols_sets/ImpT.gif>
+[(Q <img src=../symbols_sets/imp.gif> R)
+<img src=../symbols_sets/imp.gif>
+(P <img src=../symbols_sets/imp.gif> R)]
+</LI>
+<LI>[(P <img src=../symbols_sets/imp.gif> Q)
+<img src=../symbols_sets/and.gif>
+(R <img src=../symbols_sets/imp.gif> S)] 
+<img src=../symbols_sets/ImpT.gif>
+[(P <img src=../symbols_sets/and.gif> R)
+<img src=../symbols_sets/imp.gif>
+(Q <img src=../symbols_sets/and.gif> S)]
+</LI>
+<LI>[(P <img src=../symbols_sets/eqv.gif> Q)
+<img src=../symbols_sets/and.gif>
+(Q <img src=../symbols_sets/eqv.gif> R)]
+<img src=../symbols_sets/ImpT.gif>
+(P <img src=../symbols_sets/eqv.gif> R)
+</LI>
+</OL>
+
+<BR><BR>
+<B>List of Identities:</B>
+
+<OL>
+
+<LI>P <img src=../symbols_sets/EqvT.gif>  (P <img src=../symbols_sets/or.gif> P)
+----- idempotence of <img src=../symbols_sets/or.gif>
+<LI>P <img src=../symbols_sets/EqvT.gif>  (P <img src=../symbols_sets/and.gif> P)
+----- idempotence of <img src=../symbols_sets/and.gif>
+<LI>(P <img src=../symbols_sets/or.gif> Q)
+<img src=../symbols_sets/EqvT.gif>
+(Q <img src=../symbols_sets/or.gif> P)
+----- commutativity of <img src=../symbols_sets/or.gif> </LI>
+<LI>(P <img src=../symbols_sets/and.gif> Q)
+<img src=../symbols_sets/EqvT.gif>
+(Q <img src=../symbols_sets/and.gif> P)
+----- commutativity of <img src=../symbols_sets/and.gif> </LI>
+<LI>[(P <img src=../symbols_sets/or.gif> Q) <img src=../symbols_sets/or.gif> R]
+<img src=../symbols_sets/EqvT.gif>
+[P <img src=../symbols_sets/or.gif> (Q <img src=../symbols_sets/or.gif> R)]
+----- associativity of <img src=../symbols_sets/or.gif></LI>
+<LI>[(P <img src=../symbols_sets/and.gif> Q) <img src=../symbols_sets/and.gif> R]
+<img src=../symbols_sets/EqvT.gif>
+[P <img src=../symbols_sets/and.gif> (Q <img src=../symbols_sets/and.gif> R)]
+----- associativity of <img src=../symbols_sets/and.gif></LI>
+<LI><img src=../symbols_sets/not.gif> (P <img src=../symbols_sets/or.gif> Q)
+<img src=../symbols_sets/EqvT.gif>
+(<img src=../symbols_sets/not.gif> P <img src=../symbols_sets/and.gif> 
+<img src=../symbols_sets/not.gif> Q)
+----- DeMorgan's Law</LI>
+<LI><img src=../symbols_sets/not.gif> (P <img src=../symbols_sets/and.gif> Q)
+<img src=../symbols_sets/EqvT.gif>
+(<img src=../symbols_sets/not.gif> P <img src=../symbols_sets/or.gif> 
+<img src=../symbols_sets/not.gif> Q)
+----- DeMorgan's Law</LI>
+<LI>[P <img src=../symbols_sets/and.gif> (Q <img src=../symbols_sets/or.gif> R]
+<img src=../symbols_sets/EqvT.gif>
+[(P <img src=../symbols_sets/and.gif> Q) <img src=../symbols_sets/or.gif> 
+(P <img src=../symbols_sets/and.gif> R)]
+----- distributivity of <img src=../symbols_sets/and.gif> over 
+<img src=../symbols_sets/or.gif> </LI>
+<LI>[P <img src=../symbols_sets/or.gif> (Q <img src=../symbols_sets/and.gif> R]
+<img src=../symbols_sets/EqvT.gif>
+
+[(P <img src=../symbols_sets/or.gif> Q) <img src=../symbols_sets/and.gif> 
+(P <img src=../symbols_sets/or.gif> R)]
+----- distributivity of <img src=../symbols_sets/or.gif> over 
+<img src=../symbols_sets/and.gif> </LI>
+<!-- 11 --->
+<LI>(P <img src=../symbols_sets/or.gif> True) <img src=../symbols_sets/EqvT.gif>
+True</LI>
+<!-- 12 --->
+<LI>(P <img src=../symbols_sets/and.gif> False) <img src=../symbols_sets/EqvT.gif>
+False</LI>
+<!-- 13 --->
+<LI>(P <img src=../symbols_sets/or.gif> False) <img src=../symbols_sets/EqvT.gif>
+P</LI>
+<!-- 14 --->
+<LI>(P <img src=../symbols_sets/and.gif> True) <img src=../symbols_sets/EqvT.gif>
+P</LI>
+<LI>(P <img src=../symbols_sets/or.gif> <img src=../symbols_sets/not.gif> P)
+<img src=../symbols_sets/EqvT.gif>
+True</LI>
+<LI>(P <img src=../symbols_sets/and.gif> <img src=../symbols_sets/not.gif> P)
+<img src=../symbols_sets/EqvT.gif>
+False</LI>
+<LI>P <img src=../symbols_sets/EqvT.gif> <img src=../symbols_sets/not.gif>
+ (<img src=../symbols_sets/not.gif>
+P) ----- double negation</LI>
+<LI>(P <img src=../symbols_sets/imp.gif> Q)
+<img src=../symbols_sets/EqvT.gif>
+(<img src=../symbols_sets/not.gif> P <img src=../symbols_sets/or.gif> Q)
+----- implication</LI>
+<LI>(P <img src=../symbols_sets/eqv.gif> Q)
+<img src=../symbols_sets/EqvT.gif>
+[(P <img src=../symbols_sets/imp.gif> Q) <img src=../symbols_sets/and.gif>
+(Q <img src=../symbols_sets/imp.gif> P)]----- equivalence</LI>
+<LI>[(P <img src=../symbols_sets/and.gif> Q) <img src=../symbols_sets/imp.gif> R]
+<img src=../symbols_sets/EqvT.gif>
+[P <img src=../symbols_sets/imp.gif> (Q <img src=../symbols_sets/imp.gif> R)]
+----- exportation</LI>
+<LI>[(P <img src=../symbols_sets/imp.gif> Q)
+<img src=../symbols_sets/and.gif>
+(P <img src=../symbols_sets/imp.gif> <img src=../symbols_sets/not.gif> Q)]
+<img src=../symbols_sets/EqvT.gif>
+<img src=../symbols_sets/not.gif> P
+----- absurdity</LI>
+<LI>(P <img src=../symbols_sets/imp.gif> Q)
+<img src=../symbols_sets/EqvT.gif>
+(<img src=../symbols_sets/not.gif>Q <img src=../symbols_sets/imp.gif>
+<img src=../symbols_sets/not.gif> P)
+----- contrapositive</LI>
+</OL>
+
+<BR><BR>
+<B>Inference Rules Involving Quantifiers</B>
+<ol>
+<li>
+<B>Universal Instantiation:</B>
+<BR>
+<BR>
+<IMG WIDTH=10 HEIGHT=14 ALIGN=BOTTOM SRC="../symbols_sets/all.gif">
+<FONT SIZE=2>
+x P(x)
+</FONT>
+<BR>
+<FONT FACE="Symbol" SIZE=2>&#45;&#45;&#45;&#45;&#45;&#45;&#45;</FONT>
+<BR>
+<FONT SIZE=2>P(c)</FONT>
+<P>where<I> c </I>is some arbitrary element of the universe.
+
+</li>
+<!--
+Restrictions:
+If c is a variable, then it must not fall within the scope of
+a quantifier for c.
+--->
+<BR>
+Go to
+<a href="http://www.cs.odu.edu/~toida/nerzic/content/logic/pred_logic/inference/univ_inst.html">
+<r><B><font color="blue">
+Universal Instantiation
+</font></B></r></a>
+for further explanations and examples.
+<BR>
+<BR>
+<li>
+<B>Universal Generalization:</B>
+<BR>
+<BR>
+<FONT SIZE=2>
+P(c)
+</FONT>
+<BR><FONT FACE="Symbol" SIZE=2>&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;</FONT>
+<BR>
+<IMG WIDTH=10 HEIGHT=10 ALIGN=BOTTOM SRC="../symbols_sets/all.gif">
+<FONT SIZE=2>
+x P(x)
+</FONT>
+<P>where<I> P(c) </I>holds for every element c of the universe of discourse.
+</li>
+
+<!--
+Restrictions:
+x must not appear as a free variable in P(c).
+Click universal generalization on the left
+for illustration for this point.
+--->
+
+<BR>
+Go to
+<a href="http://www.cs.odu.edu/~toida/nerzic/content/logic/pred_logic/inference/univ_gen.html"><r><B><font color="blue">
+Universal Generalization
+</font></B></r></a>
+for further explanations and examples.
+<BR>
+<BR>
+<li>
+<B>Existential Instantiation:</B>
+<BR>
+<BR>
+<IMG WIDTH=8 HEIGHT=14 ALIGN=BOTTOM SRC="../symbols_sets/exists.gif">
+<FONT SIZE=2>
+x P(x)
+</FONT>
+<BR><FONT FACE="Symbol" SIZE=2>&#45;&#45;&#45;&#45;&#45;&#45;&#45;</FONT>
+<BR>
+<FONT SIZE=2>
+P(c)
+</FONT>
+<P>where<I> c </I>is some element of the universe of discourse. It is not arbitrary but must be one for which P(c
+) is true.
+
+</li>
+<!--
+Restrictions:
+c must be a new name or constant symbol.
+--->
+<BR>
+Go to
+<a href="http://www.cs.odu.edu/~toida/nerzic/content/logic/pred_logic/inference/exist_inst.html"><r><B><font color="blue">
+Existential Instantiation
+</font></B></r></a>
+for further explanations and examples.
+
+
+<BR>
+<BR>
+<li>
+<B>Existential Generalization:</B>
+<BR>
+<BR>
+<FONT SIZE=2>
+P(c)
+</FONT>
+<BR><FONT FACE="Symbol" SIZE=2>&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;</FONT>
+<BR>
+<IMG WIDTH=8 HEIGHT=14 ALIGN=BOTTOM SRC="../symbols_sets/exists.gif">
+<FONT SIZE=2>
+x P(x)
+</FONT>
+<P>where <I>c </I>is an element of the universe.
+</li>
+<BR>
+Go to
+<a href="http://www.cs.odu.edu/~toida/nerzic/content/logic/pred_logic/inference/exist_gen.html"><r><B><font color="blue">
+Existential Generalization
+</font></B></r></a>
+for further explanations and examples.
+
+<!--
+Restrictions:
+x must not appear free in P(c).
+--->
+</ol>
+<BR>
+<B>Negation of Quantified Statement</B>
+<BR><BR>
+&nbsp;&nbsp;&nbsp;
+<IMG SRC="../symbols_sets/not.gif">
+<IMG WIDTH=8 HEIGHT=14 ALIGN=BOTTOM SRC="../symbols_sets/exists.gif"> x
+P(x)
+<IMG WIDTH=8 HEIGHT=14 ALIGN=BOTTOM SRC="../symbols_sets/EqvT.gif">
+<IMG WIDTH=8 HEIGHT=14 ALIGN=BOTTOM SRC="../symbols_sets/all.gif"> x
+<IMG SRC="../symbols_sets/not.gif">
+P(x)
+<BR>
+<BR>
+<B>Quantifiers and Connectives</B>
+<ol>
+<li>
+<B><img src="../symbols_sets/all.gif"><i>x</I> [ P(x) <img src="../symbols_sets/and.gif"> Q(x) ]
+<img src="../symbols_sets/EqvT.gif"> [ <img src="../symbols_sets/all.gif"><i>x</I>  P(x) <img src="../symbols_sets/and.gif">
+<img src="../symbols_sets/all.gif"><i>x</I>  Q(x) ]
+
+<li>
+[ <img src="../symbols_sets/all.gif"><i>x</I>  P(x) <img src="../symbols_sets/or.gif">
+<img src="../symbols_sets/all.gif"><i>x</I>  Q(x) ] <img src="../symbols_sets/ImpT.gif">
+<img src="../symbols_sets/all.gif"><i>x</I> [ P(x) <img src="../symbols_sets/or.gif"> Q(x) ]
+
+<li>
+<img src="../symbols_sets/exists.gif"> <i>x</I> [ P(x) <img src="../symbols_sets/or.gif"> Q(x) ]
+<img src="../symbols_sets/EqvT.gif"> [ <img src="../symbols_sets/exists.gif"> <i>x</I>  P(x) <img src="../symbols_sets/or.gif">
+<img src="../symbols_sets/exists.gif"> <i>x</I>  Q(x) ]
+
+<li>
+ <img src="../symbols_sets/exists.gif"> <i>x</I> [ P(x) <img src="../symbols_sets/and.gif"> Q(x) ]
+<img src="../symbols_sets/ImpT.gif">
+[ <img src="../symbols_sets/exists.gif"> <i>x</I>  P(x)
+ <img src="../symbols_sets/and.gif"> <img src="../symbols_sets/exists.gif"> <i>x</I> Q(x) ]
+
+</B>
+</ol>
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+
+
+
+
+
+
+
+</body>
+
+</HTML>

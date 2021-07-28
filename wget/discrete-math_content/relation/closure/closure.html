@@ -1,0 +1,371 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1p1 release (March 2nd, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<BODY >
+<DIV ALIGN="CENTER">
+<h2>Closure of Binary Relation</h2>
+</DIV>
+<BR>
+<BR>
+<h3><font color="green">Subjects to be Learned </font></h3>
+<UL>
+<LI>reflexive closure
+<LI>symmetric closure
+<LI>transitive closure
+<LI>properties of closure
+</ul>
+<h3><font color="green">Contents </font></h3>
+In our everyday life we often talk about parent-child relationship. 
+This is a binary relation on the set of 
+people in the world, dead or alive. Also we are often interested in 
+ancestor-descendant relations.
+Although the latter relation can be obtained from the former, hence it is 
+redundant in that sense, we do use ancestor-descendant relations which give us
+necessary information more directly. 
+This ancestor-descendant relation relates two people if there is a sequence of 
+parent-child relations from one to the other. It includes the parent-child 
+relation as a 
+subset. The ancestor-descendant relation is an example of the closure of 
+a relation, in particular the transitive closure of the parent-child relation. 
+In general, the closure of a relation is 
+the smallest extension of the relation
+that has a certain specific property such as the reflexivity, symmetry or transitivity. 
+Formally they are
+defined as follows: 
+
+<BR><BR>
+
+<B>Definition (reflexive closure):</B> A relation 
+<B><I>R'</I></B>
+is the <a name="refcl"><font color="red"><B>reflexive closure</B></font></a>
+of a relation <I><B>R</B></I> if and only if <BR>
+(1) <I><B>R'</B></I> is reflexive, <BR>
+(2) 
+<I><B>R</B></I>
+<IMG
+ WIDTH="16" HEIGHT="30" ALIGN="MIDDLE" BORDER="0"
+ SRC="../../symbols_sets/subseteq.gif"> <B><I>R'</I></B>,
+and <BR>
+(3) for any relation  
+<!-- MATH: $R^{\prime \prime}$ -->
+<B><I>R''</I></B>, 
+if 
+<!-- MATH: $R \subseteq R^{\prime \prime}$ -->
+<I><B>R</B></I>
+<IMG
+ WIDTH="16" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="../../symbols_sets/subseteq.gif"> <B><I>R''</I></B>
+and 
+<B><I>R''</I></B>
+is reflexive, then
+
+<!-- MATH: $R^{\prime} \subseteq R^{\prime \prime}$ -->
+<B><I>R'</I></B>
+<IMG
+ WIDTH="16" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="../../symbols_sets/subseteq.gif"> <B><I>R''</I></B> , that is, <B><I>R'</I></B> is the smallest
+relation that satisfies (1) and (2).
+
+<BR>
+<BR>
+
+<B>Example:</B> Let <I><B>R</B></I> be the less-than relation on the set of integers <I><B>I</B></I>, 
+that is 
+<!-- MATH: $R = \{ (a, b) \mid a \in I \wedge b \in I \wedge a < b \}$ -->
+<I><B>R</B></I> <B>= { &lt; <I>a, b</I>&gt; | <I>a</I> <IMG
+ WIDTH="16" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="../../symbols_sets/in.gif"> <I>I</I>
+ <IMG
+ WIDTH="12" HEIGHT="14" SRC="../../symbols_sets/and.gif"> 
+ <I>b</I>
+<IMG
+ WIDTH="16" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="../../symbols_sets/in.gif">
+<I>I</I>
+ <IMG
+ WIDTH="12" HEIGHT="14" SRC="../../symbols_sets/and.gif"> 
+ <I>a &lt; b</I> }.
+<BR>
+</B>
+
+Then the reflexive closure <B><I>r</I>(<I>R</I>)</B> of <I><B>R</B></I> 
+is the union of <I><B>R</B></I> and the equality 
+relation on <I><B>I</B></I>, that is 
+<!-- MATH: $r(R) =\{ (a, b) \mid a \in I \wedge b \in I \wedge
+a \leq b \}$ -->
+<B><i>r(R)</I> = { &lt;<I>a, b</I>&gt; | <I>a</I> <IMG
+ WIDTH="16" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="../../symbols_sets/in.gif">
+<I>I</I>
+ <IMG
+ WIDTH="12" HEIGHT="14" SRC="../../symbols_sets/and.gif"> 
+ <I>b</I>
+<IMG
+ WIDTH="16" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="../../symbols_sets/in.gif">
+<I>I</I>
+ <IMG
+ WIDTH="12" HEIGHT="14" SRC="../../symbols_sets/and.gif"> 
+<I>a</I> 
+<IMG
+ WIDTH="16" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="../../symbols_sets/leq.gif">
+<I>b</I> } </B>
+<BR>
+<BR>
+The <B>digraph of the reflexive closure</B> of a relation is obtained from the digraph 
+of the relation
+by adding
+a self-loop at each vertex if one is already not there. 
+<BR>
+<BR>
+Symmetric and transitive closures can be defined similarly.
+<BR>
+<BR>
+<B>Definition (symmetric closure):</B> A relation 
+<!-- MATH: $R^{\prime}$ -->
+<B><I>R'</I></B>
+is the <a name="symm"><font color="red"><B>symmetric
+closure</B></font></a> of a relation <I><B>R</B></I> if and only if <BR>
+(1) <I><B>R'</B></I> is symmetric, <BR>
+(2) <I><B>R</B></I>
+<IMG
+ WIDTH="16" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="../../symbols_sets/subseteq.gif"> <B><I>R'</I></B>,
+<!-- MATH: $R \subseteq R^{\prime}$ -->
+ and <BR>
+(3) for any relation  
+<!-- MATH: $R^{\prime \prime}$ -->
+<B><I>R''</I></B>, 
+if 
+<!-- MATH: $R \subseteq R^{\prime \prime}$ -->
+<I><B>R</B></I>
+<IMG
+ WIDTH="16" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="../../symbols_sets/subseteq.gif"> <B><I>R''</I></B>,
+ and 
+<!-- MATH: $R^{\prime \prime}$ -->
+<B><I>R''</I></B>
+is symmetric, then
+<B><I>R'</I></B>
+<IMG
+ WIDTH="16" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="../../symbols_sets/subseteq.gif"> <B><I>R''</I></B> , that is, <I><B>R'</B></I> is the smallest
+relation that satisfies (1) and (2).
+
+<!-- MATH: $R^{\prime} \subseteq R^{\prime \prime}$ -->
+
+<BR>
+<BR>
+
+<B>Example:</B> Let <I><B>R</B></I> be the less-than relation on the set of integers <I><B>I</B></I>. 
+Then the symmetric closure of <I><B>R</B></I>, denoted by <B><I>s</I>(<I>R</I>)</B> is 
+
+<!-- MATH: $s(R) =\{ (a, b) \mid a \in I \wedge b \in I \wedge
+a < b \wedge a > b \}$ -->
+
+<B><i>s(R)</I> = { &lt;<I>a, b</I>&gt; | <I>a</I> <IMG
+ WIDTH="16" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="../../symbols_sets/in.gif">
+<I>I</I>
+ <IMG
+ WIDTH="12" HEIGHT="14" SRC="../../symbols_sets/and.gif">
+ <I>b</I>
+<IMG
+ WIDTH="16" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="../../symbols_sets/in.gif">
+<I>I</I>
+ <IMG
+ WIDTH="12" HEIGHT="14" SRC="../../symbols_sets/and.gif">
+[ <I>a</I>
+&lt;
+<I>b</I> 
+ <IMG
+ WIDTH="12" HEIGHT="14" SRC="../../symbols_sets/or.gif">
+<I>a</I>
+&gt;
+<I>b</I> ] } </B>
+that is
+
+<B>{ &lt;<I>a, b</I>&gt; | <I>a</I> <IMG
+ WIDTH="16" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="../../symbols_sets/in.gif">
+<I>I</I>
+ <IMG
+ WIDTH="12" HEIGHT="14" SRC="../../symbols_sets/and.gif">
+ <I>b</I>
+<IMG
+ WIDTH="16" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="../../symbols_sets/in.gif">
+<I>I</I>
+ <IMG
+ WIDTH="12" HEIGHT="14" SRC="../../symbols_sets/and.gif">
+<I>a</I>
+ <IMG
+ WIDTH="16" HEIGHT="30" ALIGN="MIDDLE" SRC="../../symbols_sets/neq.gif">
+<I>b</I> } </B>
+
+<!-- MATH: $\{ (a, b) \mid a \in I \wedge b \in I \wedge a \neq b \}$ -->
+
+<BR>
+<BR>
+The <B>digraph of the symmetric closure</B> of a relation is obtained from the digraph 
+of the relation
+by adding
+for each arc the arc in the reverse direction if one is already not there.
+ 
+<BR>
+<BR>
+
+<B>Definition (transitive closure):</B> A relation 
+<!-- MATH: $R^{\prime}$ -->
+<B><I>R'</I></B>
+is the <a name="tran"><font color="red"><B>transitive
+closure</B></font></a> of a relation <I><B>R</B></I> if and only if <BR>
+(1) <I><B>R'</B></I> is transitive, <BR>
+(2) <I><B>R</B></I>
+<IMG
+ WIDTH="16" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="../../symbols_sets/subseteq.gif"> <B><I>R'</I></B>,
+ 
+<!-- MATH: $R \subseteq R^{\prime}$ -->
+and <BR>
+(3) for any relation  
+<!-- MATH: $R^{\prime \prime}$ -->
+<B><I>R''</I></B>,
+&nbsp; if 
+<!-- MATH: $R \subseteq R^{\prime \prime}$ -->
+<I><B>R</B></I>
+<IMG
+ WIDTH="16" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="../../symbols_sets/subseteq.gif"> <B><I>R''</I></B>
+&nbsp; and
+&nbsp;<B><I>R''</I></B>
+<!-- MATH: $R^{\prime \prime}$ -->
+&nbsp; is transitive, &nbsp;then
+
+<!-- MATH: $R^{\prime} \subseteq R^{\prime \prime}$ -->
+&nbsp;<B><I>R'</I></B>
+<IMG
+ WIDTH="16" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="../../symbols_sets/subseteq.gif"> <B><I>R''</I></B> , that is, <I><B>R'</B></I> is the smallest
+relation that satisfies (1) and (2).
+
+<BR>
+<BR>
+
+<B>Examples:</B> The transitive closure of a parent-child relation is 
+the ancestor-descendant relation as mentioned above, and that of 
+the less-than relation on <I><B>I</B></I> is the less-than relation itself. 
+
+<BR>
+<BR>
+The <B>digraph of the transitive closure</B> of a relation is obtained from the digraph 
+of the relation
+by adding for each directed path the arc that shunts the path
+if one is already not there.
+
+<BR><BR>
+Two more examples of closures are given below in terms of digraphs.
+<BR>
+The arrows with two heads represent arrows going in opposite directions.
+<BR><BR>
+<IMG WIDTH=636 HEIGHT=468 ALIGN=center SRC="new-closures.gif">
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+
+<B>Properties of Closure</B>
+
+<BR>
+<BR>
+The closures have the following properties.
+They are stated here as theorems without proof.
+
+<BR>
+<BR>
+
+<B>Theorem:</B>
+Let <I><B>E</B></I> denote the equality relation, and <B><I>R</I><SUP><I>c</I></SUP></B> the inverse
+relation of binary relation <I><B>R</B></I>, all on a set <I><B>A</B></I>, 
+where 
+
+<!-- MATH: $R^{c} = \{ (a, b) \mid (b, a) \in R\}$ -->
+<B><I>R</I><SUP><I>c</I></SUP> = { &lt; a, b &gt; | &lt; b, a &gt;
+<IMG
+ WIDTH="16" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="../../symbols_sets/in.gif">
+<I>R</I>}
+</B>.
+Then 
+<BR>
+<!-- MATH: $r(R) = R \cup E$ -->
+<B>1. <I>r(R)</I> = <I>R</I>
+<IMG
+ WIDTH="22" HEIGHT="26" 
+ SRC="../../symbols_sets/cup.gif">
+<I>E</I></B>
+<BR>
+<B>2. <I>s(R)</I> = <I>R</I>
+<IMG HEIGHT="26"
+ SRC="../../symbols_sets/cup.gif">
+<!-- 
+<IMG
+ WIDTH="22" HEIGHT="26" 
+ SRC="../../symbols_sets/cup.gif">
+--->
+<I>R</I><SUP><I>c</I></SUP></B>
+<BR>
+<!-- MATH: $t(R) = \cup_{i=1}^{\infty} R^{i} =  \cup_{i=1}^{n} R^{i}$ -->
+<B>3. <I>t(R)</I> = 
+<IMG
+ WIDTH="38" HEIGHT="40" ALIGN="MIDDLE" 
+ SRC="../../symbols_sets/cup_inf.gif">
+R<SUP>i</SUP>
+&nbsp; = &nbsp;<IMG
+ WIDTH="38" HEIGHT="40" ALIGN="MIDDLE" 
+ SRC="../../symbols_sets/cup_n.gif">
+R<SUP>i</SUP></B>,
+&nbsp; if 
+<!-- MATH: $\mid A \mid = n$ -->
+<B>|<I>A</I>| = <I>n</I></B>.
+<BR>
+<B>4. <I>R</B></I> is reflexive if and only if  &nbsp; <B><I>r</I>(<I>R</I>) = <I>R</I></B>.
+<BR>
+<B>5. <I>R</B></I> is symmetric if and only if &nbsp; <B><I>s</I>(<I>R</I>) = <I>R</I></B>.
+<BR>
+<B>6. <I>R</B></I> is transitive if and only if &nbsp; <B><I>t</I>(<I>R</I>) = <I>R</I></B>.
+
+<BR>
+<BR>
+<br>
+<h3><font color="green">Test Your Understanding of Closure</font></h3>
+Indicate which of the following statements are correct and which are not.
+<br>
+Click True or False , then Submit. There are two sets of questions.
+<br>
+<br>
+<br>
+<applet code="exercise.class" width=750 height=600>
+</applet>
+<BR>
+<B><a href="../eq_relation/eq_relation.html"><r><font color="blue">
+Next -- Equivalence Relation </font></r></a></B>
+<BR>
+<BR>
+<a href="../../schedule/schedule.html#day20"><r><font color="blue">
+Back to Schedule </font></r></a></B>
+<BR>
+<a href="../../web_course.html"><r><font color="blue">
+Back to Table of Contents </font></r></a></B>
+
+
+</BODY>
+</HTML>

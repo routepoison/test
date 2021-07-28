@@ -1,0 +1,313 @@
+
+<html>
+<head>
+<title> Introduction to Quantifiers </title>
+
+<!-- Changed by: Toida, 21-Aug-1998 -->
+
+<!-- Level B --->
+
+</head>
+ 
+<body bgcolor = "white">
+ 
+<DIV ALIGN=right><h5>Predicate Logic</h5></DIV>
+
+<h2><p align="CENTER"> Quantification --- Forming Propositions from Predicates</p></h2>
+<BR><BR>
+<h3><font color="green">Subjects to be Learned</font></h3>
+<UL>
+<LI>universe
+<LI>universal quantifier
+<LI>existential quantifier
+<LI>free variable
+<LI>bound variable
+<LI>scope of quantifier
+<LI>order of quantifiers
+</ul>
+<h3><font color="green">Contents</font></h3>
+<p align="JUSTIFY">A predicate with variables is not a proposition. For example, 
+the statement <i>x > 1</i> with variable <i>x</i> over the universe of real numbers 
+is neither true nor false since we don't know what <i>x</i> is. It can be true 
+or false depending on the value of <i>x</i>.
+<BR>
+For <i>x > 1</i> to be a proposition either we substitute a specific number for <i>x</i>
+or change it to something like "There is a number <i>x</i> for which  <i>x > 1</i> holds",
+or "For every number <i>x</i>, <i>x > 1</i> holds".
+</p>
+<p>
+More generally, a predicate with variables 
+<!--
+(called an atomic formula)
+--->
+(called an <a href="../construction/wff_intro.html#atofor">
+<r><font color="green"><B>atomic formula</B></font></r></a>) 
+can be made 
+a <b>proposition</b> by applying one of the following two operations to each of its variables:
+<ol type=1>
+        <li>assign a value to the variable
+        <li>quantify the variable using a <font color="green"><B>quantifier</B></font> (see below).
+</ol>
+<p>
+For example, <i>x > 1</i> becomes <i>3 > 1</i> if <i>3</i> is assigned to <i>x</i>, 
+and it becomes a true statement, hence a proposition.
+<p>
+In general, a quantification is performed on formulas of predicate logic 
+(called 
+wff
+<!--
+<a href="../construction/wff_intro.html"><r><font color="green"><B>wff</B></font></r></a>
+--->
+),
+such as <B><i>x > 1</i></B> or <B><i>P</I>(<I>x</I>)</B>, by using quantifiers on variables. 
+<!--
+Note, however, that a quantification in general produces another wff from a given wff. It does NOT
+always produce a proposition from a wff (See <a href="../wff2Proposition/index.html"><r>
+<font color="green"><B>From wff to Proposition</B></font></r></a> for more on this). 
+--->
+There are two types 
+of quantifiers: universal quantifier 
+and existential 
+quantifier.
+<p>
+The <font color="green"><B>universal quantifier</B></font> turns, for example, the statement <i>x > 1</i>
+to "for every object <i>x</i> 
+in the universe, <i>x > 1</I>", which is expressed as 
+"<img src= "../symbols/all.gif"><i>x</I> <I> x > 1</I>".
+This new statement is true or false in the universe of discourse. Hence it is a proposition once the universe is specified.
+<p>
+Similarly the <font color="green"><B>existential quantifier</b></font> turns, for example, the statement <i>x > 1</i>
+to "for some 
+object <I>x</I> in the universe, <i>x > 1</I>", which is expressed as "<img src="../symbols/exist.gif">
+<I>x x > 1</I>." Again, it is true or false in the universe of discourse, and hence 
+it is a proposition once the universe is specified.
+<BR>
+<BR>
+<BR>
+<h3>Universe of Discourse</h3>
+The universe of discourse, also called <a name="universe"><font color="red"><B>universe</B></font></a>, is the set of objects of interest.
+The propositions in the predicate logic are statements on objects of a universe. The universe is thus 
+the domain of the (individual) variables. It can be the set of real numbers,
+the set of integers, the set of all cars on a parking lot, the set of all students 
+in a classroom etc. 
+The universe is often left implicit in practice. But it should be obvious from the
+context.
+<BR>
+<BR>
+<BR>
+<h3><p align="Left">The Universal Quantifier</h3>
+The expression: 
+<img src="../symbols/all.gif"><i>x P(x)</i>, denotes the <a name="uniqua"><font color="red"><b>universal quantification</b></font></a>
+ of the atomic formula P(x). Translated into the English language, the expression is understood as:
+"<i>For all x, P(x)</i> holds", "<i>for each x, P(x)</i> holds" or 
+"<i>for every x, P(x)</i> holds".
+<img src="../symbols/all.gif"> is called the <a name="uniqur"><font color="red"><b>universal quantifier</b></font></a>,
+and
+<img src="../symbols/all.gif"><i>x</i> means all the objects x in the universe. If this is 
+followed by <i>P(x)</i> then the meaning is that <i>P(x)</i> is true for every object 
+<i>x</I> in the universe. For
+ example, "All cars have wheels" could be transformed into the propositional form, 
+<img src="../symbols/all.gif"><I>x P(x)</I>, where:
+<ul><li><i>P(x)</I> is the predicate denoting: <b><i>x</I> has wheels</b>, and
+<li>the universe of discourse is only populated by cars.
+</ul>
+<BR>
+<B>Universal Quantifier</B> and <B>Connective AND</B> 
+<BR>
+If all the elements in the universe of discourse can be listed then the universal quantification 
+<img src="../symbols/all.gif"><i>x P(x)</i> is equivalent to the conjunction:
+<B><I>P(x<SUB>1</SUB>)</I>) <img src="../symbols/and.gif"> <I>P(x<SUB>2</SUB>)</I> 
+<img src="../symbols/and.gif"> <i>P(x<SUB>3</SUB>)</I>
+<img src="../symbols/and.gif"> ... <img src="../symbols/and.gif"> <i>P(x<SUB>n</SUB>)</I> </B>.
+<BR><BR>
+ 
+For example, in the above example of <img src="../symbols/all.gif"><I>x P(x)</I>, 
+if we knew that there were <b>only</b> 4 cars in our universe of discourse <i>(c1, c2, c3</i> and
+ <i>c4)</I> then we could also translate the statement as:
+<b><i>P(c1)</i> <img src="../symbols/and.gif"> <i>P(c2)</I> <img src="../symbols/and.gif"> 
+<i>P(c3)</I>
+<img src="../symbols/and.gif">
+<i>P(c4)</I></b>
+<BR>
+<BR>
+<BR>
+<h3><p align="Left">The Existential Quantifier</h3>
+
+The expression: 
+<img src="../symbols/exist.gif"> <i>xP(x)</i>, denotes the <a name="exiqua"><font color="red"><b>existential 
+quantification</b></font></a> of <i>P(x)</I>. Translated into the English language, the expression could also be understood as:
+"There exists an <i>x</i> such that <i>P(x)</i>"
+or
+"There is at least one <i>x</i> such that <i>P(x)</i>"
+<img src="../symbols/exist.gif"> is called the <a name="exiqur"><font color="red"><b>existential quantifier</b></font></a>,
+and 
+<img src="../symbols/exist.gif"> <i>x</I> means at least one object <i>x</i> in the universe. If this is 
+followed by <i>P(x)</i> then the meaning is that <i>P(x)</I> is true for at least one object 
+<i>x</i> of the universe.
+For example, "<i>Someone loves you</i>" could be transformed into the propositional form, 
+<img src="../symbols/exist.gif"> <i>x P(x)</I>, where:
+<ul><li> <i>P(x)</I> is the predicate meaning: <b><i>x</i> loves you</b>,
+<li> The universe of discourse contains (but is not limited to) all living creatures.
+</ul>
+ 
+<BR>
+<P><B>Existential Quantifier</B> and <B>Connective OR</B>
+<BR>
+If all the elements in the universe of discourse can be listed, then the existential quantification 
+<!-- <font face="Symbol">&#36;</font>  --->
+<img src="../symbols/exist.gif"> <i>xP(x)</i> is equivalent to the disjunction:
+<b> <i>P(x<SUB>1</SUB>) <img src="../symbols/or.gif"> P(x<SUB>2</SUB>) <img src="../symbols/or.gif"> 
+P(x<SUB>3</SUB>)
+<img src="../symbols/or.gif"> ... <img src="../symbols/or.gif"> P(x<SUB>n</SUB>)</i></b>.
+ 
+<BR><BR>
+For example, in the above example of <img src="../symbols/exist.gif"> <i>x P(x)</I>, 
+if we knew that there were <b>only</b> 5 living creatures in our universe of discourse 
+(say: me, he, she, rex and fluff), then we could also write the statement as:
+ <b><i>P(me) <img src="../symbols/or.gif"> P(he) <img src="../symbols/or.gif"> P(she)
+<img src="../symbols/or.gif"> P(rex) <img src="../symbols/or.gif"> P(fluff)</i></b>
+<br>
+<br>
+An appearance of a variable in a <a href="../construction/wff_intro.html"><r><font color="green"><B>wff</B>
+</font></r></a>is said to be <a name="bound"><font color="red"><B>bound</B></font></a> if either 
+a specific value is assigned to it or it is quantified. If an appearance of a variable is not bound,
+it is called <a name="free"><font color="red"><B>free</B></font></a>.
+The extent of the application(effect) of a quantifier, called the <a name="scope"><font color="red"><B>scope</B></font></a> 
+of the quantifier, is indicated by square brackets <B>[ ]</B>. If there are no square brackets, then
+the scope is understood to be the smallest <a href="../construction/wff_intro.html">
+<r><font color="green"><B>wff</B></font></r></a> following the quantification.
+<BR> 
+For example, 
+in &nbsp;<B><img src="../symbols/exist.gif"> <i>x P</I>(<I>x, y</I>)</B>, &nbsp;the variable <b><i>x</i></B>
+is bound while <b><i>y</i></B> is free. 
+In &nbsp;<B><img src="../symbols/all.gif"><i>x </I>[ <img src="../symbols/exist.gif"> <I>y 
+P</I>(<I>x, y</I>) <img src="../symbols/or.gif">
+<i>Q</I>(<I>x, y</I>) ] ,</B> &nbsp; <b><i>x</i></B> and the <b><i>y</i></B> in <b><i>P</I>(<I>x, y</I>)</B>
+are bound, while <b><i>y</i></B> in <B><i>Q</I>(<I>x, y</I>)</B> is free, because the scope of 
+<img src="../symbols/exist.gif">  <b><i>y</i></B> is <B><I>P</I>(<I>x, y</I>)</B>.
+The scope of 
+<img src="../symbols/all.gif"><b><i>x</i></B> is <B>[ <img src="../symbols/exist.gif"> <I>y 
+P</I>(<I>x, y</I>) <img src="../symbols/or.gif">
+<i>Q</I>(<I>x, y</I>) ] .</B>
+<BR>
+<BR>
+<BR>
+<h3><p align="Left">How to read quantified formulas</h3>
+When reading quantified formulas in English, <font color="red"><B>read them from left to right.</b></font>
+<img src="../symbols/all.gif"><b><i>x</i></B> can be read as "for every object <b><i>x</i></B> 
+in the universe the following holds" and <img src="../symbols/exist.gif"> <b><i>x</i></B> can be read as
+"there erxists an object <b><i>x</i></B> in the universe which satisfies the following" or "for some object
+<b><i>x</i></B> in the universe the following holds".
+Those do not necessarily give us good English expressions. But they are where we can start. Get the correct
+reading first then polish your English without changing the truth values.
+<BR>
+<BR>
+For example, let the universe be the set of airplanes and let <B><I>F</I>(<I>x, y</I>)</B> denote 
+"<b><i>x</i></B> flies faster than <b><i>y</i></B>". Then
+<BR>
+<img src="../symbols/all.gif"><b><i>x</i></B><img src="../symbols/all.gif"><b><i>y</i> <I>F</I>(<I>x, y</I>)</B>
+can be translated initially as "For every airplane <b><i>x</i></B> the following holds: <b><i>x</i></B> is faster 
+than every (any) airplane <b><i>y</i></B>".
+In simpler English it means "Every airplane is faster than every airplane (including itself !)".
+<BR>
+<img src="../symbols/all.gif"><b><i>x</i></B><img src="../symbols/exist.gif"> <b><i>y</i> <I>F</I>(<I>x, y</I>)</B>
+can be read initially as "For every airplane <b><i>x</i></B> the following holds: for some airplane <b><i>y</i></B>, 
+<b><i>x</i></B> is faster than <b><i>y</i></B>".
+In simpler English it means "Every airplane is faster than some airplane".
+<BR>
+<img src="../symbols/exist.gif"> <b><i>x</i></B><img src="../symbols/all.gif"><b><i>y</i> <I>F</I>(<I>x, y</I>)</B>
+represents "There exist an airplane <b><i>x</i></B> which satisfies the following: (or such that) for every airplane
+<b><i>y</i></B>, <b><i>x</i></B> is faster than <b><i>y</i></B>". In simpler English it says 
+"There is an airplane which is faster than every airplane" or  "Some airplane is 
+faster than every airplane".
+<BR>
+<img src="../symbols/exist.gif"> <b><i>x</i></B><img src="../symbols/exist.gif"> <b><i>y</i> <I>F</I>(<I>x, y</I>)</B>
+reads "For some airplane <b><i>x</i></B> there exists an airplane <b><i>y</i></B> such that <b><i>x</i></B> is faster than
+<b><i>y</i></B>", which means "Some airplane is faster than some airplane". 
+<BR>
+<BR>
+<BR>
+<h3><p align="Left">Order of Application of Quantifiers</h3>
+When more than one variables are quantified in a wff such as
+<B><img src="../symbols/exist.gif"> <i>y</I> <img src="../symbols/all.gif"><I>x
+P</I>(<I> x, y</I> )</B>, they are applied from the inside, that is, the one closest to
+the atomic formula is applied first. Thus
+<B><img src="../symbols/exist.gif"> <i>y</I> <img src="../symbols/all.gif"><I>x
+P</I>(<I> x, y</I> )</B>
+reads <B><img src="../symbols/exist.gif"> <i>y</I> [ <img src="../symbols/all.gif"><I>x
+P</I>(<I> x, y</I> ) ] ,</B>
+and we say "there exists an <B><i>y</I></B> such that for every <B><i>x</I></B>, <B><i>P</I>(<I> x, y</I> )</B> holds" or "for some <B><i>y</I></B>, <B><i>P</I>(<I> x, y</I> )</B> holds
+for every <B><i>x</I></B>".
+
+<BR><BR>
+<font color="red">The positions of the same type of quantifiers can be switched</font>
+ without affecting the truth value
+as long as there are
+no
+quantifiers of the other type between the ones to be interchanged.
+<BR>For example
+<B><img src="../symbols/exist.gif"> <i>x</I> <img src="../symbols/exist.gif"> <I>y</I>
+<img src="../symbols/exist.gif"> <i>z P(x, y , z)</I></B>
+is equivalent to
+<B><img src="../symbols/exist.gif"> <i>y</I> <img src="../symbols/exist.gif"> <I>x</I>
+<img src="../symbols/exist.gif"> <i>z P(x, y , z)</I></B>,
+&nbsp; <B><img src="../symbols/exist.gif"> <i>z</I> <img src="../symbols/exist.gif"> <I>y</I>
+<img src="../symbols/exist.gif"> <i>x P(x, y , z)</I></B>,
+&nbsp; etc.
+It is the same for the universal quantifier.
+<P>
+However, <font color="red">the positions of different types of quantifiers can
+<B>not</B> be switched.</font>
+<BR>For example
+<B><img src="../symbols/all.gif"><i>x</I> <img src="../symbols/exist.gif"> <I>y
+P( x, y )</I></B> is <font color="red"><B>not</B></font> equivalent to
+<B><img src="../symbols/exist.gif"> <i>y</I> <img src="../symbols/all.gif"><I>x
+P( x, y )</I>.</B>&nbsp; For let <B><I>P( x, y )</I></B>  represent <B><I>x</I>
+&lt; <I>y</I> </B> for the set of numbers as the universe, for example. Then <B><img src="../symbols/all.gi
+f"><i>x</I>
+<img src="../symbols/exist.gif"> <I>y
+P( x, y )</I></B> reads "for every number <B><I>x</I></B>, there is a number
+<B><I>y</I></B> that is greater than <B><I>x</I></B>", which is true, while <B><img src="../symbols/exist.g
+if"> <i>y</I> <img src="../symbols/all.gif"><I>x
+P( x, y )</I> </B> reads "there is a number 
+<!--
+<B><I>y</I></B> 
+--->
+that is
+greater than
+every (any) number",
+which is not true.
+<br>
+<br>
+<br>
+<h3><font color="green">Test Your Understanding of Quantification</font></h3>
+Indicate which of the following statements are correct and which are not.
+<br>
+<br>
+Click Yes or No , then Submit. There are two sets of questions.
+<BR>
+<BR>
+<BR>
+
+<applet code="exercise.class" width=900 height=700>
+</applet>
+
+<BR>
+<B><a href="../construction/wff_intro.html"><r><font color="blue">
+Next -- Well Formed Formulas </font></r></a></B>
+<!--
+<B><a href="../wff2Proposition/index.html"><r><font color="blue">
+Next -- From Wff to Proposition </font></r></a></B>
+--->
+<BR>
+<BR>
+<a href="../../../schedule/schedule.html#day7"><r><font color="blue">
+Back to Schedule </font></r></a></B>
+<BR>
+<a href="../../../web_course.html"><r><font color="blue">
+Back to Table of Contents </font></r></a></B>
+
+
+
+</body>
+</html>

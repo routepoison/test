@@ -1,0 +1,258 @@
+
+<html>
+<head>
+<title> Mathematical Reasoning </title>
+ 
+<!-- Written by: Toida, March 12, 1999 -->
+ 
+</head>
+ 
+<body bgcolor = "white">
+<!-- <h5><font color="blue">The boundary of this window can be adjusted using the left button of the mouse.</font></h5> -->
+<H5><P align="Right">Set</P></H5>
+<BR>
+<BR>
+ 
+<h2><p align="center"> Mathematical Reasoning</p></h2>
+<BR>
+<BR>
+<h3><font color="green">Subjects to be Learned </font></h3>
+<UL>
+<LI>axiom
+<LI>theorem
+<LI>proof --- mathematical reasoning -- inferencing
+<ul type=circle>
+<LI>trivial proof
+<LI>vacuous proof 
+<LI>proof by contrapositive 
+<LI>proof by contradiction 
+
+</ul>
+<h3><font color="green">Contents </font></h3>
+Mathematical theories are constructed starting with some fundamental assumptions, 
+called <a name="axm"><font color="red"><B>axioms</B></font></a>,
+such as "sets exist" and "objects belong to a set" in the case of naive set theory,
+then proceeding to defining concepts(<a name="def"><font color="red"><B>definitions</B></font></a>) such as "equality of sets", and "subset", and establishing their properties and relationships 
+between them in the form of <a name="thm"><font color="red"><B>theorems</B></font></a>
+such as "Two sets are equal if and only if each is a subset of the other", which in turn 
+causes introduction of new concepts 
+and establishment of their properties and relationships.
+<a name="prf"><font color="red"><B>Proofs</B></font></a> are the arguments for establishing those properties and relationships.
+At the bottom level these arguments follow the inference rules of propositional and 
+predicate logic, that is <font color="green"><B>the conclusion of the theorem  being proved must be derived 
+from its hypotheses,
+axioms, definitions, and proven theorems using inference rules</B></font>. 
+However, at the bottom level they become tedious and inefficient
+as one can easily imagine. Thus in actual proofs short-cuts are taken using already proven 
+theorems, using multiple inference rules in one step without explicitly mentioning them
+individually, omitting "obvious" proofs, and so on.  
+<BR><BR>
+Finding a proof is in general an art. There is no single method that works for all cases.
+However, at this level the most important thing to remember is to know and understand 
+<font color="blue"><B>definitions</B></font> of
+concepts involved. The next important thing to keep in mind is to look up
+<font color="blue"><B>relevant facts</B></font> and try to use them. Even if you don't see the entire path to the goal, 
+if you
+&nbsp;<font color="blue"><B>move one step</B></font> forward from where you are, you get a new perspective and it often gives you some good ideas to pursue. 
+Needless to say that you must not forget the inference rules.
+It is not a bad idea to review "<a href="../problem_solving/problem_solving.html" target="main"><r><font color="blue"><B>Problem Solving</B></font></r></a>" we studied earlier here.
+<BR><BR>
+There are also some well used and often very useful proof techniques such as trivial proof, vacuous proof, 
+direct proof, proof by contradiction, proving the contrapositive, and proof by induction.
+These are explained below with proofs of the theorems on subset relation as examples.
+If you wish to review identities, implications and inference rules
+<a href="review-inf-rule.html" target="main2"><r>
+<font color="blue"><B>click here.</B></font></r></a>
+<BR><BR>
+
+<B>Theorem 1:</B>   
+&nbsp;<IMG WIDTH=53 HEIGHT=27 ALIGN=MIDDLE ALT="tex2html_wrap_inline81" SRC="img/img2.gif"  > . 
+<BR>
+<B>Proof:</B> By the definition of  
+&nbsp;<IMG WIDTH=12 HEIGHT=25 ALIGN=MIDDLE ALT="tex2html_wrap_inline83" SRC=
+"img/img3.gif"  > ,&nbsp; we need to show that
+&nbsp;<IMG WIDTH=155 HEIGHT=30 ALIGN=MIDDLE ALT="tex2html_wrap_inline85" SRC="img/img4.gif"  > . 
+<BR>
+For that,
+what we need is to show that
+for an arbitrary <B><I>x</I></B>, 
+&nbsp;<IMG WIDTH=125 HEIGHT=29 ALIGN=MIDDLE ALT="tex2html_wrap_inline89" SRC=
+"img/img5.gif"  > &nbsp; holds according to the inference rule "universal generalization".
+<BR>
+Since <B><I>x</I></B> is an object of the universe of discourse,
+&nbsp; <IMG WIDTH=48 HEIGHT=27 ALIGN=MIDDLE ALT
+="tex2html_wrap_inline93" SRC="img/img6.gif"  >  is true for any arbitrary object
+by the Universal Instantiation.
+Hence 
+&nbsp; <IMG WIDTH=125 HEIGHT=29 ALIGN=MIDDLE ALT="tex2html_wrap_inline89" SRC="img/img5.gif"  >  is 
+true  for any arbitrary object <B><I>x</I></B>
+( <IMG WIDTH=49 HEIGHT=20 ALIGN=MIDDLE ALT="tex2html_wrap_inline97" SRC="img/img7.gif"  >  is
+always true
+if <B><I>q</I></B> is true regardless of what <B><I>p</I></B> is). Thus  
+by the Universal Generalization &nbsp;<IMG WIDTH=155 HEIGHT=30 ALIGN=MIDDLE ALT="tex2html_wrap_inline85" SRC="img/img4.gif" >, that is, 
+&nbsp;<IMG WIDTH=53 HEIGHT=29 ALIGN=MIDDLE ALT
+="tex2html_wrap_inline81" SRC="img/img2.gif"  > by the definition of subset.
+<P>
+We say &nbsp; 
+<IMG WIDTH=49 HEIGHT=20 ALIGN=MIDDLE ALT="tex2html_wrap_inline97" SRC="img/img7.gif"  >  
+is <EM>
+trivially true</EM> if <B><I>q</I></B> is true, and this kind of proof
+(i.e. showing <B><I>q</I></B> is true for  
+<IMG WIDTH=49 HEIGHT=20 ALIGN=MIDDLE ALT="tex2html_wrap_inline97"
+SRC="img/img7.gif"  > without referring to <B><I>p</I></B> ) is called a <a name="trprf"><font color="red"><b>trivial proof</B></font></a>.
+<BR><BR>
+
+<B>Theorem 2:</B> 
+&nbsp;<IMG WIDTH=47 HEIGHT=31 ALIGN=MIDDLE ALT="tex2html_wrap_inline113" SRC="img/img8.gif"  > .
+<BR>
+<B>Proof:</B> By the definition of  
+&nbsp;<IMG WIDTH=12 HEIGHT=25 ALIGN=MIDDLE ALT="tex2html_wrap_inline83" SRC=
+"img/img3.gif"  > ,&nbsp; we need to show that
+ &nbsp;<IMG WIDTH=150 HEIGHT=30 ALIGN=MIDDLE ALT="tex2html_wrap_inline117" SRC="img/img9.gif"  > . For that, 
+what we need is to show that
+for an arbitrary <B><I>x</I></B>,  &nbsp;
+<IMG WIDTH=120 HEIGHT=32 ALIGN=MIDDLE ALT="tex2html_wrap_inline121" SRC
+="img/img10.gif"  > &nbsp; holds. Then apply the Universal Generalization.
+<P>
+Since  <IMG WIDTH=64 HEIGHT=31 ALIGN=MIDDLE ALT="tex2html_wrap_inline123" SRC="img/img11.gif"  > , &nbsp; 
+for any arbitrary <B><I>x</I></B>, 
+<IMG WIDTH=43 HEIGHT=32 ALIGN=MIDDLE ALT="tex2html_wrap_inline125" SRC="img/img12.gif"  >  
+&nbsp; is false by the Universal Instantiation.
+Hence  &nbsp;
+<IMG WIDTH=120 HEIGHT=32 ALIGN=MIDDLE ALT="tex2html_wrap_inline121" SRC="img/img10.gif"  >  
+&nbsp; is 
+true for any arbitrary <B><I>x</I></B> 
+( <IMG WIDTH=49 HEIGHT=20 ALIGN=MIDDLE ALT="tex2html_wrap_inline97" SRC="img/img7.gif"  >  
+is always true
+if <B><I>p</I></B> is false regardless of what <B><I>q</I></B> is). 
+Hence by the Universal Generalization <IMG WIDTH=150 HEIGHT=30 ALIGN=MIDDLE ALT="tex2html_wrap_inline117" SRC="img/img9.gif" > .
+Thus  
+&nbsp;&nbsp;<IMG WIDTH=47 HEIGHT=31 ALIGN=MIDDLE 
+ALT="tex2html_wrap_inline113" SRC="img/img8.gif"  > by the definition of subset.
+<P>
+We say  <IMG WIDTH=49 HEIGHT=20 ALIGN=MIDDLE ALT="tex2html_wrap_inline97" SRC="img/img7.gif"  >  is &nbsp;<EM
+>vacuously true</EM> &nbsp;if <B><I>p</I></B> is false, and this kind of proof
+(i.e. showing <B><I>p</I></B> is false for  
+<IMG WIDTH=49 HEIGHT=20 ALIGN=MIDDLE ALT="tex2html_wrap_inline97"
+SRC="img/img7.gif"  > ) is called a <a name="vprf"><font color="red"><B>vacuous proof</B></font></a>.
+<P>
+<B>Proof Variations for Theorem 2</B> <BR>
+Theorem 2, like most others, can be proven in a number of other ways. 
+Here we try to prove it in two other ways.
+<BR>
+<BR>
+(1) <a name="cpprf"><font color="red"><B>Proof by Contrapositive:</B></font></a> <BR>
+In this method, to prove  <IMG WIDTH=49 HEIGHT=20 ALIGN=MIDDLE ALT="tex2html_wrap_inline97" 
+SRC="img/img7.gif">
+&nbsp; we prove its contrapositive,   
+<IMG WIDTH=72 HEIGHT=20 ALIGN=MIDDLE ALT="tex2html_wrap_inline147" SRC="img/img13.gif"> ,
+&nbsp; instead. <BR>
+So to prove  &nbsp; <IMG WIDTH=120 HEIGHT=32 ALIGN=MIDDLE ALT="tex2html_wrap_inline121" 
+SRC="img/img10.gif"  >
+  &nbsp; for an arbitrary <B><I>x</I></B>,
+&nbsp; try to prove &nbsp; 
+<IMG WIDTH=120 HEIGHT=31 ALIGN=MIDDLE ALT="tex2html_wrap_inline153" SRC="img/img14.gif"
+> . <BR>
+In this case since  
+<IMG WIDTH=43 HEIGHT=31 ALIGN=MIDDLE ALT="tex2html_wrap_inline155" SRC="img/img15.gif">
+&nbsp; is true for any arbitrary <B><I>x</I></B>, &nbsp; 
+<IMG WIDTH=120 HEIGHT=31 ALIGN=MIDDLE ALT="tex2html_wrap_inline153" SRC="img/img14.gif"  >  
+&nbsp; is trivially true. Hence its contraposiive 
+&nbsp; <IMG WIDTH=120 HEIGHT=32 ALIGN=MIDDLE ALT="tex2html_wrap_inline121"
+SRC="img/img10.gif"  >  &nbsp; is also true.
+<P>
+(2) <a name="cdcprf"><font color="red"><B>Proof by Contradiction:</B></font></a> <BR>
+In this method, to prove <B><I>p</I></B>  we assume  
+<IMG WIDTH=21 HEIGHT=18 ALIGN=MIDDLE ALT="tex2html_wrap_inline161"
+SRC="img/img16.gif"  > &nbsp; and
+derive a contradiction from that. Then since <IMG WIDTH=21 HEIGHT=18 ALIGN=MIDDLE ALT="tex2html_wrap_inline161"
+SRC="img/img16.gif"  > &nbsp; implies a contradiction, it can not hold true. 
+Hence <B><I>p</I></B>  must be true.<BR>
+So to prove &nbsp;
+ <IMG WIDTH=150 HEIGHT=30 ALIGN=MIDDLE ALT="tex2html_wrap_inline117" SRC="img/img9.gif"  >
+
+&nbsp; we assume that  
+&nbsp;<IMG WIDTH=162 HEIGHT=30 ALIGN=MIDDLE ALT="tex2html_wrap_inline165" SRC="img/img17.gif"
+  > . <BR>
+ <IMG WIDTH=162 HEIGHT=30 ALIGN=MIDDLE ALT="tex2html_wrap_inline165" SRC="img/img17.gif"  >
+&nbsp;is equivalent to 
+&nbsp;
+ <IMG WIDTH=162 HEIGHT=30 ALIGN=MIDDLE ALT="tex2html_wrap_inline169" SRC="img/img18.gif" >.
+<BR>
+This in turn is equivalent to  
+&nbsp;<IMG WIDTH=141 HEIGHT=30 ALIGN=MIDDLE ALT="tex2html_wrap_inline171"
+SRC="img/img19.gif"  > . <BR>
+However, &nbsp; 
+<IMG WIDTH=141 HEIGHT=30 ALIGN=MIDDLE ALT="tex2html_wrap_inline171"
+SRC="img/img19.gif"  > &nbsp; 
+<!--
+<IMG WIDTH=162 HEIGHT=30 ALIGN=MIDDLE ALT="tex2html_wrap_inline169" SRC="img/img18.gif" >
+--->
+implies &nbsp; 
+<IMG WIDTH=72 HEIGHT=30 ALIGN=MIDDLE ALT="tex2html_wrap_inline173" SRC="img/img20.gif"  > &nbsp;  
+by formula <B>4</B> of the <a href="../logic/pred_logic/quant_connect/index.html" target="main">
+<r><font color="blue">relationships</font></r></a> between the connectives and quantifiers from predicate logic and "simplification" from the 
+<a href="../logic/prop_logic/implications/implication.html" target="main"><r><font color="blue">implications</font></r></a>
+of propositional logic.
+&nbsp;But  
+&nbsp; 
+<IMG WIDTH=43 HEIGHT=31 ALIGN=MIDDLE ALT="tex2html_wrap_inline155" SRC="img/img15.gif"  >  
+&nbsp; for any
+<B><I>x</I></B>, which contradicts 
+<IMG WIDTH=72 HEIGHT=30 ALIGN=MIDDLE ALT="tex2html_wrap_inline173" SRC="img/img20.gif"  >. <BR>
+Hence,  <IMG WIDTH=162 HEIGHT=30 ALIGN=MIDDLE ALT="tex2html_wrap_inline165" 
+SRC="img/img17.gif"  >  &nbsp; can
+ not be true. <BR>
+Hence, &nbsp; 
+<IMG WIDTH=47 HEIGHT=31 ALIGN=MIDDLE ALT="tex2html_wrap_inline113" SRC="img/img8.gif"  > .
+
+<BR><BR>
+<h3>More Proofs</h3>
+<B>Theorem 3:</B> <B><I>A</I> = <I>B</I></B> iff  <IMG WIDTH=53 HEIGHT=27 ALIGN=MIDDLE ALT="tex2html_wrap_inline185" 
+SRC="img/img21.gif"  >  and  <IMG WIDTH=52 HEIGHT=29 ALIGN=MIDDLE ALT="tex2html_wrap_inline187" SRC="img/img22.gif"  > . 
+<BR>
+<B>Proof:</B> By the definition of <B><I>A</I> = <I>B</I></B>,
+<BR>
+ <IMG WIDTH=240 HEIGHT=29 ALIGN=MIDDLE ALT="tex2html_wrap_inline191" SRC="img/img23.gif"  >  <BR>
+&nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp;<IMG WIDTH=358 HEIGHT=30 ALIGN=MIDDLE ALT="tex2html_wrap_inline193" SRC="img/img24.gif"  >  <BR>
+&nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp;<IMG WIDTH=360 HEIGHT=30 ALIGN=MIDDLE ALT="tex2html_wrap_inline195" SRC="img/img25.gif"  >  <BR>
+Since  <IMG WIDTH=240 HEIGHT=30 ALIGN=MIDDLE ALT="tex2html_wrap_inline197" SRC="img/img26.gif"  > ,
+this means that  <IMG WIDTH=53 HEIGHT=29 ALIGN=MIDDLE ALT="tex2html_wrap_inline185" SRC="img/img21.gif"  >  and
+ <IMG WIDTH=52 HEIGHT=29 ALIGN=MIDDLE ALT="tex2html_wrap_inline187" SRC="img/img22.gif"  > .
+<BR>
+Hence, <B><I>A</I> = <I>B</I></B> iff  <IMG WIDTH=53 HEIGHT=29 ALIGN=MIDDLE ALT="tex2html_wrap_inline185" 
+SRC="img/img21.gif">
+and  <IMG WIDTH=52 HEIGHT=29 ALIGN=MIDDLE ALT="tex2html_wrap_inline187" SRC="img/img22.gif"  > .
+<P>
+<B>Theorem 4:</B>  <IMG WIDTH=214 HEIGHT=29 ALIGN=MIDDLE ALT="tex2html_wrap_inline209" SRC="img/img27.gif"  >  <BR>
+<B>Proof:</B>  <IMG WIDTH=130 HEIGHT=29 ALIGN=MIDDLE ALT="tex2html_wrap_inline211" SRC="img/img28.gif"  >  <BR>
+ <IMG WIDTH=361 HEIGHT=30 ALIGN=MIDDLE ALT="tex2html_wrap_inline213" SRC="img/img29.gif"  >  <BR>
+ <IMG WIDTH=350 HEIGHT=30 ALIGN=MIDDLE ALT="tex2html_wrap_inline215" SRC="img/img30.gif"  >  <BR>
+Thus for an arbitrary <B><I>x</I></B> in the universe, <BR>
+ <IMG WIDTH=125 HEIGHT=29 ALIGN=MIDDLE ALT="tex2html_wrap_inline219" SRC="img/img31.gif"  > , and <BR>
+ <IMG WIDTH=127 HEIGHT=29 ALIGN=MIDDLE ALT="tex2html_wrap_inline221" SRC="img/img32.gif"  >  hold.<BR>
+Hence, by hypothetical syllogism  <IMG WIDTH=125 HEIGHT=29 ALIGN=MIDDLE ALT="tex2html_wrap_inline223" 
+SRC="img/img33.gif"  >  <BR>
+Hence,  <IMG WIDTH=53 HEIGHT=29 ALIGN=MIDDLE ALT="tex2html_wrap_inline225" SRC="img/img34.gif"  > .
+
+<BR><BR>
+<BR>
+<B><a href="set_operations.html" target="_top"><r><font color="blue">
+Next -- Set Operations </font></r></a></B>
+
+<BR>
+<BR>
+<a href="../schedule/schedule.html#day12"><r><font color="blue">
+Back to Schedule </font></r></a></B>
+<BR>
+<a href="../web_course.html"><r><font color="blue">
+Back to Table of Contents </font></r></a></B>
+
+
+
+</body>
+</html>
+
+
+
+

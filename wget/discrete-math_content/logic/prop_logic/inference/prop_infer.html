@@ -1,0 +1,398 @@
+<HTML>
+<HEAD>
+<TITLE>Inferencing</TITLE>
+
+<!-- Changed by: Toida, 25-Aug-1998 -->
+
+</HEAD>
+<BODY>
+<DIV ALIGN=right><h5>Propositional Logic</h5></DIV>
+<BR>
+
+<B><FONT SIZE=5><P ALIGN="CENTER">Reasoning with Propositions</P>
+</B></FONT>
+Logical reasoning is the process of drawing conclusions from premises using rules of inference.
+The basic inference rule is <B>modus ponens</B>. It states that if both 
+P <IMG WIDTH=20 HEIGHT=14 ALIGN=BOTTOM SRC="../symbols/imp.gif"  > Q 
+and P hold, then Q can be concluded, and it is written as
+<br>
+<!-- <FONT SIZE=2>    P -->
+P
+<BR>    P <IMG WIDTH=10 HEIGHT=10 ALIGN=BOTTOM SRC="../symbols/imp.gif"  > Q 
+<BR><FONT FACE="Symbol" SIZE=2>&#45;&#45;&#45;&#45;&#45;</FONT>
+<BR>Q
+
+<P>Here the lines above the dotted line are <B>premises</B> and the line below it is the <B>conclusion</B>
+drawn from the premises. </P>
+
+<P>For example if "if it rains, then the game is not played" and "it rains"
+are both true, then we can conclude that the game is not played. </P>
+
+<P> In addition to modus ponens, one can also reason by using <a href="../identities/identities.html" target="main">
+<r><font color=blue>identities</font></r></a> and <a href="../implications/implication.html" target="main">
+<r><font color=blue>implications</font></r></a>. 
+<BR>
+<BR>
+If the left(right) hand side of an identity appearing in a proposition is replaced by the right(left) 
+hand side of the identity, then the resulting proposition is logically equivalent to the original proposition.
+Thus the new proposition is deduced from the original proposition. For example in the proposition
+P <IMG WIDTH=10 HEIGHT=10 ALIGN=BOTTOM SRC="../symbols/and.gif" > 
+(Q <IMG WIDTH=10 HEIGHT=10 ALIGN=BOTTOM SRC="../symbols/imp.gif"> R), 
+(Q <IMG WIDTH=10 HEIGHT=10 ALIGN=BOTTOM SRC="../symbols/imp.gif"> R) can be replaced with 
+(<IMG WIDTH=11 HEIGHT=6 ALIGN=BOTTOM SRC="../symbols/not.gif" >Q 
+<IMG WIDTH=10 HEIGHT=10 ALIGN=BOTTOM SRC="../symbols/or.gif"> R) to conclude 
+P <IMG WIDTH=10 HEIGHT=10 ALIGN=BOTTOM SRC="../symbols/and.gif" >
+(<IMG WIDTH=11 HEIGHT=6 ALIGN=BOTTOM SRC="../symbols/not.gif" >Q
+<IMG WIDTH=10 HEIGHT=10 ALIGN=BOTTOM SRC="../symbols/or.gif"> R), since   
+(Q <IMG WIDTH=10 HEIGHT=10 ALIGN=BOTTOM SRC="../symbols/imp.gif"> R)
+<IMG WIDTH=16 HEIGHT=10 ALIGN=BOTTOM SRC="../symbols/EqvT.gif">
+(<IMG WIDTH=11 HEIGHT=6 ALIGN=BOTTOM SRC="../symbols/not.gif" >Q
+<IMG WIDTH=10 HEIGHT=10 ALIGN=BOTTOM SRC="../symbols/or.gif"> R)
+</P>
+
+<P>Similarly if the left(right) hand side of an implication appearing in a proposition is 
+replaced by the right(left) 
+hand side of the implication, then the resulting proposition is logically implied by the original proposition.
+Thus the new proposition is deduced from the original proposition.
+
+<P>The tautologies listed as "implications" can also be considered 
+<a name="prop_inf_r"><font color="red"><B>inference rules</B></font></a>
+as shown below. </P>
+
+<TABLE BORDER CELLSPACING=1 BORDERCOLOR="#000000" CELLPADDING=9 WIDTH=650>
+
+<TR><TD WIDTH="24%" VALIGN="TOP">
+<P ALIGN="CENTER">Rules of Inference</TD>
+<TD WIDTH="47%" VALIGN="TOP">
+<P ALIGN="CENTER">Tautological Form</TD>
+<TD WIDTH="29%" VALIGN="TOP">
+<P ALIGN="CENTER">Name</TD>
+</TR>
+
+<TR>
+<TD WIDTH="24%" VALIGN="TOP">
+<FONT SIZE=2>P</FONT>
+<BR><FONT FACE="Symbol" SIZE=2>&#45;&#45;&#45;&#45;&#45;&#45;&#45;</FONT>
+<BR> <FONT SIZE=2>P</FONT> <IMG WIDTH=10 HEIGHT=10 ALIGN=BOTTOM SRC="../symbols/or.gif"> <FONT SIZE=2>Q</FONT> 
+</TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2>P</FONT> <IMG WIDTH=12 HEIGHT=10 ALIGN=BOTTOM SRC="../symbols/ImpT.gif">
+<FONT SIZE=2> (P </FONT> <IMG WIDTH=10 HEIGHT=10 ALIGN=BOTTOM SRC="../symbols/or.gif"> <FONT SIZE=2>Q)</FONT></TD>
+<TD WIDTH="29%" VALIGN="TOP">addition</TD>
+</TR>
+
+<TR>
+<TD WIDTH="24%" VALIGN="TOP">
+<FONT SIZE=2>P </FONT><IMG WIDTH=10 HEIGHT=10 ALIGN=BOTTOM SRC="../symbols/and.gif"> <FONT SIZE=2> Q</FONT>
+<BR><FONT FACE="Symbol" SIZE=2>&#45;&#45;&#45;&#45;&#45;</FONT>
+<BR>
+<FONT SIZE=2> P</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2>(P </FONT><IMG WIDTH=10 HEIGHT=10 ALIGN=BOTTOM SRC="../symbols/and.gif"><FONT SIZE=2> Q) </FONT>
+<IMG WIDTH=12 HEIGHT=10 ALIGN=BOTTOM SRC="../symbols/ImpT.gif">
+<FONT SIZE=2> P</FONT></TD>
+<TD WIDTH="29%" VALIGN="TOP">
+simplification</TD>
+</TR>
+
+<TR>
+<TD WIDTH="24%" VALIGN="TOP">
+<FONT SIZE=2>    P
+<BR>    P </FONT>
+<IMG WIDTH=10 HEIGHT=10 ALIGN=BOTTOM SRC="../symbols/imp.gif">
+<FONT SIZE=2> Q</FONT>
+<BR><FONT FACE="Symbol" SIZE=2>&#45;&#45;&#45;&#45;&#45;</FONT>
+<BR>
+<FONT SIZE=2> Q</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2>[P </FONT>
+<IMG WIDTH=10 HEIGHT=10 ALIGN=BOTTOM SRC="../symbols/and.gif">
+<FONT SIZE=2> (P </FONT>
+<IMG WIDTH=10 HEIGHT=10 ALIGN=BOTTOM SRC="../symbols/imp.gif">
+<FONT SIZE=2> Q)] </FONT>
+<IMG WIDTH=12 HEIGHT=10 ALIGN=BOTTOM SRC="../symbols/ImpT.gif">
+<FONT SIZE=2> Q</FONT></TD>
+<TD WIDTH="29%" VALIGN="TOP">modus ponens</TD>
+</TR>
+
+<TR>
+<TD WIDTH="24%" VALIGN="TOP">
+<FONT SIZE=2> <IMG WIDTH=11 HEIGHT=6 ALIGN=BOTTOM SRC="../symbols/not.gif">Q</FONT>
+<BR> <FONT SIZE=2>   P </FONT>
+<IMG WIDTH=10 HEIGHT=10 ALIGN=BOTTOM SRC="../symbols/imp.gif">
+<FONT SIZE=2> Q</FONT>
+<BR><FONT FACE="Symbol" SIZE=2>&#45;&#45;&#45;&#45;&#45;</FONT>
+<BR>
+<FONT SIZE=2> <IMG WIDTH=11 HEIGHT=6 ALIGN=BOTTOM SRC="../symbols/not.gif">P</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2> [<IMG WIDTH=11 HEIGHT=6 ALIGN=BOTTOM SRC="../symbols/not.gif">Q</FONT>
+<IMG WIDTH=10 HEIGHT=10 ALIGN=BOTTOM SRC="../symbols/and.gif">
+<FONT SIZE=2> (P </FONT>
+<IMG WIDTH=10 HEIGHT=10 ALIGN=BOTTOM SRC="../symbols/imp.gif">
+<FONT SIZE=2> Q)] </FONT>
+<IMG WIDTH=12 HEIGHT=10 ALIGN=BOTTOM SRC="../symbols/ImpT.gif">
+<FONT SIZE=2> <IMG WIDTH=11 HEIGHT=6 ALIGN=BOTTOM SRC="../symbols/not.gif">P</FONT>
+</TD>
+<TD WIDTH="29%" VALIGN="TOP">modus tollens</TD>
+</TR>
+
+<TR>
+<TD WIDTH="24%" VALIGN="TOP">
+<FONT SIZE=2>P </FONT>
+<IMG WIDTH=10 HEIGHT=10 ALIGN=BOTTOM SRC="../symbols/or.gif">
+<FONT SIZE=2> Q</FONT>
+<BR>
+<IMG WIDTH=11 HEIGHT=6 ALIGN=BOTTOM SRC="../symbols/not.gif">
+<FONT SIZE=2> P</FONT>
+<BR><FONT FACE="Symbol" SIZE=2>&#45;&#45;&#45;&#45;&#45;</FONT>
+<BR>
+<FONT SIZE=2> Q</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2>
+[(P </FONT>
+<IMG WIDTH=10 HEIGHT=10 ALIGN=BOTTOM SRC="../symbols/or.gif">
+<FONT SIZE=2> Q) </FONT>
+<IMG WIDTH=10 HEIGHT=10 ALIGN=BOTTOM SRC="../symbols/and.gif">
+<FONT SIZE=2> </FONT>
+<IMG WIDTH=11 HEIGHT=6 ALIGN=BOTTOM SRC="../symbols/not.gif">
+<FONT SIZE=2> P] </FONT>
+<IMG WIDTH=12 HEIGHT=10 ALIGN=BOTTOM SRC="../symbols/ImpT.gif">
+<FONT SIZE=2> Q</FONT></TD>
+<TD WIDTH="29%" VALIGN="TOP">disjunctive syllogism</TD>
+</TR>
+
+<TR>
+<TD WIDTH="24%" VALIGN="TOP">
+<FONT SIZE=2>P </FONT>
+<IMG WIDTH=10 HEIGHT=10 ALIGN=BOTTOM SRC="../symbols/imp.gif">
+<FONT SIZE=2> Q
+<BR>Q </FONT>
+<IMG WIDTH=10 HEIGHT=10 ALIGN=BOTTOM SRC="../symbols/imp.gif">
+<FONT SIZE=2> R</FONT>
+<BR><FONT FACE="Symbol" SIZE=2>&#45;&#45;&#45;&#45;&#45;&#45;&#45;</FONT>
+<BR>
+<FONT SIZE=2> P </FONT>
+<IMG WIDTH=10 HEIGHT=10 ALIGN=BOTTOM SRC="../symbols/imp.gif">
+<FONT SIZE=2> R</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2>
+[(P </FONT><IMG WIDTH=10 HEIGHT=10 ALIGN=BOTTOM SRC="../symbols/imp.gif">
+<FONT SIZE=2> Q) </FONT>
+<IMG WIDTH=10 HEIGHT=10 ALIGN=BOTTOM SRC="../symbols/and.gif">
+<FONT SIZE=2> (Q </FONT>
+<IMG WIDTH=10 HEIGHT=10 ALIGN=BOTTOM SRC="../symbols/imp.gif">
+<FONT SIZE=2> R)] </FONT>
+<IMG WIDTH=12 HEIGHT=10 ALIGN=BOTTOM SRC="../symbols/ImpT.gif">
+<FONT SIZE=2> [P </FONT>
+<IMG WIDTH=10 HEIGHT=10 ALIGN=BOTTOM SRC="../symbols/imp.gif">
+<FONT SIZE=2> R]</FONT></TD>
+<TD WIDTH="29%" VALIGN="TOP">hypothetical syllogism</TD>
+</TR>
+
+<TR>
+<TD WIDTH="24%" VALIGN="TOP">
+<FONT SIZE=2>P
+<BR>Q</FONT>
+<BR><FONT FACE="Symbol" SIZE=2>&#45;&#45;&#45;&#45;&#45;&#45;&#45;</FONT>
+<BR>
+<FONT SIZE=2> P </FONT>
+<IMG WIDTH=10 HEIGHT=10 ALIGN=BOTTOM SRC="../symbols/and.gif">
+<FONT SIZE=2> Q</FONT> </TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<TD WIDTH="29%" VALIGN="TOP">conjunction</TD>
+</TR>
+
+<TR>
+<TD WIDTH="24%" VALIGN="TOP">
+<FONT SIZE=2>(P </FONT>
+<IMG WIDTH=10 HEIGHT=10 ALIGN=BOTTOM SRC="../symbols/imp.gif">
+<FONT SIZE=2> Q) </FONT>
+<IMG WIDTH=10 HEIGHT=10 ALIGN=BOTTOM SRC="../symbols/and.gif">
+<FONT SIZE=2> (R </FONT>
+<IMG WIDTH=10 HEIGHT=10 ALIGN=BOTTOM SRC="../symbols/imp.gif">
+<FONT SIZE=2> S)
+<BR>P </FONT>
+<IMG WIDTH=10 HEIGHT=10 ALIGN=BOTTOM SRC="../symbols/or.gif">
+<FONT SIZE=2> R</FONT>
+<BR><FONT FACE="Symbol" SIZE=2>&#45;&#45;&#45;&#45;&#45;&#45;&#45;</FONT>
+<BR>
+<FONT SIZE=2> Q </FONT>
+<IMG WIDTH=10 HEIGHT=10 ALIGN=BOTTOM SRC="../symbols/or.gif">
+<FONT SIZE=2> S</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2>
+[(P </FONT>
+<IMG WIDTH=10 HEIGHT=10 ALIGN=BOTTOM SRC="../symbols/imp.gif">
+<FONT SIZE=2> Q) </FONT>
+<IMG WIDTH=10 HEIGHT=10 ALIGN=BOTTOM SRC="../symbols/and.gif">
+<FONT SIZE=2> (R </FONT>
+<IMG WIDTH=10 HEIGHT=10 ALIGN=BOTTOM SRC="../symbols/imp.gif">
+<FONT SIZE=2> S) </FONT>
+<IMG WIDTH=10 HEIGHT=10 ALIGN=BOTTOM SRC="../symbols/and.gif">
+<FONT SIZE=2> (P </FONT>
+<IMG WIDTH=10 HEIGHT=10 ALIGN=BOTTOM SRC="../symbols/or.gif">
+<FONT SIZE=2> R)] </FONT>
+<IMG WIDTH=10 HEIGHT=10 ALIGN=BOTTOM SRC="../symbols/ImpT.gif">
+<FONT SIZE=2> [Q </FONT>
+<IMG WIDTH=10 HEIGHT=10 ALIGN=BOTTOM SRC="../symbols/or.gif">
+<FONT SIZE=2> S]</FONT></TD>
+<TD WIDTH="29%" VALIGN="TOP">constructive dilemma</TD>
+</TR>
+
+<TR><TD WIDTH="24%" VALIGN="TOP">
+<FONT SIZE=2>(P </FONT>
+<IMG WIDTH=10 HEIGHT=10 ALIGN=BOTTOM SRC="../symbols/imp.gif">
+<FONT SIZE=2> Q) </FONT>
+<IMG WIDTH=10 HEIGHT=10 ALIGN=BOTTOM SRC="../symbols/and.gif">
+<FONT SIZE=2> (R </FONT>
+<IMG WIDTH=10 HEIGHT=10 ALIGN=BOTTOM SRC="../symbols/imp.gif">
+<FONT SIZE=2> S)</FONT>
+<BR>
+<IMG WIDTH=11 HEIGHT=6 ALIGN=BOTTOM SRC="../symbols/not.gif" >
+<FONT SIZE=2> Q </FONT>
+<IMG WIDTH=10 HEIGHT=10 ALIGN=BOTTOM SRC="../symbols/or.gif">
+<FONT SIZE=2> </FONT>
+<IMG WIDTH=11 HEIGHT=6 ALIGN=BOTTOM SRC="../symbols/not.gif" >
+<FONT SIZE=2> S</FONT>
+<BR>
+<FONT FACE="Symbol" SIZE=2>&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;</FONT>
+<BR>
+<FONT SIZE=2> </FONT>
+<IMG WIDTH=11 HEIGHT=6 ALIGN=BOTTOM SRC="../symbols/not.gif" >
+<FONT SIZE=2> P </FONT>
+<IMG WIDTH=10 HEIGHT=10 ALIGN=BOTTOM SRC="../symbols/or.gif">
+<FONT SIZE=2> </FONT>
+<IMG WIDTH=11 HEIGHT=6 ALIGN=BOTTOM SRC="../symbols/not.gif" >
+<FONT SIZE=2> R</FONT></TD>
+<TD WIDTH="48%" VALIGN="TOP">
+<FONT SIZE=2>
+[(P </FONT>
+<IMG WIDTH=10 HEIGHT=10 ALIGN=BOTTOM SRC="../symbols/imp.gif">
+<FONT SIZE=2> Q) </FONT>
+<IMG WIDTH=10 HEIGHT=10 ALIGN=BOTTOM SRC="../symbols/and.gif">
+<FONT SIZE=2> (R </FONT>
+<IMG WIDTH=10 HEIGHT=10 ALIGN=BOTTOM SRC="../symbols/imp.gif">
+<FONT SIZE=2> S) </FONT>
+<IMG WIDTH=10 HEIGHT=10 ALIGN=BOTTOM SRC="../symbols/and.gif">
+<FONT SIZE=2> (</FONT>
+<IMG WIDTH=11 HEIGHT=6 ALIGN=BOTTOM SRC="../symbols/not.gif" >
+<FONT SIZE=2> Q </FONT>
+<IMG WIDTH=10 HEIGHT=10 ALIGN=BOTTOM SRC="../symbols/or.gif">
+<FONT SIZE=2> </FONT>
+<IMG WIDTH=11 HEIGHT=6 ALIGN=BOTTOM SRC="../symbols/not.gif" >
+<FONT SIZE=2> S)] </FONT>
+<IMG WIDTH=10 HEIGHT=10 ALIGN=BOTTOM SRC="../symbols/ImpT.gif">
+<FONT SIZE=2> [</FONT>
+<IMG WIDTH=11 HEIGHT=6 ALIGN=BOTTOM SRC="../symbols/not.gif" >
+<FONT SIZE=2> P </FONT>
+<IMG WIDTH=10 HEIGHT=10 ALIGN=BOTTOM SRC="../symbols/or.gif">
+<FONT SIZE=2> </FONT>
+<IMG WIDTH=11 HEIGHT=6 ALIGN=BOTTOM SRC="../symbols/not.gif" >
+<FONT SIZE=2> R]</FONT></TD>
+<TD WIDTH="29%" VALIGN="TOP">destructive dilemma</TD>
+</TR>
+</TABLE>
+
+<BR>
+<BR>
+<h3> <B>Example of Inferencing </B></h3>
+<P>
+Consider the following argument<B>:</B>
+<P>
+<B>1.</B> Today is Tuesday or Wednesday.
+<P>
+<B>2.</B> But it can't be Wednesday, since the doctor's office is open today,
+and that office is always closed on Wednesdays.
+<P>
+<B>3.</B> Therefore today must be Tuesday.
+<P>
+This sequence of reasoning (inferencing) can be represented
+as a series of application of modus ponens to the corresponding propositions
+as follows. <BR>
+<P>
+The modus ponens is an inference rule which deduces &nbsp<B><I>Q</I></B>&nbsp from
+&nbsp<B><I>P</I> -> <I>Q</I></B>&nbsp  
+and &nbsp<B><I>P</I></B>.
+<P>
+<B><I>T</I></B>: Today is Tuesday.
+<P>
+<B><I>W</I></B>: Today is Wednesday.
+<P>
+<B><I>D</I></B>: The doctor's office is open today.
+<P>
+<B><I>C</I></B>: The doctor's office is always closed on Wednesdays.
+<P>
+The above reasoning can be represented by propositions as follows.
+<P>
+<B>1. <I>T</I></B> V <B><I>W</I> </B>
+<BR>
+<BR>
+<B>2. <I>D</I> </B>
+<BR>
+&nbsp &nbsp <B><I>C</I> </B><BR>
+<B>------------ </B><BR>
+&nbsp &nbsp<B>~<I>W</I></B>
+<BR>
+<B>------------ </B><BR>
+<B>3. <I>T</I> </B><BR>
+<P>
+To see if this conclusion <B><I>T</I></B> is correct, let us first find the relationship
+among <B><I>C</I></B>, <B><I>D</I></B>, and <B><I>W</I></B>:
+<P>
+<B><I>C</I></B> can be expressed using <B><I>D</I></B> and <B><I>W</I></B>. That is, restate <B><I>C</I></B> first as
+the doctor's office is always closed
+if it is Wednesday. Then <B><I>C</I></B> <B><-></B> <B>(<I>W</I> -> ~<I>D</I>)</B>
+Thus
+substituting <B>(<I>W</I> -> ~<I>D</I>)</B>
+for <B><I>C</I></B>, we can
+ proceed as follows.
+<P>
+<B><I>D</I></B> <BR>
+<B><I>W</I> -> ~<I>D</I></B><BR>
+------------ <BR>
+<B>~<I>W</I></B><BR>
+<BR>
+which is correct by modus tollens.
+<BR>
+<BR>
+From this &nbsp<B>~<I>W</I></B>&nbsp combined with &nbsp<B><I>T</I></B> V <B><I>W</I></B>&nbsp of <B>1.</B> above, <BR>
+<BR>
+<B>~<I>W</I></B><BR>
+<B><I>T</I></B> V <B><I>W</I> </B><BR>
+------------ <BR>
+<B><I>T</I></B> <BR>
+<BR>
+which is correct by disjunctive syllogism.
+<BR>
+Thus we can conclude that the given argument is correct.
+<BR>
+<BR>
+To save space we also write this process as follows eliminating one of the <B>~<I>W</I></B>'s:
+<P>
+<B><I>D</I></B> <BR>
+<B><I>W</I> -> ~<I>D</I></B><BR>
+------------ <BR>
+<B>~<I>W</I></B><BR>
+<B><I>T</I></B> V <B><I>W</I> </B><BR>
+------------ <BR>
+<B><I>T</I></B> <BR>
+<BR>
+<BR>
+<B><a href="../identities/identity_proof.html"><r><font color="blue">
+Next -- Proof of Identities </font></r></a></B>
+<BR>
+<BR>
+<a href="../../../web_course.html"><r><font color="blue">
+Back to Table of Contents </font></r></a></B>
+
+<BR>
+<BR>
+<BR>
+<BR>
+
+
+
+
+
+</BODY>
+</HTML>

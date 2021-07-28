@@ -1,0 +1,164 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<!--Converted with LaTeX2HTML 96.1 (Feb 5, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+
+
+<!--  Level B --->
+
+<HEAD>
+<TITLE>No Title</TITLE>
+<META NAME="description" CONTENT="No Title">
+<META NAME="keywords" CONTENT="induction">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="induction.css">
+</HEAD>
+<BODY LANG="EN">
+<H5><P align="Right">Induction</P></H5>
+<h2><B>Mathematical Induction -- First Principle</B></h2>
+<BR> 
+<BR>
+<h3><font color="green">Subjects to be Learned </font></h3>
+<UL>
+<LI>first principle of mathematical induction
+<LI>basis step
+<LI>induction hypothesis
+<LI>induction
+</ul>
+<h3><font color="green">Contents </font></h3>
+As we have seen in <a href="../recursive_def/rec_def.html" target="main"><font color="blue"><B><r>recursion</B></font></r></a> ,
+the set of natural numbers can be defined recursively,
+and its elements can be generated one by one starting with <B><I>0</I></B> by adding <B><I>1</I></B>.
+Thus the set of natural numbers can be described completely by specifying the basis 
+element (<B><I>0</I></B>), and the process of generating an element from a known element in the set.
+<BR>
+<BR>
+Taking advantage of this, natural numbers can be proven to have certain properties 
+as follows<B>:</B> 
+<BR>
+First it is proven
+that the basis element, 
+that is <B><i>0</I></B>, has the property in question (<font color="green"><B><r>basis step</B></font>).
+You prove that the seeds (the first generation elements) have the property. 
+<BR>
+Then it is proven that if an arbitrary natural 
+number, denote it by <B><i>n</I></B>, has the property in question, then the next element, that is
+<B><i>n + 1</I></B>, has that property (<font color="green"><B><r>inductive step</B></font>). 
+Here you prove that the property is inherited from one generation (<B><i>n</I></B>) 
+to the next generation (<B><i>n + 1</I></B>).
+<BR><BR>
+When these two are proven, then it follows that all the natural 
+numbers have that property. For since <B><i>0</I></B> has the property by the basis step, the element next to it, which is 
+<B><i>1</I></B>, has the same property by the inductive step. Then since <B><i>1</I></B> has the property, the element next to it,
+which is 
+<B><i>2</I></B>, has the same property again by the inductive step. Proceeding likewise, any natural number can be shown to have 
+the property. This process is somewhat analogous to the knocking over a row of dominos with knocking over the first domino 
+corresponding to 
+the basis step.
+<BR><BR>
+
+More generally mathematical statements involving a natural number <B><I>n</I></B> such as 
+<B><I>1</I> + <I>2</I> + ... + <I>n</I> = <I>n( n + 1 )/2</I></B> 
+can be proven by mathematical induction by the same token. <BR> 
+<BR>
+To prove that a statement <B><I>P</I></B>(<B><I>n</I></B>) is true for all natural number  <IMG WIDTH=54 HEIGHT=25 ALIGN=MIDDLE ALT="tex2html_wrap_inline59" SRC="img1.gif"  > , where
+ <IMG WIDTH=17 HEIGHT=18 ALIGN=MIDDLE ALT="tex2html_wrap_inline61" SRC="img2.gif"  >  is a natural number, 
+we proceed 
+as follows<B>:</B>
+<BR>
+<B><a name="bastep">Basis Step</B></a>: Prove that <B><I>P</I></B>( <IMG WIDTH=17 HEIGHT=18 ALIGN=MIDDLE ALT="tex2html_wrap_inline61" SRC="img2.gif"  > ) is true.
+<br>
+<B><a name="indstep">Induction</B></a>: Prove that for any integer  <IMG WIDTH=52 HEIGHT=27 ALIGN=MIDDLE ALT="tex2html_wrap_inline65" SRC="img3.gif"  > , if <B><I>P</I></B>(<B><I>k</I></B>) is true
+(called <a name="indhyp"><font color="red"><B>induction hypothesis</B></font></a>), then
+<B><I>P</I>(<I>k</I>+<I>1</I>)</B> is true. <BR> 
+The <a name="fpind"><font color="red"><B>first principle of mathematical induction</B></font></a> states that if the basis step
+and the inductive step are proven, then  <B><I>P</I></B>(<B><I>n</I></B>) is true for all natural number
+<IMG WIDTH=54 HEIGHT=25 ALIGN=MIDDLE
+ ALT="tex2html_wrap_inline59" SRC="img1.gif"  > .
+<BR><BR>
+As a first step for proof by induction, &nbsp; it is often a good idea to restate
+<B><I>P</I>(<I>k</I>+<I>1</I>)</B> in terms of <B><I>P</I>(<I>k</I>)</B> 
+so that <B><I>P</I>(<I>k</I>)</B>, which is assumed to be true, can be used.
+<br>
+
+
+
+<!--
+<P>
+<h4>To learn induction in a more general context 
+<a href="gen_ind/gen_ind.html" target="main"><r><font color="blue"><B>click here.</B></font></r></a></h4>
+--->
+
+<P>
+<B>Example:</B> <BR> 
+<P>
+&nbsp; &nbsp;&nbsp; &nbsp;Prove that for any natural number <B><I>n</I></B>, &nbsp; <B><I>0</I> + <I>1</I> + ... + <I>n</I> = <I>n( n + 1 )/2</I> .</B>
+<BR>
+<BR>
+<B>Proof:</B> <BR>
+<B>Basis Step:</B>
+If <B><I>n</I> = <I>0</I></B>,
+then <B><I>LHS</I> = <I>0</I></B>, and <B><I>RHS</I> = <i>0 * (0 + 1) = 0</I> .</B>
+<BR>
+Hence <B><I>LHS</I> = <I>RHS</I>. </B>
+<BR>
+<B>Induction</B>: Assume that  for an arbitrary natural number <B><I>n</I></B>, 
+<B><I>0</I> + <I>1</I> + ... + <I>n</I>
+ = <I>n( n + 1 )/2</I> .</B> -------- <font color="green">
+<I>Induction Hypothesis</I></font><BR>
+To prove this for <B><I>n</I>+<I>1</I>,</B>  &nbsp; first try to express <B><I>LHS</I></B> for
+<B><I>n</I>+<I>1</I></B> &nbsp; in terms of <B><I>LHS</I></B>
+for <B><I>n</I>,</B> &nbsp; and somehow use the induction hypothesis. <BR>
+Here let us try  <BR>
+&nbsp; &nbsp;&nbsp; &nbsp;<B><I>LHS</I></B> for <B><i>n + 1</I> = </B>
+<B><I>0</I> + <I>1</I> + ... + <I>n</I> + (<I>n + 1</I>) =
+(<I>0</I> + <I>1</I> + ... + <I>n</I>) + (<I>n + 1</I>) .</B><BR>
+Using the induction hypothesis, the last expression can be rewritten as <BR>
+&nbsp; &nbsp;&nbsp; &nbsp;<B><I>n( n + 1 )/2</I> + (<I>n + 1</I>) .</B><BR>
+Factoring <B>(<I>n + 1</I>) </B> out, we get <BR>
+ &nbsp; &nbsp;&nbsp; &nbsp;<B>(<I>n + 1</I>)(<I>n + 2</I>) / 2 ,</B>
+<BR>
+which is equal to the <B><I>RHS</I></B> for <B><I>n</I>+<I>1</I>.</B>
+<BR>
+<BR>
+Thus <B><I>LHS</I> = <I>RHS</I></B> for <B><I>n</I>+<I>1</I>.</B>
+<BR>
+<BR>
+<B>End of Proof.</B>
+<BR>
+<BR>
+More examples can be found 
+<a href="examples.html" target="main"><r><font color="blue"><B>here</B></font></r></a>. 
+
+<BR><BR>
+Also an
+<a href="use_of_induction_loop.html" target="main"><r><font color="blue"><B>example </B></font></r></a>
+is given on how induction might be used to derive a new result.
+<br>
+<br>
+<br>
+<h3><font color="green">Test Your Understanding of Induction </font></h3>
+Indicate which of the following statements are correct and which are not.
+<br>
+Click True or False , then Submit. There is one set of questions.
+<br>
+<br>
+<br>
+<applet code="exercise.class" width=750 height=750>
+</applet>
+
+<BR><BR>
+<BR>
+<B><a href="use_of_induction_loop.html"><r><font color="blue">
+Next -- Example of Use of Induction </font></r></a></B>
+<BR>
+<BR>
+<a href="../schedule/schedule.html#day16"><r><font color="blue">
+Back to Schedule </font></r></a></B>
+<BR>
+<a href="../web_course.html"><r><font color="blue">
+Back to Table of Contents </font></r></a></B>
+
+
+</BODY>
+</HTML>

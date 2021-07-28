@@ -1,0 +1,144 @@
+<HTML>
+<HEAD>
+<TITLE>Inferencing</TITLE>
+
+</HEAD>
+<BODY>
+
+<H5><P align="Right">Predicate Logic</P></H5>
+
+<B><FONT SIZE=4><P ALIGN="CENTER">Existential Generalization</P>
+</B></FONT>
+<BR><BR>
+<h3><font color="green">Subjects to be Learned </font></h3>
+<UL>
+<LI>existential generalization rule
+</ul>
+<h3><font color="green">Contents </font></h3>
+<B>Rule:</B>
+<BR>
+<BR>
+<FONT SIZE=2>
+P(c)
+</FONT>
+<BR><FONT FACE="Symbol" SIZE=2>&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;
+</FONT>
+<BR>
+<IMG WIDTH=8 HEIGHT=14 ALIGN=BOTTOM SRC="../symbols/exist.gif">
+<FONT SIZE=2>
+x P(x)
+</FONT>
+<P>where <I>c </I>is an element of the universe.
+<BR>
+<BR>
+<B>Restrictions:</B>
+<BR>
+<BR>
+x must not appear free in P(c).
+<BR>
+<BR>
+<BR>
+<B>Explanation:</B>
+<BR>
+<BR>
+What this rule says is that if there is some element c in the universe
+that has the property P, then we can say that there exists something
+in the universe that has the property P.
+<BR>
+<BR>
+<BR>
+<B>Example:</B>
+<BR>
+<BR>
+For example the statement "if everyone is happy then someone is happy"
+can be proven correct using this existential generalization rule.
+<BR>
+<BR>
+To prove it, first let the universe be the set of all people and let
+H(x) mean that x is happy.
+<BR>
+<BR>
+Then the argument is 
+<BR>
+<IMG WIDTH=12 HEIGHT=12 ALIGN=BOTTOM SRC="../symbols/all.gif">x
+H(x)
+<IMG WIDTH=12 HEIGHT=12 ALIGN=BOTTOM SRC="../symbols/imp.gif"> 
+<IMG WIDTH=10 HEIGHT=14 ALIGN=BOTTOM SRC="../symbols/exist.gif"> x 
+H(x) 
+<BR>
+<BR>
+The proof is 
+<BR>
+<table align=left clospan=20>
+<tr>
+<td>
+1. <IMG WIDTH=12 HEIGHT=12 ALIGN=BOTTOM SRC="../symbols/all.gif">x
+H(x)
+</td>
+<td>
+ Hypothesis
+</td>
+</tr>
+<tr>
+<td>
+2. H(c)
+</td>
+<td>
+Universal instantiation
+</td>
+</tr>
+<tr>
+<td>
+4. <IMG WIDTH=10 HEIGHT=14 ALIGN=BOTTOM SRC="../symbols/exist.gif"> x
+H(x)
+</td>
+<td>
+Existential generalization.
+</td>
+</tr>
+</table>
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<B>Note:</B>
+<BR>
+<BR>
+Without the restriction that x must not appear free in P(c),
+one may produce an incorrect formula by existential generalization.
+For example, <IMG WIDTH=10 HEIGHT=14 ALIGN=BOTTOM SRC="../symbols/exist.gif"> x Q(x, x)
+may be derived from Q(x,c) by existential generalization. But Q(x,c)
+<IMG WIDTH=12 HEIGHT=12 ALIGN=BOTTOM SRC="../symbols/imp.gif"> 
+<IMG WIDTH=10 HEIGHT=14 ALIGN=BOTTOM SRC="../symbols/exist.gif"> x Q(x, x)
+is not valid, as you can see if Q(x,y) means "x is not equal to y", or "x > y", for example.
+<BR>
+<BR>
+<BR>
+<h5>
+<a href="univ_inst.html"><r><font color="blue">
+Universal Instantiation
+</font></r></a>
+<BR>
+<a href="univ_gen.html"><r><font color="blue">
+Universal Generalization
+</font></r></a>
+<BR>
+<a href="exist_inst.html"><r><font color="blue">
+Existential Instantiation
+</font></r></a>
+</h5>
+
+<h5><a href="infer_intro.html"><r><font color="blue">
+Back to Inferencing</font></r></a>
+<BR>
+<a href="../intr_to_pred_logic.html"><r><font color="blue">
+Back to Predicate Logic</font></r></a>
+</h5>
+
+</BODY>
+</HTML>
+

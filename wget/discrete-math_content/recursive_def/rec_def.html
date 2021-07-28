@@ -1,0 +1,357 @@
+
+ 
+<!-- <body bgcolor="#ffffff" text="black" link="blue" vlink="#00bb77">  --->
+<!-- <body bgcolor="#ffffff" text="black" link="blue" vlink="3355dd"> --->
+<body bgcolor="#ffffff" text="black" link="blue" vlink="blue">
+ 
+ 
+<title>Practice Questions on Recursive Definition </title>
+ 
+<H5><P align="Right">Recursive Definition</P></H5>
+
+<center>
+<h2>Recursive Definition </h2> 
+</center>
+<BR>
+<BR>
+<h3><font color="green">Subjects to be Learned </font></h3>
+<UL>
+<LI>recursive/inductive definition
+<LI>basis clause
+<LI>basis 
+<LI>inductive clause
+<LI>extremal clause
+</ul>
+<h3><font color="green">Contents </font></h3>
+Sets which have too many elements to list them up, and for which there are no convenient 
+or obvious predicates to specify their elements can often be
+defined using a <font color="green"><B>recursive definition</B></font> 
+(also called inductive definition). It essentially gives a procedure to generate
+the members of the set one by one starting with some subset of its elements. <br>
+In this type of definition, first a collection of elements to be included initially 
+in the set is specified. These elements can be viewed as the seeds of the set being defined. 
+Next, the rules to be used to generate elements of the set from
+elements already known to be in the set (initially the seeds) are given. 
+These rules provide a method to construct
+the set element by element starting with the seeds. 
+These rules can also be used to test elements for the membership 
+in the set. <BR>
+<BR>
+A <B><a name="recdef"><font color="red">recursive definition</font></a></B> of a set always consists of 
+three distinct clauses: <br>
+
+<ol>
+<li>The <a name="bascla"><font color="#ff0000"><B>basis clause</B></font></a> (or simply basis)
+of the definition establishes
+that certain objects are in the set. This part of the definition specifies the "seeds" of
+the set from which the elements of the set are generated using the methods given in the inductive clause. The set of elements specified here is called
+<a name="basis"><font color="#ff0000"><B>basis </B></font></a> of the set being defined.
+<li>The <a name="indcla"><font color="#ff0000"><B>inductive clause</B></font></a> (or simply induction) 
+of the definition
+establishes the ways in which elements of the set can be combined to produce new elements of the set.
+The inductive clause always asserts that if objects are elements of the set, then they can be 
+combined in certain specified ways to create other objects. 
+Let us call the objects used to create a new object the <font color="#ff0000"><B>
+parents</B></font> of the new object, and the new object is their
+<font color="#ff0000"><B> child </B></font>.
+<li>The <a name="extcla"><font color="#ff0000"><B>extremal clause</B></font></a> asserts that unless an object 
+can be shown to be a member of the set by applying the basis and inductive clauses 
+a finite number of times,
+the object is not a member of the set. 
+<BR>
+<BR>
+The set you are trying to define recursively is <B><font color="red">the set that satisfies those three clauses.</font></b>
+<BR>
+<BR>
+There are a number of other ways of expressing the extremal clause that are equivalent to
+the extremal clause given above.
+They are not required for this course but those interested 
+<a href="extremal_clause.html" target="main"> <r>click here. </r></a>
+</ol>
+<br>
+<h3><B>Examples of Recursive Definition of Set</B></h3>
+<B>Example 1.</B> Definition of the Set of Natural Numbers  <IMG WIDTH=15 HEIGHT=13 ALIGN=BOTTOM 
+ALT="tex2html_wrap_inline51" SRC="imgs/img1.gif"  >
+<br>
+<br>
+The set <B><I>N</I></B> is the set that satisfies the following three clauses:
+<br>
+<br>
+<B>Basis Clause:</B>   <IMG WIDTH=47 HEIGHT=27 ALIGN=MIDDLE ALT="tex2html_wrap_inline53" SRC="imgs/img2.gif"  >
+ <BR>
+<B>Inductive Clause:</B> For any element <B><I>x</I></B>
+in  <IMG WIDTH=15 HEIGHT=13 ALIGN=BOTTOM ALT="tex2html_wrap_inline51" SRC="imgs/img1.gif"  > ,
+<B><I>x</I> + <I>1</I></B> is in  <IMG WIDTH=15 HEIGHT=13 ALIGN=BOTTOM 
+ALT="tex2html_wrap_inline51" SRC="imgs/img1.gif"  > .
+<br>
+<B>Extremal Clause:</B> Nothing is in  <IMG WIDTH=15 HEIGHT=13 
+ALIGN=BOTTOM ALT="tex2html_wrap_inline51" SRC="imgs/img1.gif"  >  
+unless it is obtained from the
+Basis and Inductive Clauses.
+<BR><BR>
+The basis for this set <B><I>N</I></B> is <B>{ <I>0</I> } .</B> 
+The <B><I>x</I> + <I>1</I></B> in the Inductive Clause is the child of 
+<B><I>x</I></B>, and <B><I>x</I></B> is the parent of <B><I>x</I> + <I>1</I></B>.
+<BR> 
+Following this definition,  the set of natural numbers <B><I>N</I></B> can be obtained as follows:
+<BR>
+First by the Basis Clause, &nbsp; <B><I>0</I></B> is put into <B><I>N</I></B>.
+<BR>
+Then by the Inductive Clause, since <B><I>0</I></B> is in <B><I>N</I></B>, &nbsp;<B><I>0 + 1 (= 1)</I></B>
+is in <B><I>N</I></B>. <B><I>0</I></B> is the parent of <B><I>1</I></B>, 
+and <B><I>1</I></B> is the child of <B><I>0</I></B>.
+<BR>
+Then by the Inductive Clause again, &nbsp;
+ <B><I>1 + 1 (= 2)</I></B> is
+in <B><I>N</I></B>.
+<B><I>1</I></B> is the parent of <B><I>2</I></B>, 
+and <B><I>2</I></B> is the child of <B><I>1</I></B>.
+
+<BR>
+Proceeding in this manner all the "natural numbers"
+are put into <B><I>N</I></B>.
+<BR>
+<BR>
+Note that if we don't have the Extremal Clause,&nbsp; <B><I>0.5, 1.5, 2.5, ...</I></B> can be included in
+<B><I>N</I></B>, which is not what we want as the set of natural numbers.
+<br>
+<br>
+For more precise and abstract definition of natural numbers
+<a href="http://cs.odu.edu/~toida/nerzic/content/set/natural_no.html"
+target="main"> <r>click
+ here. </r></a>
+<BR>
+You might also want to look at the entry on natural number in Wikipedia.
+
+
+<br>
+<br>
+<br>
+<B><A NAME="Even">Example 2.</A></B> Definition of the Set of Nonnegative Even Numbers  <IMG WIDTH=30 HEIGHT=13 
+ALIGN=BOTTOM ALT="tex2html_wrap_inline65" SRC="imgs/img3.gif"  >
+<br>
+<br>
+The set <B><I>NE</I></B> is the set that satisfies the following three clauses:
+<br>
+<br>
+<B>Basis Clause:</B>   <IMG WIDTH=62 HEIGHT=27 ALIGN=MIDDLE ALT="tex2html_wrap_inline67" SRC="imgs/img4.gif"  >
+ <BR>
+<B>Inductive Clause:</B> For any element <B><I>x</I></B>
+in  <IMG WIDTH=30 HEIGHT=13 ALIGN=BOTTOM ALT="tex2html_wrap_inline65" SRC="imgs/img3.gif"  > ,
+<B><I>x</I> + <I>2</I></B> is in  <IMG WIDTH=30 HEIGHT=13 
+ALIGN=BOTTOM ALT="tex2html_wrap_inline65" SRC="imgs/img3.gif"  > . <BR>
+<B>Extremal Clause:</B> Nothing is in  <IMG WIDTH=30 HEIGHT=13 
+ALIGN=BOTTOM ALT="tex2html_wrap_inline65" SRC="imgs/img3.gif"  >  unless it is obtained from the
+Basis and Inductive Clauses.
+<P>
+<br>
+<B>Example 3.</B> Definition of the Set of Even Integers  <IMG WIDTH=22 HEIGHT=13 ALIGN=BOTTOM 
+ALT="tex2html_wrap_inline79" SRC="imgs/img5.gif"  >
+<br>
+<br>
+The set <B><I>EI</I></B> is the set that satisfies the following three clauses:
+<BR>
+<BR>
+<B>Basis Clause:</B>   <IMG WIDTH=54 HEIGHT=27 ALIGN=MIDDLE ALT="tex2html_wrap_inline81" SRC="imgs/img6.gif"  >
+ <BR>
+<B>Inductive Clause:</B> For any element <B><I>x</I></B>
+in  <IMG WIDTH=22 HEIGHT=13 ALIGN=BOTTOM ALT="tex2html_wrap_inline79" SRC="imgs/img5.gif"  > ,
+<B><I>x</I> + <I>2</I></B>, and <B><I>x</I> - <I>2</I></B> are in  
+<IMG WIDTH=22 HEIGHT=13 ALIGN=BOTTOM ALT
+="tex2html_wrap_inline79" SRC="imgs/img5.gif"  > . <BR>
+<B>Extremal Clause:</B> Nothing is in  <IMG WIDTH=22 HEIGHT=13 ALIGN=BOTTOM 
+ALT="tex2html_wrap_inline79" SRC="imgs/img5.gif"  >  unless it is obtained from the
+Basis and Inductive Clauses.
+<P>
+<br>
+<B>Example 4.</B> Definition of the Set of Strings  <IMG WIDTH=10 HEIGHT=13 ALIGN=BOTTOM ALT="tex2html_wrap_inline95" SRC="imgs/img7.gif"  >
+ over the alphabet  <IMG WIDTH=43 HEIGHT=30 ALIGN=MIDDLE ALT="tex2html_wrap_inline97" SRC="imgs/img8.gif"  >  
+excepting empty string.
+<br>
+This is the set of strings consisting of <B><I>a</I></B>'s and <B><I>b</I></B>'s
+such as <B><I>abbab</I></B>, <B><I>bbabaa</I></B>, etc.
+<BR>
+<BR>
+The set <B><I>S</I></B> is the set that satisfies the following three clauses:
+<br>
+<br>
+<B>Basis Clause:</B>   <IMG WIDTH=43 HEIGHT=27 ALIGN=MIDDLE ALT="tex2html_wrap_inline99" SRC="imgs/img9.gif"  >
+, and  <IMG WIDTH=41 HEIGHT=27 ALIGN=MIDDLE ALT="tex2html_wrap_inline101" SRC="imgs/img10.gif"  > . <BR>
+<B>Inductive Clause:</B> For any element <B><I>x</I></B>
+in  <IMG WIDTH=10 HEIGHT=13 ALIGN=BOTTOM ALT="tex2html_wrap_inline95" SRC="imgs/img7.gif"  > , 
+<IMG WIDTH=54 HEIGHT=27 ALIGN=MIDDLE ALT="tex2html_wrap_inline107" SRC="imgs/img11.gif"  > , 
+and  <IMG WIDTH=52 HEIGHT=27 ALIGN=
+MIDDLE ALT="tex2html_wrap_inline109" SRC="imgs/img12.gif"  > . <BR>
+Here <B><I>ax</I></B> means the concatenation of <B><I>a</I></B> with <B><I>x</I></B>. <BR>
+<B>Extremal Clause:</B> Nothing is in  <IMG WIDTH=10 HEIGHT=13 
+ALIGN=BOTTOM ALT="tex2html_wrap_inline95" SRC="imgs/img7.gif"  >  unless it is obtained from the
+Basis and Inductive Clauses.
+<BR>
+<BR>
+<font color="blue"><B>Tips</B></font> for recursively defining a set<B>:</B>
+<BR>
+For the "Basis Clause", try simplest elements in the set such as smallest numbers
+(<B><I>0,</I></B> or <B><I> 1</I></B>),
+simplest expressions, or shortest strings.
+Then see how other elements can be obtained from them, and generalize that generation process for the "Inductive Clause".
+<BR>
+<BR>
+The set of propositions (propositional forms) can also be defined recursively.
+To see how it is defined <a href="prop-def/prop-def.html" target="main"> <r>click here. </r></a>
+<br>
+<br>
+<br>
+<h3><font color="green">Test Your Understanding of Recursive Definition </font></h3>
+Indicate which of the following statements are correct and which are not.
+<br>
+Click Yes or No , then Submit. There are two sets of questions.
+<br>
+<br>
+<br>
+<applet code="exercise.class" width=750 height=600>
+</applet>
+<BR><BR>
+<BR>
+<B><a href="../set/generalized_set_op.html"><r><font color="blue">
+Next -- Generalized Set Operations </font></r></a></B>
+<BR>
+<BR>
+<a href="../schedule/schedule.html#day14"><r><font color="blue">
+Back to Schedule </font></r></a></B>
+<BR>
+<a href="../web_course.html"><r><font color="blue">
+Back to Table of Contents </font></r></a></B>
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+
+
+<center>
+<h2><B><A NAME="RecFunc"> Recursive Definition of Function</A></B></h2>
+</center>
+<BR>
+<BR>
+<h3><font color="green">Subjects to be Learned </font></h3>
+<UL>
+<LI>recursive definition of function
+</ul>
+<h3><font color="green">Contents </font></h3>
+Some functions can also be defined recursively. 
+<BR>
+<BR>
+<B>Condition:</B>
+The domain of the function you wish to define recursively must be a set defined recursively.
+<BR>
+<B>How to define function recursively:</B>
+First the values of the function for the basis elements of the domain are specified.
+Then the value of the function at an element, say <b><I>x</I></B>, of the domain 
+is defined using its value
+at the parent(s) of the element <b><I>x</I></B>. 
+<BR>
+<BR>
+A few examples are given below. 
+<br>
+They are all on functions from integer to integer except the last one.
+<BR>
+<BR>
+<B>Example 5:</B> The function <B><I>f(n</I>) = <I>n!</I></B> for natural numbers
+<B><I>n</I></B> can be defined recursively as follows:
+<BR>
+<BR>
+The function <B><I>f</I></B> is the function that satisfies the following 
+two clauses:
+<BR>
+<BR>
+<B>Basis Clause:</B> <B><I>f(0) = 0! = 1</I></B>
+<BR>
+<B>Inductive Clause:</B> For all natural number <B><I>n</I>, &nbsp;<I>f(n+1) = (n+1) f(n)</I>.</B>
+<BR>
+<BR>
+Note that here Extremal Clause is not necessary, because the set of natural numbers
+can be defined recursively and that has the extremal clause in it. So there is no
+chance of other elements to come into the function being defined.
+<BR>
+<BR>
+Using this definition,  <B><I>3!</I></B> can be found as follows:
+<BR>
+Since <B><I>0 ! = 1</I></B>, &nbsp; <B><I>1 ! = 1 * 0 ! = 1 * 1 = 1</I> , </B>
+<BR>
+Hence <B><I>2 ! = 2 * 1 ! = 2 * 1 = 2 </I> .</B>
+<BR>
+Hence <B><I>3 ! = 3 * 2 ! = 3 * 2 * 1 = 6 </I> .</B>
+<BR>
+<BR>
+<B>Example 6:</B> The function <B><I>f(n) = 2n + 1</I></B> for natural numbers <B><I>n</I></B>
+can be defined recursively as follows:
+<BR>
+<BR>
+The function <B><I>f</I></B> is the function that satisfies the following 
+two clauses:
+<BR>
+<BR>
+<B>Basis Clause:</B> <B><I>f(0) = 1</I></B>
+<BR>
+<B>Inductive Clause:</B> For all natural number <B><I>n</I>, &nbsp;<I>f(n+1) = f(n) + 2 </I>.</B>
+<BR>
+See above for the extremal clause.
+<BR>
+<BR>
+
+<B>Example 7:</B> The function <B><I>f(n)</I> = <I>2<SUP>n</sup></I></B>  for natural numbers
+<B><I>n</I></B> can be defined recursively as follows:
+<BR>
+<BR>
+The function <B><I>f</I></B> is the function that satisfies the following 
+two clauses:
+<BR>
+<BR>
+<B>Basis Clause:</B> <B><I>f(0) = 1</I></B>
+<BR>
+<B>Inductive Clause:</B> For all natural number <B><I>n</I>, &nbsp;<I>f(n+1) = 2 f(n) </I>.</B>
+<BR>
+See Example 5 for the extremal clause.
+<BR>
+<BR>
+<B>Example 8:</B> The function <B><I>L</I></B> from the set <B><I>S</I></B> of strings
+over <B>{<I>a, b</I>}</B> to the set
+of natural numbers that gives the length of a string can be defined recursively as follows:
+<BR>
+<BR>
+The function <B><I>L</I></B> is the function that satisfies the following 
+two clauses:
+<BR>
+<BR>
+<B>Basis Clause:</B> For symbols <B><I>a</I></B> and <B><I>b</I></B> of the alphabet,
+&nbsp; <B><I>L(a) = 1</I></B> and <B><I>L(b) = 1</I>.</B>
+<BR>
+<B>Inductive Clause:</B> For any string <B><I>x</I></B> and <B><I>y</I></B> of <B><I>S</I>,
+ &nbsp;<I>L(xy) = L(x) + L(y)
+</I>,</B>  &nbsp;where <B><I>xy</I></B> is the concatenation of strings <B><I>x</I></B> and <B><I>y</I>.</B
+>
+<BR>
+See Example 5 for the extremal clause.
+<BR><BR>
+This function <B><I>L</I></B> gives the number of <B><I>a</I></B>'s and <B><I>b</I></B>'s
+<BR>
+
+
+<BR><BR>
+<BR>
+<B><a href="../recursive_alg/rec_alg.html"><r><font color="blue">
+Next -- Recursive Algorithm </font></r></a></B>
+<BR>
+<BR>
+<a href="../schedule/schedule.html#day15"><r><font color="blue">
+Back to Schedule </font></r></a></B>
+<BR>
+<a href="../web_course.html"><r><font color="blue">
+Back to Table of Contents </font></r></a></B>
+

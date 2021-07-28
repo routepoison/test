@@ -1,0 +1,440 @@
+
+<HTML>
+<HEAD>
+<TITLE>Identities</TITLE>
+
+<!-- Changed by: Toida, 21-Aug-1998 -->
+ 
+
+</HEAD>
+<BODY>
+ 
+<H5><P align="Right">Propositional Logic</P></H5>
+<center>
+<h2>Identities</h2>
+</center>
+<BR><BR>
+<h3><font color="green">Subjects to be Learned</font></h3>
+<ul>
+<li>Identities(tautologies) of propositional logic
+<li>Dual of proposition
+</ul>
+<h3><font color="green">Contents</font></h3>
+</B></U></FONT><P>&#9;From the definitions(meaning) of connectives, 
+a number of relations between propositions which are useful in reasoning can be derived. Below some of 
+the often encountered pairs of logically equivalent propositions, also called 
+<I>identities</I>, are listed.
+<BR>
+These identities are used in logical reasoning. In fact we use them in our
+daily life, often more than one at a time, without realizing it.
+<BR>
+If two propositions are logically equivalent,
+one can be substituted for the other in any proposition in which they occur 
+without changing the logical value of the proposition.
+<BR>
+<BR>
+Below <img src=../../../../symbols/EqvT.gif> corresponds to
+<img src=../../../../symbols/eqv.gif> and it means that the equivalence is always true 
+(a tautology), while <img src=../../../../symbols/eqv.gif> means the equivalence may be
+false in some cases, that is in general a contingency. 
+<BR>
+<BR>
+That these equivalences hold can be verified by constructing truth tables for them.
+<a href="./identity_proof.html" target="main">
+<r><font color=blue>Click here</font></r></a> for more detailed discussions about it.
+
+<BR>
+<BR>
+First the identities are listed, then examples are given to illustrate them.
+<BR><BR>
+<B>List of Identities:</B>
+
+<OL>
+ 
+<LI>P <img src=../../../../symbols/EqvT.gif>  (P <img src=../../../../symbols/or.gif> P)
+----- idempotence of <img src=../../../../symbols/or.gif>
+<LI>P <img src=../../../../symbols/EqvT.gif>  (P <img src=../../../../symbols/and.gif> P)
+----- idempotence of <img src=../../../../symbols/and.gif>
+<LI>(P <img src=../../../../symbols/or.gif> Q)
+<img src=../../../../symbols/EqvT.gif>
+(Q <img src=../../../../symbols/or.gif> P)
+----- commutativity of <img src=../../../../symbols/or.gif> </LI>
+<LI>(P <img src=../../../../symbols/and.gif> Q)
+<img src=../../../../symbols/EqvT.gif>
+(Q <img src=../../../../symbols/and.gif> P)
+----- commutativity of <img src=../../../../symbols/and.gif> </LI>
+<LI>[(P <img src=../../../../symbols/or.gif> Q) <img src=../../../../symbols/or.gif> R]
+<img src=../../../../symbols/EqvT.gif>
+[P <img src=../../../../symbols/or.gif> (Q <img src=../../../../symbols/or.gif> R)]
+----- associativity of <img src=../../../../symbols/or.gif></LI>
+<LI>[(P <img src=../../../../symbols/and.gif> Q) <img src=../../../../symbols/and.gif> R]
+<img src=../../../../symbols/EqvT.gif>
+[P <img src=../../../../symbols/and.gif> (Q <img src=../../../../symbols/and.gif> R)]
+----- associativity of <img src=../../../../symbols/and.gif></LI>
+<LI><img src=../../../../symbols/not.gif> (P <img src=../../../../symbols/or.gif> Q)
+<img src=../../../../symbols/EqvT.gif>
+(<img src=../../../../symbols/not.gif> P <img src=../../../../symbols/and.gif> <img src=../../../../symbols/not.gif> Q)
+----- DeMorgan's Law</LI>
+<LI><img src=../../../../symbols/not.gif> (P <img src=../../../../symbols/and.gif> Q)
+<img src=../../../../symbols/EqvT.gif>
+(<img src=../../../../symbols/not.gif> P <img src=../../../../symbols/or.gif> <img src=../../../../symbols/not.gif> Q)
+----- DeMorgan's Law</LI>
+<LI>[P <img src=../../../../symbols/and.gif> (Q <img src=../../../../symbols/or.gif> R]
+<img src=../../../../symbols/EqvT.gif>
+[(P <img src=../../../../symbols/and.gif> Q) <img src=../../../../symbols/or.gif> (P <img src=../../../../symbols/and.gif> R)]
+----- distributivity of <img src=../../../../symbols/and.gif> over <img src=../../../../symbols/or.gif> </LI>
+<LI>[P <img src=../../../../symbols/or.gif> (Q <img src=../../../../symbols/and.gif> R]
+<img src=../../../../symbols/EqvT.gif>
+[(P <img src=../../../../symbols/or.gif> Q) <img src=../../../../symbols/and.gif> (P <img src=../../../../symbols/or.gif> R)]
+----- distributivity of <img src=../../../../symbols/or.gif> over <img src=../../../../symbols/and.gif> </LI>
+<!-- 11 --->
+<LI>(P <img src=../../../../symbols/or.gif> True) <img src=../../../../symbols/EqvT.gif>
+True</LI>
+<!-- 12 --->
+<LI>(P <img src=../../../../symbols/and.gif> False) <img src=../../../../symbols/EqvT.gif>
+False</LI>
+<!-- 13 --->
+<LI>(P <img src=../../../../symbols/or.gif> False) <img src=../../../../symbols/EqvT.gif>
+P</LI>
+<!-- 14 --->
+<LI>(P <img src=../../../../symbols/and.gif> True) <img src=../../../../symbols/EqvT.gif>
+P</LI>
+<LI>(P <img src=../../../../symbols/or.gif> <img src=../../../../symbols/not.gif> P)  
+<img src=../../../../symbols/EqvT.gif>
+True</LI>
+<LI>(P <img src=../../../../symbols/and.gif> <img src=../../../../symbols/not.gif> P)  
+<img src=../../../../symbols/EqvT.gif>
+False</LI>
+<LI>P <img src=../../../../symbols/EqvT.gif> <img src=../../../../symbols/not.gif>
+ (<img src=../../../../symbols/not.gif>
+P) ----- double negation</LI>
+<LI>(P <img src=../../../../symbols/imp.gif> Q)
+<img src=../../../../symbols/EqvT.gif>
+(<img src=../../../../symbols/not.gif> P <img src=../../../../symbols/or.gif> Q)
+----- implication</LI>
+<LI>(P <img src=../../../../symbols/eqv.gif> Q)
+<img src=../../../../symbols/EqvT.gif>
+[(P <img src=../../../../symbols/imp.gif> Q) <img src=../../../../symbols/and.gif> 
+(Q <img src=../../../../symbols/imp.gif> P)]----- equivalence</LI>
+<LI>[(P <img src=../../../../symbols/and.gif> Q) <img src=../../../../symbols/imp.gif> R]
+<img src=../../../../symbols/EqvT.gif>
+[P <img src=../../../../symbols/imp.gif> (Q <img src=../../../../symbols/imp.gif> R)]
+----- exportation</LI>
+<LI>[(P <img src=../../../../symbols/imp.gif> Q)
+<img src=../../../../symbols/and.gif>
+(P <img src=../../../../symbols/imp.gif> <img src=../../../../symbols/not.gif> Q)]
+<img src=../../../../symbols/EqvT.gif> 
+<img src=../../../../symbols/not.gif> P
+----- absurdity</LI>
+<LI>(P <img src=../../../../symbols/imp.gif> Q)
+<img src=../../../../symbols/EqvT.gif>
+(<img src=../../../../symbols/not.gif>Q <img src=../../../../symbols/imp.gif>
+<img src=../../../../symbols/not.gif> P)
+----- contrapositive</LI>
+</OL>
+ 
+Let us see some example statements in English that illustrate these identities.
+<BR><BR>
+<B>Examples:</B>
+<br>
+<br>
+1. P <img src=../../../../symbols/EqvT.gif>  (P <img src=../../../../symbols/or.gif> P)
+----- idempotence of <img src=../../../../symbols/or.gif>
+<BR>
+What this says is, for example, that "Tom is happy." is equivalent to 
+"Tom is happy or Tom is happy".
+This and the next identity are rarely used, if ever, in everyday life. 
+However, these are useful when manipulating propositions in reasoning
+in symbolic form.
+<BR>
+<BR>
+
+2. P <img src=../../../../symbols/EqvT.gif>  (P <img src=../../../../symbols/and.gif> P)
+----- idempotence of <img src=../../../../symbols/and.gif>
+<BR>
+Similar to 1. above.
+
+<BR>
+<BR>
+3. (P <img src=../../../../symbols/or.gif> Q)
+<img src=../../../../symbols/EqvT.gif>
+(Q <img src=../../../../symbols/or.gif> P)
+----- commutativity of <img src=../../../../symbols/or.gif> 
+<BR>
+What this says is, for example, that "Tom is rich or (Tom is) famous." is equivalent to 
+"Tom is famous or (Tom is) rich".
+
+<BR>
+<BR>
+4. (P <img src=../../../../symbols/and.gif> Q)
+<img src=../../../../symbols/EqvT.gif>
+(Q <img src=../../../../symbols/and.gif> P)
+----- commutativity of <img src=../../../../symbols/and.gif> 
+<BR>
+What this says is, for example, that "Tom is rich and (Tom is) famous." is equivalent to 
+"Tom is famous and (Tom is) rich".
+
+<BR>
+<BR>
+5. [(P <img src=../../../../symbols/or.gif> Q) <img src=../../../../symbols/or.gif> R]
+<img src=../../../../symbols/EqvT.gif>
+[P <img src=../../../../symbols/or.gif> (Q <img src=../../../../symbols/or.gif> R)]
+----- associativity of <img src=../../../../symbols/or.gif>
+<BR>
+What this says is, for example, that "Tom is rich or (Tom is) famous, or he is also happy." 
+is equivalent to 
+"Tom is rich, or he is also famous or (he is) happy".
+
+<BR>
+<BR>
+6. [(P <img src=../../../../symbols/and.gif> Q) <img src=../../../../symbols/and.gif> R]
+<img src=../../../../symbols/EqvT.gif>
+[P <img src=../../../../symbols/and.gif> (Q <img src=../../../../symbols/and.gif> R)]
+----- associativity of <img src=../../../../symbols/and.gif>
+<BR>
+Similar to 5. above.
+
+<BR>
+<BR>
+7. <img src=../../../../symbols/not.gif> (P <img src=../../../../symbols/or.gif> Q)
+<img src=../../../../symbols/EqvT.gif>
+(<img src=../../../../symbols/not.gif> P <img src=../../../../symbols/and.gif> 
+<img src=../../../../symbols/not.gif> Q)
+----- DeMorgan's Law
+<BR>
+For example, "It is not the case that Tom is rich or famous." is true if and only if
+"Tom is not rich and he is not famous."
+
+<BR>
+<BR>
+8. <img src=../../../../symbols/not.gif> (P <img src=../../../../symbols/and.gif> Q)
+<img src=../../../../symbols/EqvT.gif>
+(<img src=../../../../symbols/not.gif> P <img src=../../../../symbols/or.gif> 
+<img src=../../../../symbols/not.gif> Q)
+----- DeMorgan's Law
+<BR>
+For example, "It is not the case that Tom is rich and famous." is true if and only if
+"Tom is not rich or he is not famous."
+
+<BR>
+<BR>
+9. [P <img src=../../../../symbols/and.gif> (Q <img src=../../../../symbols/or.gif> R]
+<img src=../../../../symbols/EqvT.gif>
+[(P <img src=../../../../symbols/and.gif> Q) <img src=../../../../symbols/or.gif> 
+(P <img src=../../../../symbols/and.gif> R)]
+----- distributivity of <img src=../../../../symbols/and.gif> over 
+<img src=../../../../symbols/or.gif> 
+<BR>
+What this says is, for example, that "Tom is rich, and he is famous or (he is) happy." 
+is equivalent to 
+"Tom is rich and (he is) famous, or Tom is rich and (he is) happy".
+
+<BR>
+<BR>
+10. [P <img src=../../../../symbols/or.gif> (Q <img src=../../../../symbols/and.gif> R]
+<img src=../../../../symbols/EqvT.gif>
+[(P <img src=../../../../symbols/or.gif> Q) <img src=../../../../symbols/and.gif> 
+(P <img src=../../../../symbols/or.gif> R)]
+----- distributivity of <img src=../../../../symbols/or.gif> over <img src=../../../../symbols/and.gif> 
+<BR>
+Similarly to 9. above, what this says is, for example, that "Tom is rich, or he is famous and (he is) happy." 
+is equivalent to 
+"Tom is rich or (he is) famous, and Tom is rich or (he is) happy".
+
+<BR>
+<BR>
+11. (P <img src=../../../../symbols/or.gif> True) <img src=../../../../symbols/EqvT.gif>
+True. 
+&nbsp; Here True is a proposition that is always true. Thus the proposition
+(P <img src=../../../../symbols/or.gif> True) is always true regardless of what P is.
+<BR>
+This and the next three identities, like identities 1 and 2,  
+are rarely used, if ever, in everyday life. 
+However, these are useful when manipulating propositions in reasoning
+in symbolic form.
+<BR>
+<BR>
+
+12. (P <img src=../../../../symbols/and.gif> False) <img src=../../../../symbols/EqvT.gif>
+False
+<BR>
+<BR>
+
+13. (P <img src=../../../../symbols/or.gif> False) <img src=../../../../symbols/EqvT.gif>
+P
+<BR>
+<BR>
+
+14. (P <img src=../../../../symbols/and.gif> True) <img src=../../../../symbols/EqvT.gif>
+P
+<BR>
+<BR>
+15. (P <img src=../../../../symbols/or.gif> <img src=../../../../symbols/not.gif> P)
+<img src=../../../../symbols/EqvT.gif>
+True
+<BR>
+What this says is that a statement such as "Tom is 6 foot tall or he is not 6 foot tall." is 
+always true.
+
+<BR>
+<BR>
+16. (P <img src=../../../../symbols/and.gif> <img src=../../../../symbols/not.gif> P)
+<img src=../../../../symbols/EqvT.gif>
+False
+<BR>
+What this says is that a statement such as "Tom is 6 foot tall and he is not 6 foot tall." is 
+always false.
+
+<BR>
+<BR>
+17. P <img src=../../../../symbols/EqvT.gif> <img src=../../../../symbols/not.gif>
+ (<img src=../../../../symbols/not.gif>
+P) ----- double negation
+<BR>
+What this says is, for example, that "It is not the case that Tom is not 6 foot tall."
+is equivalent to "Tom is 6 foot tall." 
+
+<BR>
+<BR>
+18. (P <img src=../../../../symbols/imp.gif> Q)
+<img src=../../../../symbols/EqvT.gif>
+(<img src=../../../../symbols/not.gif> P <img src=../../../../symbols/or.gif> Q)
+----- implication
+<BR>
+For example, the statement "If I win the lottery, I will give you a million
+dollars." 
+is not true, that is, 
+I am lying, if I win the lottery and don't give you a million dollars. 
+It is true in all the other cases. Similarly,
+the statement "I don't win the lottery or I give you a million dollars." is false,
+if I win the lottery and don't give you a million dollars. It is true in all the other cases.
+Thus these two statements are logically equivalent. 
+
+<BR>
+<BR>
+19. (P <img src=../../../../symbols/eqv.gif> Q)
+<img src=../../../../symbols/EqvT.gif>
+[(P <img src=../../../../symbols/imp.gif> Q) <img src=../../../../symbols/and.gif>
+(Q <img src=../../../../symbols/imp.gif> P)]----- equivalence
+<BR>
+What this says is, for example, that "Tom is happy if and only if he is healthy." 
+is logically equivalent to ""if Tom is happy then he is healthy, and if Tom is
+healthy he is happy."
+
+<BR>
+<BR>
+20. [(P <img src=../../../../symbols/and.gif> Q) <img src=../../../../symbols/imp.gif> R]
+<img src=../../../../symbols/EqvT.gif>
+[P <img src=../../../../symbols/imp.gif> (Q <img src=../../../../symbols/imp.gif> R)]
+----- exportation
+<BR>
+For example, "If Tom is healthy, then if he is rich, then he is happy."
+is logically equivalent to "If Tom is healthy and rich, then he is happy."
+
+<BR>
+<BR>
+21. [(P <img src=../../../../symbols/imp.gif> Q)
+<img src=../../../../symbols/and.gif>
+(P <img src=../../../../symbols/imp.gif> <img src=../../../../symbols/not.gif> Q)]
+<img src=../../../../symbols/EqvT.gif>
+<img src=../../../../symbols/not.gif> P
+----- absurdity
+<BR>
+For example, if "If Tom is guilty then he must have been in that room." and
+"If Tom is guilty then he could not have been in that room." are both true,
+then there must be something wrong about the assumption that Tom is guilty.
+
+<BR>
+<BR>
+22. (P <img src=../../../../symbols/imp.gif> Q)
+<img src=../../../../symbols/EqvT.gif>
+(<img src=../../../../symbols/not.gif>Q <img src=../../../../symbols/imp.gif>
+<img src=../../../../symbols/not.gif> P)
+----- contrapositive
+<BR>
+For example, "If Tom is healthy, then he is happy." is logically equivalent to
+"If Tom is not happy, he is not healthy."
+<br>
+<br>
+<br>
+The identities 1 ~ 16 listed above can be paired by duality relation, which is defined below,
+as 1 and 2, 3 and 4,
+..., 15 and 16. That is 1 and 2 are dual to each other, 3 and 4 are dual to each other, ....
+Thus if you know one of a pair, you can obtain the other of the pair by using the duality.
+<br>
+<br>
+<B>Dual of Proposition</B>
+<br>
+Let <B><I>X</I></B> be a proposition involving only 
+<img src=../../../../symbols/not.gif>,
+<img src=../../../../symbols/and.gif>, and 
+<img src=../../../../symbols/or.gif>
+as a connective.
+Let <B><I>X<SUP>*</SUP></I></B> be the proposition obtained from <B><I>X</I></B>
+by replacing 
+<img src=../../../../symbols/and.gif>  
+with <img src=../../../../symbols/or.gif>,
+<img src=../../../../symbols/or.gif>
+with <img src=../../../../symbols/and.gif>,  
+<B><I>T</I></B> with <B><I>F</I></B>, and <B><I>F</I></B> with <B><I>T</I></B>.
+Then <B><I>X<SUP>*</SUP></I></B> is called the <font color="red"><B>dual</B>
+</font> of <B><I>X</I></B>.
+<BR>
+<BR>
+For example, the dual of 
+[P <img src=../../../../symbols/and.gif> Q ] 
+<img src=../../../../symbols/or.gif> P is 
+[P <img src=../../../../symbols/or.gif> Q ] 
+<img src=../../../../symbols/and.gif> P,
+and the dual of 
+[<img src=../../../../symbols/not.gif> P
+<img src=../../../../symbols/and.gif> Q]
+<img src=../../../../symbols/or.gif>
+<img src=../../../../symbols/not.gif> [ T <img src=../../../../symbols/and.gif>
+<img src=../../../../symbols/not.gif> R]
+is
+[<img src=../../../../symbols/not.gif> P
+<img src=../../../../symbols/or.gif> Q]
+<img src=../../../../symbols/and.gif>
+<img src=../../../../symbols/not.gif> [ F <img src=../../../../symbols/or.gif>
+<img src=../../../../symbols/not.gif> R] .
+<br>
+<br>
+<B>Property of Dual:</B> If two propositions <B><I>P</I></B> and <B><I>Q</I></B>
+involving only  
+<img src=../../../../symbols/not.gif>,
+<img src=../../../../symbols/and.gif>, and
+<img src=../../../../symbols/or.gif>
+as connectives are equivalent, then their duals <B><I>P<SUP>*</SUP></I></B>
+and <B><I>Q<SUP>*</SUP></I></B> are also equivalent.
+<br>
+<br>
+<h3><font color="green">Test Your Understanding of Identities</font></h3>
+Indicate which of the following statements are correct and which are not.
+<br>
+<br>
+Click Yes or No , then Submit. There are two sets of questions.
+<br>
+<br>
+<br>
+<applet code="exercise.class" width=450 height=800>
+</applet>
+<BR>
+<BR>
+<B><a href="../identities/use_of_ident.html"><r><font color="blue">
+Next -- Examples of Use of Identities </font></r></a></B>
+<BR>
+<BR>
+<a href="../../../schedule/schedule.html#day5"><r><font color="blue">
+Back to Schedule </font></r></a></B>
+<BR>
+<a href="../../../web_course.html"><r><font color="blue">
+Back to Table of Contents </font></r></a></B>
+
+
+
+<P ALIGN="JUSTIFY">&nbsp;</P>
+<P ALIGN="JUSTIFY">&nbsp;</P></BODY>
+</HTML>
+ 
+

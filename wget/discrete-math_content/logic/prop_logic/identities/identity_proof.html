@@ -1,0 +1,186 @@
+
+<HTML>
+<HEAD>
+<TITLE> Introduction to Propositional Logic </TITLE>
+</HEAD>
+ 
+<body bgcolor = "white">
+<H5><P align="Right">Propositional Logic</P></H5>
+<center>
+<h2>Proof of Identities</h2>
+</center>
+<BR><BR>
+<h3><font color="green">Subjects to be Learned</font></h3>
+<ul>
+<LI>Proving identities using truth table
+</ul>
+<h3><font color="green">Contents</font></h3>
+<P>All the identities in <a href="./identities.html" target="main">
+<r><font color=blue>Identities</font></r></a>
+can be proven to hold using truth tables as follows.
+In general two propositions are logically equivalent if they take the same value
+for each set of values of their variables. Thus to see whether or not two propositions are equivalent, 
+we construct truth tables for them and compare to see whether or not they take
+the same value for each set of values of their variables.
+<BR>
+<BR>
+For example consider the <B>commutativity of <img src=../../../../symbols/or.gif></B>:
+<BR>
+(P <img src=../../../../symbols/or.gif> Q)
+<img src=../../../../symbols/EqvT.gif>
+(Q <img src=../../../../symbols/or.gif> P).
+<BR>
+<BR>
+To prove that this equivalence holds, let us construct a truth table for each of 
+the proposition (P <img src=../../../../symbols/or.gif> Q) and
+(Q <img src=../../../../symbols/or.gif> P).
+<BR>
+<BR>
+A truth table for (P <img src=../../../../symbols/or.gif> Q) is, by the definition of <img src=../../../../symbols/or.gif>,
+<BR>
+<BR>
+<table border align=left clospan=15>
+<tr>
+<th> P </th> <th>Q</th> <th> (P <img src="../../../../symbols/or.gif">  Q) </th>
+</tr>
+<tr>
+<td> F </td> <td>F</td> <td align=center> F </td>
+</tr>
+<tr>
+<td> F </td> <td>T</td> <td align=center> T </td>
+</tr>
+<tr>
+<td> T </td> <td>F</td> <td align=center> T </td>
+</tr>
+<tr>
+<td> T </td> <td>T</td> <td align=center> T </td>
+</tr>
+</table>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+A truth table for (Q <img src=../../../../symbols/or.gif> P) is, by the definition of <img src=../../../../symbols/or.gif>,
+<BR>
+<BR>
+<table border align=left clospan=15>
+<tr>
+<th> P </th> <th>Q</th> <th> (Q <img src="../../../../symbols/or.gif"> P) </th>
+</tr>
+<tr>
+<td> F </td> <td>F</td> <td align=center> F </td>
+</tr>
+<tr>
+<td> F </td> <td>T</td> <td align=center> T </td>
+</tr>
+<tr>
+<td> T </td> <td>F</td> <td align=center> T </td>
+</tr>
+<tr>
+<td> T </td> <td>T</td> <td align=center> T </td>
+</tr>
+</table>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+As we can see from these tables (P <img src="../../../../symbols/or.gif"> Q) and 
+(Q <img src="../../../../symbols/or.gif"> P) take the same value  
+for the same set of value of P and Q. 
+Thus they are (logically) equivalent.
+<BR>
+<BR>
+We can also put these two tables into one as follows:
+<BR>
+<BR>
+
+<table border align=left clospan=15>
+<tr>
+<th> P </th> <th>Q</th> <th> (P <img src="../../../../symbols/or.gif"> Q) </th> <th> (Q <img src="../../../../symbols/or.gif"> P) </th>
+</tr>
+<tr>
+<td> F </td> <td>F</td> <td align=center> F </td> <td align=center> F </td>
+</tr>
+<tr>
+<td> F </td> <td>T</td> <td align=center> T </td> <td align=center> T </td>
+</tr>
+<tr>
+<td> T </td> <td>F</td> <td align=center> T </td> <td align=center> T </td>
+</tr>
+<tr>
+<td> T </td> <td>T</td> <td align=center> T </td> <td align=center> T </td>
+</tr>
+</table>
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+
+Using this convention for truth table we can show that the first of <B>De Morgan's</B> Laws
+also holds.
+<BR>
+<BR>
+<table border align=left clospan=15>
+<tr>
+<th> P </th> <th>Q</th> <th> <img src="../../../../symbols/not.gif"> (P <img src="../../../../symbols/or.gif"> Q) </th> <th> <img src="../../../../symbols/not.gif"> P <img src="../../../../symbols/and.gif"> <img src="../../../../symbols/not.gif"> Q </th>
+</tr>
+<tr>
+<td> F </td> <td>F</td> <td align=center> T </td> <td align=center> T </td>
+</tr>
+<tr>
+<td> F </td> <td>T</td> <td align=center> F </td> <td align=center> F </td>
+</tr>
+<tr>
+<td> T </td> <td>F</td> <td align=center> F </td> <td align=center> F </td>
+</tr>
+<tr>
+<td> T </td> <td>T</td> <td align=center> F </td> <td align=center> F </td>
+</tr>
+</table>
+ 
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+By comparing the two right columns we can see that <img src="../../../../symbols/not.gif"> (P <img src="../../../../symbols/or.gif"> Q)
+and <img src="../../../../symbols/not.gif">
+P <img src="../../../../symbols/and.gif"> <img src="../../../../symbols/not.gif"> Q
+are equivalent.
+
+<BR>
+<BR>
+<BR>
+<B><a href="../implications/implication_proof.html"><r><font color="blue">
+Next -- Proof of Implications </font></r></a></B>
+<BR>
+<BR>
+<a href="../../../schedule/schedule.html#day6"><r><font color="blue">
+Back to Schedule </font></r></a></B>
+<BR>
+<a href="../../../web_course.html"><r><font color="blue">
+Back to Table of Contents </font></r></a></B>
+
+</body>
+</html>
+ 
+
+<!-- Exercises  -->

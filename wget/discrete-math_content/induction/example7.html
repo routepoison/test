@@ -1,0 +1,132 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<!--Converted with LaTeX2HTML 96.1 (Feb 5, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>No Title</TITLE>
+</HEAD>
+<BODY LANG="EN">
+<H5><P align="Right">Induction</P></H5>
+<h2> <B>Mathematical Induction Example 7 --- Intersection  of Sets</B></h2>
+<P>
+<B>Problem</B>: Let <B><I>A<sub>1</sub></I></B>, <B><I>A<sub>2</sub></I></B>, ...,
+<B><I>A<sub>n</sub></I></B>, and <B><I>B<sub>1</sub></I></B>, <B><I>B<sub>2</sub></I></B>, ...,
+<B><I>B<sub>n</sub></I></B> be sets. Then if <B><I>A<sub>i</sub></I></B>
+<IMG WIDTH=20 HEIGHT=24 ALIGN=MIDDLE 
+SRC="../symbols_sets/subseteq.gif"  > 
+<B><I>B<sub>i</sub></I></B>
+for  <B><I>i = 1, 2, ..., n</I></B>, 
+ &nbsp; then 
+<IMG WIDTH=38 HEIGHT=30 ALIGN=MIDDLE
+SRC="../symbols_sets/cap_n.gif"  >
+<B><I>A<sub>i</sub></I></B>
+<IMG WIDTH=20 HEIGHT=24  ALIGN=MIDDLE
+SRC="../symbols_sets/subseteq.gif"  >
+<IMG WIDTH=38 HEIGHT=30  ALIGN=MIDDLE
+SRC="../symbols_sets/cap_n.gif"  >
+<B><I>B<sub>i</sub></I> .</B>
+<BR>
+<B>Proof:</B> 
+<BR>
+<B>Basis Step:</B> If <B><I>n = 1</I></B>, then  
+<IMG WIDTH=38 HEIGHT=30  ALIGN=MIDDLE
+SRC="../symbols_sets/cap_n.gif"  >
+<B><I>A<sub>i</sub></I>
+= <I>A<sub>1</sub></I></B>
+and 
+<IMG WIDTH=38 HEIGHT=30  ALIGN=MIDDLE
+SRC="../symbols_sets/cap_n.gif"  >
+<B><I>B<sub>i</sub></I>
+= <I>B<sub>1</sub></I> .</B>
+
+By the hypothesis 
+<B><I>A<sub>1</sub></I></B>
+<IMG WIDTH=20 HEIGHT=24  ALIGN=MIDDLE
+SRC="../symbols_sets/subseteq.gif"  >
+<B><I>B<sub>1</sub></I> .</B>
+
+Hence 
+<IMG WIDTH=38 HEIGHT=30  ALIGN=MIDDLE
+SRC="../symbols_sets/cap_n.gif"  >
+<B><I>A<sub>i</sub></I></B>
+<IMG WIDTH=20 HEIGHT=24  ALIGN=MIDDLE
+SRC="../symbols_sets/subseteq.gif"  >
+<IMG WIDTH=38 HEIGHT=30  ALIGN=MIDDLE
+SRC="../symbols_sets/cap_n.gif"  >
+<B><I>B<sub>i</sub></I> ,</B>
+for <B><I>n = 1</I> .</B>
+<BR>
+<B>Induction:</B> Assume that 
+<IMG WIDTH=38 HEIGHT=30  ALIGN=MIDDLE
+SRC="../symbols_sets/cap_n.gif"  >
+<B><I>A<sub>i</sub></I></B>
+<IMG WIDTH=20 HEIGHT=24  ALIGN=MIDDLE
+SRC="../symbols_sets/subseteq.gif"  >
+<IMG WIDTH=38 HEIGHT=30 ALIGN=MIDDLE
+SRC="../symbols_sets/cap_n.gif"  >
+<B><I>B<sub>i</sub></I> ,</B>
+for an arbitrary <B><I>n </I> .</B>
+<BR>
+Then 
+<IMG WIDTH=40 HEIGHT=36  ALIGN=MIDDLE
+SRC="../symbols_sets/cap_n1.gif"  >
+<B><I>A<sub>i</sub></I>
+= ( <IMG WIDTH=38 HEIGHT=30  ALIGN=MIDDLE
+SRC="../symbols_sets/cap_n.gif"  >
+<I>A<sub>i</sub></I> )
+<IMG WIDTH=14 HEIGHT=14
+SRC="../symbols_sets/cap.gif"  >
+<I>A<sub>n+1</sub></I> </B>
+by the definition of 
+<IMG WIDTH=38 HEIGHT=30  ALIGN=MIDDLE
+SRC="../symbols_sets/cap_n.gif"  > .
+
+<BR>
+Since 
+<IMG WIDTH=38 HEIGHT=30  ALIGN=MIDDLE
+SRC="../symbols_sets/cap_n.gif"  >
+<B><I>A<sub>i</sub></I></B>
+<IMG WIDTH=20 HEIGHT=24  ALIGN=MIDDLE
+SRC="../symbols_sets/subseteq.gif"  >
+<IMG WIDTH=38 HEIGHT=30  ALIGN=MIDDLE
+SRC="../symbols_sets/cap_n.gif"  >
+<B><I>B<sub>i</sub></I> </B>
+by the induction hypothesis, 
+and 
+<B><I>A<sub>n+1</sub></I></B>
+<IMG WIDTH=20 HEIGHT=24  ALIGN=MIDDLE
+SRC="../symbols_sets/subseteq.gif"  >
+<B><I>B<sub>n+1</sub></I> </B>
+by the hypothesis,  &nbsp; from property <B>7.</B> of the <a href="../set/set_op_prop.html">
+<r>properties of set operation</r></a>
+<B>( <IMG WIDTH=38 HEIGHT=30  ALIGN=MIDDLE
+SRC="../symbols_sets/cap_n.gif"  >
+<I>A<sub>i</sub></I> )
+<IMG WIDTH=14 HEIGHT=14
+SRC="../symbols_sets/cap.gif"  >
+<I>A<sub>n+1</sub></I>
+<IMG WIDTH=20 HEIGHT=24  ALIGN=MIDDLE
+SRC="../symbols_sets/subseteq.gif"  >
+( <IMG WIDTH=38 HEIGHT=30  ALIGN=MIDDLE
+SRC="../symbols_sets/cap_n.gif"  >
+<I>B<sub>i</sub></I> )
+<IMG WIDTH=14 HEIGHT=14
+SRC="../symbols_sets/cap.gif"  >
+<I>B<sub>n+1</sub></I> .</B>
+<br>
+Hence 
+<IMG WIDTH=40 HEIGHT=36  ALIGN=MIDDLE
+SRC="../symbols_sets/cap_n1.gif"  >
+<B><I>A<sub>i</sub></I></B>
+<IMG WIDTH=20 HEIGHT=24  ALIGN=MIDDLE
+SRC="../symbols_sets/subseteq.gif"  >
+<IMG WIDTH=40 HEIGHT=36 ALIGN=MIDDLE
+SRC="../symbols_sets/cap_n1.gif"  >
+<B><I>B<sub>i</sub></I> </B>
+by the definition of 
+<IMG WIDTH=38 HEIGHT=30  ALIGN=MIDDLE
+SRC="../symbols_sets/cap_n.gif"  >
+
+<BR>
+<B>End of Proof</B>
+</BODY>
+</HTML>

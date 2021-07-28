@@ -1,0 +1,78 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<!--Converted with LaTeX2HTML 96.1 (Feb 5, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>No Title</TITLE>
+</HEAD>
+<BODY LANG="EN">
+<H5><P align="Right">Induction</P></H5>
+<h2> <B>Mathematical Induction Example 6 --- Size of Powerset</B></h2>
+<P>
+<B>Problem</B>: If <I>S</I> is a finite set with <I>n</I> elements, then <I>S</I> has  <IMG WIDTH=16 HEIGHT=13 ALIGN=BOTTOM ALT="tex2html_wrap_inline27" SRC="img1.gif"  > 
+distinct subsets. <BR>
+<P>
+<B>Proof:</B> <BR> 
+<B>Basis Step</B>: If <I>n</I> = 0, then  <IMG WIDTH=46 HEIGHT=32 ALIGN=MIDDLE ALT="tex2html_wrap_inline31" SRC="img2.gif"  > . Hence it has exactly one 
+subset, namely  <IMG WIDTH=8 HEIGHT=32 ALIGN=MIDDLE ALT="tex2html_wrap_inline33" SRC="img3.gif"  > . Since  <IMG WIDTH=49 HEIGHT=16 ALIGN=BOTTOM ALT="tex2html_wrap_inline35" SRC="img4.gif"  > , the statement holds for <I>n</I> = 0. <BR> 
+<B>Induction</B>: Assume that a set with <I>n</I> elements has  <IMG WIDTH=16 HEIGHT=13 ALIGN=BOTTOM ALT="tex2html_wrap_inline27" SRC="img1.gif"  >  distinct subsets.
+&nbsp;&nbsp;----- <font color="green"><I>Induction Hypothesis </I></font><BR> 
+To prove that this holds for <I>n</I>+1, <font color="#ff0000">first try to express the number of subsets of 
+<I>S</I> of size <I>n</I>+1 in terms of that of a set of size <I>n</I></font> 
+so that the induction hypothesis can be used. 
+For that we use the following claim without a rigorous proof.
+<BR>
+<B>Claim:</B>  <B>|  <IMG WIDTH=14 HEIGHT=14 ALIGN=BOTTOM ALT="tex2html_wrap_inline95" 
+SRC="img10.gif"  > (<I>T</I>) | 
+=  <I>2 * </I>|  <IMG WIDTH=14 HEIGHT=14 ALIGN=BOTTOM ALT="tex2html_wrap_inline95" 
+SRC="img10.gif"  > (<I>S</I>) | ,</B> &nbsp; if <B><I>T</I></B> is obtained from <B><I>S</I></B>
+by adding one more element, where   
+ <IMG WIDTH=14 HEIGHT=14 ALIGN=BOTTOM ALT="tex2html_wrap_inline95" SRC="img10.gif"  > (<I>A</I>) 
+denotes the powerset of a set <I>A</I> . <BR>
+<BR>
+Let us 
+illustrate the basic idea of this claim with a simple example.
+Let  <IMG WIDTH=81 HEIGHT=30 ALIGN=MIDDLE ALT="tex2html_wrap_inline51" SRC="img5.gif"  > . Then the subsets of <I>S</I> are  <IMG WIDTH=8 HEIGHT=32 ALIGN=MIDDLE ALT="tex2html_wrap_inline33" SRC="img3.gif"  > ,  <IMG WIDTH=26 HEIGHT=30 ALIGN=MIDDLE ALT="tex2html_wrap_inline57" SRC="img6.gif"  > ,  <IMG WIDTH=26 HEIGHT=30 ALIGN=MIDDLE ALT="tex2html_wrap_inline59" SRC="img7.gif"  > ,
+and  <IMG WIDTH=44 HEIGHT=30 ALIGN=MIDDLE ALT="tex2html_wrap_inline61" SRC="img8.gif"  > . These subsets can be grouped into two groups:  <IMG WIDTH=8 HEIGHT=32 ALIGN=MIDDLE ALT="tex2html_wrap_inline33" SRC="img3.gif"  >  and 
+ <IMG WIDTH=26 HEIGHT=30 ALIGN=MIDDLE ALT="tex2html_wrap_inline57" SRC="img6.gif"  >  in one group, and  <IMG WIDTH=26 HEIGHT=30 ALIGN=MIDDLE ALT="tex2html_wrap_inline59" SRC="img7.gif"  >  and  <IMG WIDTH=44 HEIGHT=30 ALIGN=MIDDLE ALT="tex2html_wrap_inline61" SRC="img8.gif"  >  in the other. The sets in the 
+first group do not contain 2 while the ones in the second group contain 2.
+Also there is an obvious bijection between these two groups: Adding the element 2 
+to each 
+set in the first group produces a unique set in the second group, and deleting 2 from
+each set of the second group produces a unique set in the first group. 
+Furthermore the sets of the first group are the subsets of  <IMG WIDTH=26 HEIGHT=30 ALIGN=MIDDLE ALT="tex2html_wrap_inline57" SRC="img6.gif"  >  that is 
+ <IMG WIDTH=62 HEIGHT=30 ALIGN=MIDDLE ALT="tex2html_wrap_inline81" SRC="img9.gif"  > . Thus the subsets of <I>S</I> have been expressed in terms of the subsets of
+<IMG WIDTH=62 HEIGHT=30 
+ALIGN=MIDDLE ALT="tex2html_wrap_inline81" SRC="img9.gif"  > and 
+<I>S</I> can be seen to have twice as many subsets as  <IMG WIDTH=62 HEIGHT=30 ALIGN=MIDDLE ALT="tex2html_wrap_inline81" SRC="img9.gif"  > .<BR> 
+<font color="#0000ff">The proof of the inductive step</font> is a straightforward application of this
+claim.
+<BR>
+Let <I>S</I> be a set with <I>n</I>+1 elements and let <I>x</I> be an arbitrary element of <I>S</I>.
+
+ <IMG WIDTH=14 HEIGHT=14 ALIGN=BOTTOM ALT="tex2html_wrap_inline95" SRC="img10.gif"  > (<I>T</I>) 
+denote the set of subsets of a set <I>T</I> . <BR>
+
+Then a set in  <IMG WIDTH=14 HEIGHT=14 ALIGN=BOTTOM ALT="tex2html_wrap_inline95" SRC="img10.gif"  > (<I>S</I>) not containing <I>x</I> is a member of 
+ <IMG WIDTH=14 HEIGHT=14 ALIGN=BOTTOM ALT="tex2html_wrap_inline95" SRC="img10.gif"  >  <IMG WIDTH=76 HEIGHT=30 ALIGN=MIDDLE ALT="tex2html_wrap_inline111" SRC="img11.gif"  > , 
+and conversely, 
+a member of 
+ <IMG WIDTH=14 HEIGHT=14 ALIGN=BOTTOM ALT="tex2html_wrap_inline95" SRC="img10.gif"  >  <IMG WIDTH=76 HEIGHT=30 ALIGN=MIDDLE ALT="tex2html_wrap_inline111" SRC="img11.gif"  > 
+is a member of  <IMG WIDTH=14 HEIGHT=14 ALIGN=BOTTOM ALT="tex2html_wrap_inline95" SRC="img10.gif"  > (<I>S</I>) that does not contain <I>x</I>. <BR> 
+Also 
+a set in  <IMG WIDTH=14 HEIGHT=14 ALIGN=BOTTOM ALT="tex2html_wrap_inline95" SRC="img10.gif"  > (<I>S</I>) containing <I>x</I> is a member of 
+ <IMG WIDTH=14 HEIGHT=14 ALIGN=BOTTOM ALT="tex2html_wrap_inline95" SRC="img10.gif"  >  <IMG WIDTH=76 HEIGHT=30 ALIGN=MIDDLE ALT="tex2html_wrap_inline111" SRC="img11.gif"  >  with <I>x</I>
+and conversely, 
+a member of 
+ <IMG WIDTH=14 HEIGHT=14 ALIGN=BOTTOM ALT="tex2html_wrap_inline95" SRC="img10.gif"  >  <IMG WIDTH=76 HEIGHT=30 ALIGN=MIDDLE ALT="tex2html_wrap_inline111" SRC="img11.gif"  >  plus <I>x</I>
+is a member of  <IMG WIDTH=14 HEIGHT=14 ALIGN=BOTTOM ALT="tex2html_wrap_inline95" SRC="img10.gif"  > (<I>S</I>) that contains <I>x</I>. <BR> 
+Thus altogether there are twice as many sets in 
+ <IMG WIDTH=14 HEIGHT=14 ALIGN=BOTTOM ALT="tex2html_wrap_inline95" SRC="img10.gif"  > (<I>S</I>) 
+as in
+ <IMG WIDTH=14 HEIGHT=14 ALIGN=BOTTOM ALT="tex2html_wrap_inline95" SRC="img10.gif"  >  <IMG WIDTH=76 HEIGHT=30 ALIGN=MIDDLE ALT="tex2html_wrap_inline111" SRC="img11.gif"  > .
+But by the induction hypothesis 
+ <IMG WIDTH=14 HEIGHT=14 ALIGN=BOTTOM ALT="tex2html_wrap_inline95" SRC="img10.gif"  >  <IMG WIDTH=76 HEIGHT=30 ALIGN=MIDDLE ALT="tex2html_wrap_inline111" SRC="img11.gif"  > 
+has  <IMG WIDTH=16 HEIGHT=13 ALIGN=BOTTOM ALT="tex2html_wrap_inline27" SRC="img1.gif"  >  elements. Hence <I>S</I> has  <IMG WIDTH=43 HEIGHT=17 ALIGN=BOTTOM ALT="tex2html_wrap_inline163" SRC="img12.gif"  >  subsets. 
+<br>
+End of Proof
+</BODY>
+</HTML>

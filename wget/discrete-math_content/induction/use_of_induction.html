@@ -1,0 +1,149 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<!--Converted with LaTeX2HTML 96.1 (Feb 5, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+
+<HEAD>
+<TITLE>No Title</TITLE>
+</HEAD>
+<BODY LANG="EN">
+<H5><P align="Right">Induction</P></H5>
+<center>
+<h2><B>Use of Mathematical Induction</B></h2>
+</center>
+<BR>
+<BR>
+<h3><font color="green">Subjects to be Learned </font></h3>
+<UL>
+<LI>guessing and verifying using induction
+</ul>
+<h3><font color="green">Contents </font></h3>
+Sometimes when you see a recurring pattern in the value of some mathematical expression,
+such as the sum of some terms, you may be able to guess a general formula for the value.
+To verify or disprove your guess, you may be able to use mathematical induction.
+An example is given below.
+<BR> 
+<BR> 
+We have seen that 
+for any natural number <B><I>n</I></B>
+<BR>
+<B><I>1</I> + <I>2</I> + ... + <I>n</I> = <I>n( n + 1 )/2</I></B> 
+<BR>
+and <BR>
+<B><I>1<SUP>2</SUP></I> + <I>2<SUP>2</SUP></I> + ... + <I>n<SUP>2</sup></I> = 
+<I>n( n + 1 )( 2n + 1 )/6
+</I></B> 
+<BR>
+hold.
+<BR><BR>
+One might then wonder what
+<B><I>1<SUP>3</SUP></I> + <I>2<SUP>3</SUP></I> + ... + <I>n<SUP>3</sup></I></B> 
+would be equal to.
+<BR>
+One way to find that out is to make a conjecture (i.e. educated guess) and prove the conjecture.
+<BR><BR>
+Let us first take a guess.
+<BR>
+By looking at the sums 
+<B><I>1</I> + <I>2</I> + ... + <I>n</I> = <I>n( n + 1 )/2</I></B>
+--- a function of <B><I>n<SUP>2</sup></I></B>
+<BR> and 
+<B><I>1<SUP>2</SUP></I> + <I>2<SUP>2</SUP></I> + ... + <I>n<SUP>2</sup></I> = 
+<I>n( n + 1 )( 2n + 1 )/6
+</I></B> 
+--- a function of <B><I>n<SUP>3</sup></I> ,</B>
+<BR>
+one can guess that <B><I>1<SUP>3</SUP></I> + <I>2<SUP>3</SUP></I> + ... + <I>n<SUP>3</sup></I></B>
+is equal to some function of <B><I>n<SUP>4</SUP></I></B>, that is
+<BR>
+<B><I>1<SUP>3</SUP></I> + <I>2<SUP>3</SUP></I> + ... + <I>n<SUP>3</sup></I>
+= <I>an<SUP>4</sup></I> + <I>bn<SUP>3</sup></I> + <I>cn<SUP>2</SUP></I> + <I>dn</I> + <I>e</I> </B>  ---- (1)
+for some constants <B><I>a, b, c, d</I></B> and <B><I>e</I></B>.
+<BR>
+<BR>
+Now to determine the value of <B><I>a, b, c, d</I></B> and <B><I>e</I></B>, 
+we compare the value of
+the both sides of the equation (1) for five values of <B><I>n</I></B>.
+<BR>
+For <B><I>n = 0</I></B>, LHS = <B><I>0</I></B>, and RHS = <B><I>e</I></B>. 
+Hence we get <B><I>e = 0</I></B>.
+<BR>
+Similarly for <B><I>n = 1</I></B>, <B><I>1 = a</I> + <I>b</I> + <I>c</I> + <I>d</I></B>,
+<BR>
+for <B><I>n = 2</I></B>, <B><I>9 = 16a</I> + <I>8b</I> + <I>4c</I> +  <I>2d</I></B>, 
+<BR>
+for <B><I>n = 3</I></B>, <B><I>36 = 81a</I> + <I>27b</I> + <I>9c</I> + <I>3d</I> </B>, and
+<BR>
+for <B><I>n = 4</I></B>, <B><I>100 = 256a</I> + <I>64b</I> + <I>16c</I> + <I>4d</I> </B>.
+<BR>
+<BR>
+Solving this system of equations we obtain
+<BR>
+<B><I>a = c = 1/4, b = 1/2</I></B>, and <B><I>d = 0</I></B>.
+<BR>
+Hence our conjecture is
+<BR>
+<B><I>1<SUP>3</SUP></I> + <I>2<SUP>3</SUP></I> + ... + <I>n<SUP>3</sup></I>
+= <I>1/4 n<SUP>2</SUP> ( n<SUP>2</SUP> + 2n + 1 ) = ( 1/2 n ( n + 1 ) )<SUP>2</SUP></I> .</B> 
+<BR>
+<BR>
+What we do next is to try to prove it by mathematical induction.
+<BR>
+<BR>
+<B>Proof by Mathematical Induction:</B>
+<BR>
+<B>Basis Step:</B> For <B><I>n = 0</I></B>, LHS = <B><I>0<SUP>3</SUP> = 0 </I>, </B> and
+<BR>
+RHS =  <B><I>( 1/2* 0  ( 0 + 1 ) )<SUP>2</SUP> = 0</I> .</B>
+<BR>
+Hence LHS = RHS.
+<BR>
+<B>Induction:</B> Assume that 
+<B><I>1<SUP>3</SUP></I> + <I>2<SUP>3</SUP></I> + ... + <I>n<SUP>3</sup>
+= ( 1/2 n ( n + 1 ) )<SUP>2</SUP></I> </B>
+&nbsp;for an arbitrary <B><I>n</I></B>. --------- <font color="green">Induction Hypothesis</font>
+<BR>
+Then for <B><I>n + 1</I></B>, LHS = <B><I>1<SUP>3</SUP></I> + <I>2<SUP>3</SUP></I> + ... 
++ <I>n<SUP>3</sup> + ( n + 1 )<SUP>3</sup></I></B>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;= <B>(<I>1<SUP>3</SUP></I> + <I>2<SUP>3</SUP></I> + ... 
++ <I>n<SUP>3</sup></I>) + <I>( n + 1 )<SUP>3</sup></I></B>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;= 
+<B>(<I> 1/2 n</I> (<I> n + 1</I> ) )<I><SUP>2</SUP></I> +  <I>( n + 1 )<SUP>3</sup></I></B>
+&nbsp;&nbsp;by the induction hypothesis.
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;= 
+<B>(<I> 1/4 ( n + 1 )<SUP>2</sup>( n<SUP>2</SUP> + 4*( n + 1 ) )</I></B>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;= 
+<B><I>( 1/2 ( n + 1 )( n + 2 ) )<SUP>2</SUP></I> , </B>
+<BR>
+which is equal to RHS.
+<BR>
+<B>End of Proof</B>
+<BR>
+<BR>
+Thus we now know for sure that
+<BR>
+<B><I>1<SUP>3</SUP></I> + <I>2<SUP>3</SUP></I> + ... + <I>n<SUP>3</sup></I>
+= <I>( 1/2 n ( n + 1 ) )<SUP>2</SUP></I> .</B>
+
+<BR><BR>
+<BR>
+<B><a href="use_of_induction_loop.html"><r><font color="blue">
+Next -- Program Correctness using Induction </font></r></a></B>
+<BR>
+<B><a href="second_principle.html"><r><font color="blue">
+Next -- Second Principle of Mathematical Induction </font></r></a></B>
+<BR>
+<BR>
+<a href="../schedule/schedule.html#day17"><r><font color="blue">
+Back to Schedule </font></r></a></B>
+<BR>
+<a href="../web_course.html"><r><font color="blue">
+Back to Table of Contents </font></r></a></B>
+
+
+
+</BODY>
+</HTML>

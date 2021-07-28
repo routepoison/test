@@ -1,0 +1,231 @@
+<html><head><meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+<title>Unit 16 Answers</title></head><body>
+<p><font color="#8000FF"><u><strong>Unit 16 Answers</strong></u></font></p>
+
+<p><strong>1. </strong> Let <em>P(n)</em> be &quot; 3 + 3 * 5 + 
+3 * 5<sup><sup>2</sup></sup>+ ... + 3 * 5<sup><sup>n</sup></sup> = 
+3 (5<sup><sup>n+1</sup></sup> - 1)/4 
+whenever <em>n</em> is a nonnegative integer&quot;. </p>
+<p><B>Basis step: </B> <em>P</em>(0) is true since 3*5<sup><sup>0</sup></sup> = 3 =
+3 (5<sup><sup>0+1</sup></sup> - 1)/4 </p>
+<p><B>Inductive step:</B> Assume that <em>P(n)</em> is true.&nbsp; 
+Then 3 + 3 * 5 + 
+3 * 5<sup><sup>2</sup></sup>+ ... + 3 * 5<sup><sup>n</sup></sup> 
++ 3 * 5<sup><sup>n + 1</sup></sup>
+<BR>
+= 3 (5<sup><sup>n+1</sup></sup> - 1 )/4 + 3 * 5<sup><sup>n + 1</sup></sup>
+<BR>
+= ( 3 (5<sup><sup>n+1</sup></sup> - 1) + 3*4*5<sup><sup>n+1</sup></sup> )/4
+<BR>
+= 3 ( 5<sup><sup>n+2</sup></sup> - 1 )/4
+<BR>
+= 3 ( 5<sup><sup>(n+1)+1</sup></sup> - 1 )/4 </p>
+<p> Hence <em>P(n + 1)</em> is true.
+
+<p><strong>2. </strong> Let <em>P(n)</em> be &quot;1² + 3² + ... + (2<em>n</em> + 1)² =
+(<em>n</em> + 1)(2<em>n</em> + 1)(2<em>n</em> + 3)/3 
+whenever <em>n</em> is a nonnegative integer&quot;. 
+</p>
+<p><B>Basis step:</B> <em>P</em>(0) is true since 1² = 1 = (0 + 1)(2*0 + 1)(2*0 + 3)/3.&nbsp; </p>
+<p><B>Inductive step:</B> Assumethat <em>P(n)</em> is true.&nbsp; 
+<BR>
+Then 1² + 3² + ... + (2<em>n</em> + 1)² + (2(<em>n</em>+ 1) + 1)² <BR>= 
+(<em>n</em> + 1)(2<em>n</em> + 1)(2<em>n</em> + 3)/3 + (2<em>n</em> + 3)² <BR>=
+(2<em>n</em> + 3)[(<em>n</em> + 1)(2<em>n</em> + 1)/3 + (2<em>n</em> + 3)]<BR> = 
+(2<em>n</em>+ 3)(2<em>n</em>² + 9<em>n</em> + 10)/3 <BR>= 
+(2<em>n</em> + 3)(2<em>n</em> + 5)(<em>n</em> +2)/3<BR> = 
+((n<em>+ </em>1) + 1)(2(<em>n</em>+1)+1)(2(<em>n</em>+1) + 3)/3.</p>
+<p> Hence <em>P(n + 1)</em> is true.
+
+<p><strong>3.</strong> Let <em>P(n) </em>be &quot;2<sup><sup><em>n</em></sup></sup> &gt; 
+<em>n</em>² whenever <em>n</em> is an integer greater than 4 &quot;.</p>
+<p><B>Basis step:</B> <em>P</em>(5) is true since 2<sup><sup>5</sup></sup> 
+= 32 &gt; 25 =5².&nbsp; </p>
+<p><B>Inductive step:</B> Assume that <em>P(n)</em> is true, that is, 
+2<sup><sup><em>n</em></sup></sup>&gt; <em>n</em>².&nbsp; 
+Then 2<sup><sup><em>n</em>+1</sup></sup> = 2*2<sup><sup>n</sup></sup><em>&gt; 
+n</em>² + <em>n</em>² &gt; <em>n</em>² + 4<em>n</em> 
+<img src="geq.gif" width="19" height="22" alt="geq.gif (893 bytes)"> 
+<em>n</em>²+ 2<em>n</em> + 1 = (<em>n</em>+1)² &nbsp; 
+<BR>since <em>n</em> &gt; 4.</p>
+<p> Hence <em>P(n + 1)</em> is true.
+
+<p><strong>4.</strong> Let <em>P(n)</em> be &quot;a postage of <em>n</em> cents can 
+be formed using 3-cent and 5-cent stamps if <em>n</em> is greater than 7 &quot;.&nbsp; </p>
+<p><B>Basis step:</B> <em>P</em>(8) is true since 8 cents postage can be formed 
+with one 3-cent and one 5-cent stamp.&nbsp; </p>
+<p><B>Inductive step:</B> Assume that <em>P(n)</em> is true, that is, postage of 
+<em>n</em> cents can be formed using 3-cent and 5-cent stamps.&nbsp; 
+We will show how to form postage of <em>n</em> + 1 
+cents.&nbsp; By the inductive hypothesis postage of <em>n</em> cents can be formed 
+using 3-cent and 5-cent stamps.&nbsp; 
+If this included a 5-cent stamp, replace this 5-cent stamp with two 3-cent stamps to obtain 
+<em>n</em> + 1 cents postage.&nbsp; Otherwise, only 3-cent stamps were used and<em> n</em> 
+<img src="geq.gif" width="19" height="22" alt="geq.gif (893 bytes)"> 9.&nbsp; 
+Hence there are at least three 3-cent stamps forming <em>n</em> cents.
+Remove three of these 3-cent stamps and replace them with two 5-cent stamps to obtain 
+<em>n</em> + 1 cents postage.</p>
+<p> Hence <em>P(n + 1)</em> is true.
+
+<p><strong>5.</strong> Let <em>P(n)</em> be &quot;
+<em>n</em><sup><sup>5</sup></sup> - <em>n</em> is divisible by 5 when <em>n</em> is a nonnegative 
+integer &quot;.&nbsp; </p>
+<p><B>Basis step: </B><em>P</em>(0) is true since 0<sup><sup>5</sup></sup>- 0 = 0  and 0 is 
+divisible by 5.&nbsp; </p>
+<p><B>Inductive step: </B> Assume that <em>P(n)</em> is true, that is, 
+<em>n</em><sup><sup>5</sup></sup> - 5 is divisible by 5.&nbsp; 
+<BR>
+Then 
+(<em>n</em>+1)<sup><sup>5</sup></sup>- (<em>n</em>+1) 
+<BR>
+= (<em>n</em><sup><sup>5</sup></sup> + 5<em>n</em><sup><sup>4</sup></sup>+ 10<em>n</em>³ + 
+10<em>n</em>² + 5<em>n</em> + 1) - (<em>n</em>+1) 
+<BR>
+= (<em>n</em><sup><sup>5</sup></sup>- <em>n</em>) + 5(<em>n</em><sup><sup>4</sup></sup> + 
+2<em>n</em>³ + 2<em>n</em>² + <em>n</em>), and the last quantity is also divisible by 5, 
+since both terms in this 
+sum are divisible by 5.</p>
+
+<p><strong>6.</strong> Let
+<IMG
+ WIDTH="45" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.gif"
+ ALT="$P(n)$"> be the statement &nbsp; 
+<!-- MATH
+ $\overline {\cup_{i = 1}^{n} A_{i}}$
+ -->
+<IMG
+ WIDTH="60" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img2.gif"
+ ALT="$\overline {\cup_{i = 1}^{n} A_{i}}$"> = 
+<!-- MATH
+ $\cap_{i=1}^{n} \overline{A_{i}}$
+ -->
+<IMG
+ WIDTH="60" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.gif"
+ ALT="$\cap_{i=1}^{n} \overline{A_{i}}$">.
+
+<BR>
+<BR>
+<B>Basis step:</B> When <IMG
+ WIDTH="46" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img4.gif"
+ ALT="$ i = 1$">, &nbsp; then &nbsp; 
+<!-- MATH
+ $\overline {\cup_{i = 1}^{1} A_{i}}$
+ -->
+<IMG
+ WIDTH="60" HEIGHT="44" ALIGN="MIDDLE" BORDER="0"
+ SRC="img5.gif"
+ ALT="$\overline {\cup_{i = 1}^{1} A_{i}}$"> = 
+<!-- MATH
+ $\overline{A_{1}}$
+ -->
+<IMG
+ WIDTH="26" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img6.gif"
+ ALT="$\overline{A_{1}}$">. &nbsp; 
+Also &nbsp; 
+<!-- MATH
+ $\cap_{i=1}^{1} \overline{A_{i}}$
+ -->
+<IMG
+ WIDTH="60" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img7.gif"
+ ALT="$\cap_{i=1}^{1} \overline{A_{i}}$"> = 
+<!-- MATH
+ $\overline{A_{1}}$
+ -->
+<IMG
+ WIDTH="26" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img6.gif"
+ ALT="$\overline{A_{1}}$">. &nbsp; 
+Hence <IMG
+ WIDTH="43" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img8.gif"
+ ALT="$P(1)$"> is true.
+<BR>
+<BR>
+<B>Inductive step:</B> Assume that <IMG
+ WIDTH="45" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1.gif"
+ ALT="$P(n)$"> is true, &nbsp; that is, 
+&nbsp; 
+<!-- MATH
+ $\overline {\cup_{i = 1}^{n} A_{i}}$
+ -->
+<IMG
+ WIDTH="60" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img2.gif"
+ ALT="$\overline {\cup_{i = 1}^{n} A_{i}}$"> = 
+<!-- MATH
+ $\cap_{i=1}^{n} \overline{A_{i}}$
+ -->
+<IMG
+ WIDTH="60" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img3.gif"
+ ALT="$\cap_{i=1}^{n} \overline{A_{i}}$">. 
+<BR>
+<BR>
+Then &nbsp; 
+<!-- MATH
+ $\overline {\cup_{i = 1}^{n+1} A_{i}}$
+ -->
+<IMG
+ WIDTH="63" HEIGHT="47" ALIGN="MIDDLE" BORDER="0"
+ SRC="img9.gif"
+ ALT="$\overline {\cup_{i = 1}^{n+1} A_{i}}$"> 
+
+<P>
+ 
+= 
+<!-- MATH
+ $\overline {(\cup_{i = 1}^{n} A_{i}) \cup A_{n+1} }$
+ -->
+<IMG
+ WIDTH="136" HEIGHT="43" ALIGN="MIDDLE" BORDER="0"
+ SRC="img10.gif"
+ ALT="$\overline {(\cup_{i = 1}^{n} A_{i}) \cup A_{n+1} }$"> 
+
+<P>
+ 
+= 
+<!-- MATH
+ $\overline {\cup_{i = 1}^{n} A_{i}} \cap \overline{A_{n+1}}$
+ -->
+<IMG
+ WIDTH="121" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img11.gif"
+ ALT="$\overline {\cup_{i = 1}^{n} A_{i}} \cap \overline{A_{n+1}}$">
+
+<P>
+ 
+= 
+<!-- MATH
+ $\cap_{i=1}^{n} \overline{A_{i}} \cap \overline{A_{n+1}}$
+ -->
+<IMG
+ WIDTH="121" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img12.gif"
+ ALT="$\cap_{i=1}^{n} \overline{A_{i}} \cap \overline{A_{n+1}}$"> 
+
+<P>
+ 
+= 
+<!-- MATH
+ $\cap_{i=1}^{n+1} \overline{A_{i}}$
+ -->
+<IMG
+ WIDTH="63" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img13.gif"
+ ALT="$\cap_{i=1}^{n+1} \overline{A_{i}}$">. 
+<BR>
+<BR>
+Hence <IMG
+ WIDTH="77" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img14.gif"
+ ALT="$P(n+1)$"> is true.
+
+<BR><BR><BR><BR><BR>
+</body></html>

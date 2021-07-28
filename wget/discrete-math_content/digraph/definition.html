@@ -1,0 +1,328 @@
+
+<html>
+<head>
+<title> Digraph Definition </title>
+ 
+<!-- Written by: Toida, 19-Nov-1998 -->
+ 
+</head>
+ 
+<body bgcolor = "white" text="black">  <! this is light gray > 
+<!--  
+<body bgcolor = "#efd230">  <! This is yellowish.>
+<body bgcolor = "#efeffe">  <! this is light gray > 
+<body bgcolor = "pink">  <! this is pink > 
+--->  
+ 
+<h4><p align="Right"> Relation</p></h4>
+<h2><p align="CENTER">Digraph </h2> 
+<BR>
+<BR>
+<h3><font color="green">Subjects to be Learned </font></h3>
+<UL>
+<LI>digraph
+<LI>vertex
+<LI>arc
+<LI>loop
+<LI>in-degree, out-degree
+<LI>path,
+directed path,
+simple path
+<LI>cycle
+<LI>connected graph
+<LI>partial digraph
+<LI>subdigraph
+</ul>
+<h3><font color="green">Contents </font></h3>
+
+A <font color="green"><B>digraph</B></font> is short for directed graph, and it is a diagram composed of 
+points called <font color="green"><B>vertices</B></font>
+(nodes) and arrows called <font color="green"><B>arcs</B></font> going from a vertex to a vertex.
+<BR>
+For example the figure below is a digraph with 3 vertices and 4 arcs.
+<BR><BR>
+<IMG WIDTH=200 HEIGHT=150 ALIGN=center SRC="../relation/figures/ex1.gif">
+<BR>
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B><I>G<SUB>1</SUB></I></B>
+<BR><BR>
+In this figure the vertices are labeled with numbers <B><I>1, 2, </I></B>and <B><I>3</I></B>.
+<BR>
+<BR>
+Mathematically a digraph is defined as follows.
+<BR>
+<B>Definition (digraph):</B> A <a name="digraph"><font color="red"><B>digraph</B></font></a> is an ordered pair of sets 
+<B><I>G</I> = (<I>V, A</I>)</B>, where <B><I>V</I></B> is a set of <a name="vertex"><font color="red"><B>vertices</B></font></a> 
+and <B><I>A</I></B>
+is a set of ordered pairs (called <a name="arc"><font color="red"><B>arcs</B></font></a>) of vertices of <B><I>V</I></B>.
+<BR>
+<BR>
+In the example, <B><I>G<SUB>1</SUB></I> ,</B> given above, <B><I>V</I> = { <I>1, 2, 3</I> } ,</B> and 
+<B><I>A</I> = { &lt;<I>1, 1</I>&gt;, &lt;<I>1, 2</I>&gt;, &lt;<I>1, 3</I>&gt;, &lt;<I>2, 3</I>&gt; } .</B>
+<BR>
+<BR>
+<B>Digraph representation of binary relations</B>
+<BR>
+A binary relation on a set can be represented by a digraph.
+<BR>
+Let <B><I>R</I></B> be a binary relation on a set <B><I>A</I></B>,
+that is <B><I>R</I></B> is a subset of <B><I>A</I></B>
+<IMG
+ WIDTH="20" HEIGHT="28" ALIGN="MIDDLE" BORDER="0"
+ SRC="../symbols_sets/times.gif">
+<B><I>A</I></B>.
+<BR>
+Then the digraph, call it <B><I>G</I></B>, representing <B><I>R</I></B> can be constructed as follows<B>:</B>
+<BR>
+&nbsp; &nbsp; <B>1.</B> The vertices of the digraph
+<B><I>G</I></B> are the elements of <B><I>A</I></B>, 
+and 
+<BR>
+&nbsp; &nbsp; <B>2.</B> <B>&lt;<I>x, y</I>&gt;</B> is an arc of <B><I>G</I></B>
+from vertex <B><I>x</I></B> to vertex <B><I>y</I></B> if and only if
+<B>&lt;<I>x, y</I>&gt;</B>  is in <B><I>R</I></B>.
+<BR>
+<BR>
+
+<B>Example:</B> The less than relation <B><I>R</I></B> on the set of integers 
+<B><I>A</I> =</B> <B>{<I>1, 2, 3, 4</I>}</B>
+is the set <B>{&lt;<I>1, 2</I>&gt;</B> , <B>&lt;<I>1, 3</I>&gt;</B>, 
+<B>&lt;<I>1, 4</I>&gt;</B>, <B>&lt;<I>2, 3</I>&gt;</B> , <B>&lt;<I>2, 4</I>&gt;</B> ,
+<B>&lt;<I>3, 4</I>&gt;</B> <B>}</B> 
+and it
+can be represented by the following digraph.
+<BR>
+<BR>
+<BR>
+<IMG WIDTH=200 HEIGHT=250 ALIGN=ABSMIDDLE SRC="../relation/figures/less_than_digraph.gif">
+<BR><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<B><I>G<SUB>2</SUB></I></B>
+
+<BR><BR>
+
+Let us now define some of the basic concepts on digraphs.
+<BR>
+<BR>
+<B>Definition (loop):</B> An arc from a vertex to itself such as <B>&lt;<I>1, 1</I>&gt;</B>,
+is called a <a name="loop"><font color="red"><B>loop (or self-loop)</B></font></a>
+<BR>
+<B>Definition (degree of vertex):</B>
+The <a name="indeg"><font color="red"><B>in-degree</B></font></a> of a vertex is the number of arcs 
+coming to the vertex, and the <a name="outdeg"><font color="red"><B>out-degree</B></font></a>
+is the number of arcs going out of the vertex. 
+<BR>
+For example, the in-degree of vertex <B><I>2</I></B> in the digraph <B><I>G<SUB>2</SUB></I></B>
+shown above
+is <B><I>1</I></B>, and the out-degree is <B><I>2</I></B>.
+<BR>
+<B>Definition (path):</B>
+A <a name="path"><font color="red"><B>path</B></font></a>  from a vertex <B><I>x<SUB>0</SUB></I></B>
+to a vertex <B><I>x<SUB>n</SUB></I></B> in a digraph <B><I>G</I> = (<I>V, A</I>)</B>
+is a sequence of vertices 
+<B><I>x<SUB>0</SUB> , x<SUB>1</SUB> , ....., x<SUB>n</SUB></I></B>
+that satisfies the following:
+<BR>
+for each <B><I>i</I></B>, &nbsp;<B><I>0 
+<IMG WIDTH=11 HEIGHT=22 ALIGN=top SRC="../symbols_sets/leq.gif"> 
+i
+<IMG WIDTH=11 HEIGHT=22 align=top SRC="../symbols_sets/leq.gif">
+n - 1
+</I> , </B>
+&nbsp; <B>&lt;<I>x<SUB>i</SUB> , x<SUB>i + 1</SUB></I>&gt;</B>
+<IMG WIDTH=11 HEIGHT=22 align=middle SRC="../symbols_sets/in.gif">
+<B><I>A</I> ,</B>
+or
+&nbsp; <B>&lt;<I>x<SUB>i + 1</SUB> , x<SUB>i</SUB></I>&gt;</B>
+<IMG WIDTH=11 HEIGHT=22 align=middle SRC="../symbols_sets/in.gif">
+<B><I>A</I> ,</B>
+&nbsp; that is, between any pair of vertices there is an arc connecting them.
+<BR>
+<B><I>x<SUB>0</SUB></I></B> is the <font color="red"><B>initial vertex</B></font> and <B><I>x<SUB>n</SUB></I></B> 
+is the <font color="red"><B>terminal vertex</B></font> of the path.
+<BR>
+<BR>
+A path is called a  <a name="dipath"><font color="red"><B>directed path</B></font></a> &nbsp; if 
+&nbsp; <B>&lt;<I>x<SUB>i</SUB> , x<SUB>i + 1</SUB></I>&gt;</B>
+<IMG WIDTH=11 HEIGHT=22 align=middle SRC="../symbols_sets/in.gif">
+<B><I>A</I> ,</B>
+&nbsp; for every <B><I>i</I></B>, &nbsp; <B><I>0
+<IMG WIDTH=11 HEIGHT=22 align=top SRC="../symbols_sets/leq.gif">
+i
+<IMG WIDTH=11 HEIGHT=22 align=top SRC="../symbols_sets/leq.gif">
+n - 1
+</I> . </B>
+<BR>
+If the initial and the terminal vertices of a path are the same, that is, 
+&nbsp; <B><I>x<SUB>0</SUB> = x<SUB>n</SUB></I> ,</B>
+&nbsp; then the path
+is called a <a name="cycle"><font color="red"><B>cycle</B></font></a> .
+<BR>
+<BR>
+If no arcs appear more than once in a path, the path is called a 
+<a name="sipath"><font color="red"><B>simple path</B></font></a>.
+A path is called <a name="elpath"><font color="red"><B>elementary </B></font></a> if no vertices appear more than once in it except for the initial and terminal vertices of a cycle. In a simple cycle one vertex appears twice in the sequence: once as the initial vertex 
+and once
+as the terminal vertex.
+<BR>
+<BR>
+<B>Note:</B> There are two different definitions for "simple path".
+Here we follow the definition of Berge[1], Liu[2], Rosen[3] and others.
+A "simple path" according to another group (Cormen et al[4], Stanat and McAllister[5] and others) is a path in which <B>no vertices</B>
+appear more than once. 
+<BR>
+<BR>
+<B>Definition(connected graph):</B> A digraph is said to be <a name="congraph">
+<font color="red"><B>
+connected</B></font></a> if there is a path between every pair of its vertices.
+
+
+
+<BR><BR>
+<B>Example:</B>
+In the digraph <B><I>G<SUB>3</SUB></I></B> given below, 
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B><I>1, 2, 5</I></B> 
+is a simple and elementary path but not directed,
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B><I>1, 2, 2, 5</I> </B> is a simple path but neither directed nor elementary.  
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B><I>1, 2, 4, 5</I></B> is a simple elementary directed path,
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B><I>1, 2, 4, 5, 2, 4, 5</I></B> is a directed path but not simple (hence not elementary), 
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B><I>1, 3, 5, 2, 1</I></B> is a simple elementary cycle but not directed, and
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B><I>2, 4, 5, 2</I></B> is a simple elementary directed cycle.
+
+<BR>
+<BR>
+This digraph is connected.
+<BR>
+<BR>
+<IMG WIDTH=300 HEIGHT=200 ALIGN=Left SRC="../relation/figures/path.gif">
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --->
+<BR><BR>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+<B><I>G<SUB>3</SUB></I></B>
+<BR><BR>
+Sometimes we need to refer to part of a given digraph. A <font color="green"><B>partial digraph</B></font> 
+of a digraph is a digraph consisting of arbitrary numbers of vertices and arcs of the given digraph, while
+a <font color="green"><B>subdigraph</B></font> is a digraph consisting of an arbitrary number of vertices 
+and all the arcs between them of the given
+digraph. Formally they are defined as follows:
+<BR>
+<B>Definition (subdigraph, partial digraph):</B>
+Let <B><I>G</I> = ( <I>V, A</I> )</B> be a digraph.
+Then a digraph <B>( <I>V<SUP>'</SUP>, A<SUP>'</SUP></I> )</B>
+is a <a name="pargraph"><font color="red"><B>partial digraph</B></font></a> of <B><I>G</I> ,</B>
+&nbsp;if &nbsp; <B><I>V<SUP>'</SUP> 
+<IMG WIDTH=14 HEIGHT=32 align=top SRC="../symbols_sets/subseteq.gif">
+V</I> ,</B>
+&nbsp;and&nbsp;
+<B><I>A<SUP>'</SUP>
+<IMG WIDTH=14 HEIGHT=32 align=middle SRC="../symbols_sets/subseteq.gif">
+A</I> </B>
+<IMG WIDTH=18 HEIGHT=22 align=bottom SRC="../symbols_sets/cap.gif">
+<B><I> ( V<SUP>'</SUP>
+<IMG WIDTH=14 HEIGHT=22 align=middle SRC="../symbols_sets/times.gif">
+V<SUP>'</SUP> )</I> .</B>
+&nbsp;It is a <a name="subgraph"><font color="red"><B>subdigraph</B></font></a> of <B><I>G</I> ,</B>
+&nbsp;if &nbsp; <B><I>V<SUP>'</SUP>
+<IMG WIDTH=14 HEIGHT=32 align=middle SRC="../symbols_sets/subseteq.gif">
+V</I> ,</B>
+&nbsp;and&nbsp;
+<B><I>A<SUP>'</SUP>
+&nbsp;=&nbsp;
+A</I> </B>
+<IMG WIDTH=18 HEIGHT=22 align=bottom SRC="../symbols_sets/cap.gif">
+<B><I> ( V<SUP>'</SUP>
+<IMG WIDTH=14 HEIGHT=22 align=middle SRC="../symbols_sets/times.gif">
+V<SUP>'</SUP> )</I></B>
+<BR>
+<BR>
+A partial digraph and a subdigraph of <B><I>G<SUB>3</SUB></I></B> given above are shown below.
+<BR><BR>
+<IMG WIDTH=600 HEIGHT=280 ALIGN=Left SRC="../relation/figures/partial.gif">
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<br>
+<h3><font color="green">Test Your Understanding of Digraph </font></h3>
+Indicate which of the following statements are correct and which are not.
+<br>
+Click True or False , then Submit. There are two sets of questions.
+<br>
+<br>
+<BR>
+<B>The digraph in the exercise questions below is <B><I>G<SUB>3</SUB></I></B> repeated below unless otherwise specified. </B>
+<BR>
+<BR>
+<IMG WIDTH=300 HEIGHT=200 ALIGN=Left SRC="../relation/figures/path.gif">
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<applet code="exercise.class" width=500 height=650>
+</applet>
+
+<BR>
+<B><a href="../relation/digraph_rep.html"><r><font color="blue">
+Next -- Digraph Representaion of Binary Relation </font></r></a></B>
+<BR>
+<BR>
+<a href="../schedule/schedule.html#day19"><r><font color="blue">
+Back to Schedule </font></r></a></B>
+<BR>
+<a href="../web_course.html"><r><font color="blue">
+Back to Table of Contents </font></r></a></B>
+
+
+</body>
+</html>
+

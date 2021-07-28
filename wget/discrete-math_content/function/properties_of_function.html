@@ -1,0 +1,148 @@
+
+<html>
+<head>
+<title> Properties of Function </title>
+ 
+<!-- Written by: Toida, 24-October-2007 -->
+ 
+</head>
+ 
+<body bgcolor = "white" text="black">  <! this is light gray > 
+<!--  
+<body bgcolor = "#efd230">  <! This is yellowish.>
+<body bgcolor = "#efeffe">  <! this is light gray > 
+<body bgcolor = "pink">  <! this is pink > 
+--->  
+ 
+<h5><p align="Right"> Function</p></h5>
+<h2><p align="CENTER"> Properties of Function</p></h2>
+<BR>
+<BR>
+
+<!--
+<h3><font color="green">Subjects to be Learned </font></h3>
+<UL>
+<LI>function
+<LI>domain, codomain
+<LI>image 
+<LI>image of set
+<LI>range 
+<LI>sum of functions
+<LI>product of functions
+<LI>one-to-one function (injection)
+<LI>onto function (surjection)
+<LI>one-to-one onto function (bijection)
+<LI>inverse function
+<LI>composite function
+</ul>
+<h3><font color="green">Contents </font></h3>
+--->
+
+
+Two properties of functions in general are presented with proofs here.
+<BR>
+Below <em>f</em> is a function from a set <EM>A</em> to a set <em>B</em>,
+<em>S</em> &sube; <em>A</em>, and <em>T &sube; B</em>.
+<BR>
+<BR>
+<strong>Property 1: &nbsp;
+		<em>f( S </em> &cup; <em>T )</em> = <em>f(S)</em> &cup; <em>f(T) </em>
+</strong> 
+<BR>
+<BR>
+<strong>Proof of Property 1</strong>:
+<blockquote> 
+<strong>Proof for <em>f( S</em> &cup; <em>T )</em> &sube; <em>f(S)</em> &cup; <em>f(T) </em> </strong>:
+                        <br>
+                        <br>
+                Let <em>y</em> be an arbitrary element of <em>f( S</em> &cup; <em>T )</em>.
+<BR>
+		Then there is an element <em>x</em> in <em>S</em> &cup; <em>T</em> such that <em>y = f(x)</em>.
+<BR>
+If <Em>x</em> is in <em>S</em>, then <em>y</em> is in <em>f(S)</em>.
+Hence  <em>y</em> is in <em>f(S) </em> &cup; <em>f(T) </em>.
+<BR>
+<BR>
+Similarly <em>y</em> is in <em>f(S)</em> &cup; <em>f(T) </em> if <Em>x</em> is in <em>T</em>.
+<BR>
+<BR>
+Hence if <i>y</i> &isin; <i>f( S</i> &cup; <i>T )</i>, then <i>y</i> &isin; <i>f(S)</i> &cup; <i>f(T)</i>. 
+<BR>
+QED
+</blockquote>
+<blockquote>
+<strong>Proof for <em>f(S)</em> &cup; <em>f(T) </em> &sube; <em>f( S</em> &cup; <em>T )</em> 
+</strong>:
+                        <br>
+                        <br>
+                Let <em>y</em> be an arbitrary element of <em>f(S)</em> &cup; <em>f(T) </em>. 
+<BR>
+		Then <em>y</em> is in <em>f(S)</em> or in <em>f(T)</em>.
+<BR>
+		If <em>y</em> is in <em>f(S)</em>, then 
+                there is an element <em>x</em> in <em>S</em> such 
+that <em>y = f(x)</em>.
+<BR>
+Since <Em>x</em> &isin; <em>S</em> implies <Em>x</em> &isin;  <em>S</em> &cup; <em>T</em>,  
+&nbsp;<em>f(x)</em> &isin; <em>f( S</em> &cup; <em>T )</em>.
+<BR>
+Hence <em>y</em> &isin; <em>f( S</em> &cup; <em>T )</em>.
+<br>
+<BR>
+Similarly <em>y</em> &isin; <em>f( S</em> &cup; <em>T ) </em> if <Em>y</em> &isin; <em>f(T)
+</em>.
+<BR>
+<BR>
+QED
+</blockquote>
+Hence Property 1 has been proven.
+
+<BR>
+<BR>
+<BR>
+<strong>Property 2: &nbsp;
+                <em>f( S</em> &cap; <em>T )</em> &sube; <em>f(S)</em> &cap; <em>f(T) </em>
+</strong>
+<BR>
+<BR>
+<strong>Proof of Property 2</strong>:
+<blockquote>
+                Let <em>y</em> be an arbitrary element of <em>f( S</em> &cap; <em>T )</em>.
+<BR>
+                Then there is an element <em>x</em> in <em>S</em> &cap; <em>T</em> such that
+<em>y = f(x)</em>, that is
+<BR>
+there is an element <em>x</em> which is in <em>S</em> and 
+in <em>T</em>, and for which <em>y = f(x)</em> holds.
+<br>
+Hence 
+<em>y</em> &isin; <em>f(S)</em> and <em>y</em> &isin; <em>f(T)</em>, that is 
+<em>y</em> &isin; <em>f(S)</em> &cap; <em>f(T) 
+</em>. &nbsp; QED
+</blockquote>
+
+Note here that the converse of Property 2 does not necessarily hold.
+<BR>
+For examle let <em>S</em> = {1}, <em>T</em> = {2}, and <em>f(1)</em> = <em>f(2)</em> = {3}. 
+<BR>
+Then <em>f( S</em> &cap; <em>T )</em> = <i>f(</i>&phi;<i>)</i> = &phi;,
+while <em>f(S)</em> &cap; <em>f(T)</em> = {3}. 
+<BR>
+Hence <em>f(S)</em> &cap; <em>f(T)</em> can not be a subset of <em>f( S</em> &cap; <em>T )</em> giving a counterexample to the converse of Property 2.
+<BR>
+<br>
+
+<BR>
+<BR>
+<a href="../schedule/schedule.html#day23"><r><font color="blue">
+Back to Schedule </font></r></a></B>
+<BR>
+<a href="../web_course.html"><r><font color="blue">
+Back to Table of Contents </font></r></a></B>
+
+</body>
+</html>
+
+
+
+

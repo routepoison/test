@@ -1,0 +1,172 @@
+
+<html>
+<head>
+<title> Recursive Definition of Relation </title>
+ 
+<!-- Written by: Toida, 12-Feb-1999 -->
+ 
+</head>
+ 
+<body bgcolor = "white" text="black">  <! this is light gray > 
+<!--  
+<body bgcolor = "#efd230">  <! This is yellowish.>
+<body bgcolor = "#efeffe">  <! this is light gray > 
+<body bgcolor = "pink">  <! this is pink > 
+--->  
+ 
+<h5><p align="Right"> Relation</p></h5>
+<h2><p align="CENTER"> Recursive Definition of Relation</p></h2>
+<BR>
+<BR>
+<h3><font color="green">Subjects to be Learned </font></h3>
+<UL>
+<LI>how to define relation recursively
+</ul>
+<h3><font color="green">Contents </font></h3>
+
+<p align="JUSTIFY">Certain relations can be defined recursively.
+Note that a relation is a set. Therefore a recursive definition of a relation 
+follows the same format as that of sets. Here only examples are given. 
+To review recursive definition <a href="../../recursive_def/rec_def.html">
+<r><font color="blue"><B>click here</B></font></r></a>.
+<BR>
+<BR>
+<B>Example 1:</B> Let us define recursively the relation "less than" denoted by 
+<B><I>R<SUB>&lt;</SUB></I></B>
+on the set of 
+natural numbers <B><I>N</I></B>.
+<BR>
+Note that 
+<B><I>R<SUB>&lt;</SUB></I>
+= { &lt;<I>a, b</I>&gt; | 
+<I>a</I> 
+<img WIDTH=12 HEIGHT=22 ALIGN=MIDDLE ALT="tex2html_wrap_inline64" src="../../symbols_sets/in.gif">
+<I>N</I> 
+&nbsp;<img WIDTH=8 HEIGHT=11 ALT="tex2html_wrap_inline64" src="../../symbols_sets/and.gif">
+&nbsp;<I>b</I> 
+<img WIDTH=12 HEIGHT=22 ALIGN=MIDDLE ALT="tex2html_wrap_inline64" src="../../symbols_sets/in.gif">
+<I>N</I> 
+&nbsp;<img WIDTH=8 HEIGHT=11 ALT="tex2html_wrap_inline64" src="../../symbols_sets/and.gif">
+&nbsp;<I>a</I> &lt; <I>b</I> } = { &lt;<I>0, 1</I>&gt;, &lt;<I>0, 2</I>&gt; , ..., &lt;<I>1, 2</I>&gt;, .... }.</B>
+<BR>
+<BR>
+<B>Basis Clause:</B> <B>&lt;<I>0, 1</I>&gt; <img WIDTH=12 HEIGHT=22 ALIGN=MIDDLE ALT="tex2html_wrap_inline64" src="../../symbols_sets/in.gif"> 
+<B><I>R<SUB>&lt;</SUB></I></B>
+ ( or <B><I>0</I> 
+<B><I>R<SUB>&lt;</SUB></I></B>
+1</I> )</B>, meaning <B><I>0</I></B> is less than <B><I>1</I></B>.
+<BR>
+<B>Inductive Clause:</B> For all <B><I>x</I></B> and <B><I>y</I></B> in <B><I>N</I></B>, 
+&nbsp; if <B>&lt;<I>x, y</I>&gt; </B> 
+<img WIDTH=12 HEIGHT=22 ALIGN=MIDDLE ALT="tex2html_wrap_inline64" src="../../symbols_sets/in.gif"> 
+<B><I>R<SUB>&lt;</SUB></I> ,</B>
+&nbsp; then
+<B>&lt;<I>x, y + 1</I>&gt; <img WIDTH=12 HEIGHT=22 ALIGN=MIDDLE ALT="tex2html_wrap_inline64" 
+src="../../symbols_sets/in.gif"> 
+<I>R<SUB>&lt;</SUB></I> ,</B>
+and 
+<B>&lt;<I>x + 1, y + 1</I>&gt; <img WIDTH=12 HEIGHT=22 ALIGN=MIDDLE ALT="tex2html_wrap_inline64" 
+src="../../symbols_sets/in.gif"> 
+<I>R<SUB>&lt;</SUB></I> .</B>
+<BR>
+<B>Extremal Clause:</B> Nothing is in 
+<B><I>R<SUB>&lt;</SUB></I> ,</B>
+unless it is obtained from the Basis and Inductive Clauses.
+<BR>
+<BR>
+Informally one can see that this definition is correct as follows:
+<BR>
+First, <B>&lt;<I>0</I>, <I>1</I>&gt;</B> is the "simplest" element
+in <B><I>R<SUB>&lt;</SUB></I> .</B>
+<BR>
+Next by arranging the ordered pairs in <B><I>R<SUB>&lt;</SUB></I></B> as follows, 
+one can see that the two operations in the Inductive Clause generate them all:
+<BR>
+<B>&lt;<I>0</I>, <I>1</I>&gt;, &lt;<I>0</I>, <I>2</I>&gt;, &lt;<I>0</I>, <I>3</I>&gt;, ............................. , &lt;<I>0</I>, <I>n</I>&gt;, ..... </B>
+<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <B>&lt;<I>1</I>, <I>2</I>&gt;, &lt;<I>1</I>, <I>3</I>&gt;, &lt;<I>1</I>, <I>4</I>&gt;, ................. , &lt;<I>1</I>, <I>n</I>&gt;, .....</B>
+<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <B>&lt;<I>2</I>, <I>3</I>&gt;, &lt;<I>2</I>, <I>4</I>&gt;, &lt;<I>2</I>, <I>5</I>&gt;, ..... , &lt;<I>2</I>, <I>n</I>&gt;, .....</B>
+<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+<B> ............................................</B>
+<BR>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp;
+
+<B> ............................................</B>
+<BR>
+<BR>
+In each row, the first (leftmost) ordered pair gives the "smallest" ordered pair with the first number.
+For example <B>&lt;<I>2</I>, <I>3</I>&gt; </B> is the smallest with <B><I>2</I></B> as the first
+component. It is obtained from the first ordered pair of the row immediately above it by using
+<B>&lt;<I>x + 1, y + 1</I>&gt;</B> of the Inductive Clause, apply that to 
+<B>&lt;<I>1</I>, <I>2</I>&gt; </B> to get <B>&lt;<I>2</I>, <I>3</I>&gt; </B>, for example. 
+<BR>
+Within each row, the ordered pairs are obtained from the first one by using 
+<B>&lt;<I>x, y + 1</I>&gt;</B> of the Inductive Clause successively.
+<BR>
+Thus all the ordered pairs of <B><I>R<SUB>&lt;</SUB></I></B> are generated from
+<B>&lt;<I>0</I>, <I>1</I>&gt; </B> by following
+the Inductive Clause.
+<BR>
+<BR>
+<B>Example 2:</B> 
+Let 
+<B><I>R<SUB>a + b = c</SUB></I></B>
+be the set of triples of natural numbers 
+<B>&lt;<I>a, b, c</I>&gt;</B> which satisfy <B><I>a + b </I>= <I>c</I> . </B>
+Then 
+<B><I>R<SUB>a + b = c</SUB></I></B>
+on the set of natural numbers <B><I>N</I></B> 
+can be defined recursively as follows. 
+<BR>
+<BR>
+<B>Basis Clause:</B> <B>&lt;<I>0, 0, 0</I>&gt; <img WIDTH=12 HEIGHT=22 ALIGN=MIDDLE ALT="tex2html_wrap_inline64"src="../../symbols_sets/in.gif"> <I>R<SUB>a + b = c</SUB></I> .</B>
+<BR>
+<B>Inductive Clause:</B> For all <B><I>x, y</I></B> and <B><I>z</I></B> in <B><I>N</I></B>, 
+&nbsp; if <B>&lt;<I>x, y, z</I>&gt; <img WIDTH=12 HEIGHT=22
+ALIGN=MIDDLE ALT="tex2html_wrap_inline64" src="../../symbols_sets/in.gif"> 
+<I>R<SUB>a + b = c</SUB></I> ,</B>
+&nbsp; then
+<B>&lt;<I>x + 1, y, z + 1</I>&gt;</B> and <B>&lt;<I>x, y + 1, z + 1</I>&gt; 
+<img WIDTH=12 HEIGHT=22 ALIGN=MIDDLE
+ALT="tex2html_wrap_inline64" src="../../symbols_sets/in.gif"> 
+<I>R<SUB>a + b = c</SUB></I> .</B>
+<BR>
+<B>Extremal Clause:</B> Nothing is in 
+<B><I>R<SUB>a + b = c</SUB></I></B>
+unless it is obtained from the Basis and 
+Inductive Clauses.
+
+<BR>
+<BR>
+<br>
+<h3><font color="green">Test Your Understanding of Recursive Definition of Relation </font></h3>
+Indicate which of the following statements are correct and which are not.
+<br>
+Click True or False , then Submit. There is one set of questions.
+<br>
+<br>
+<br>
+<applet code="exercise.class" width=650 height=650>
+</applet>
+
+<BR><BR>
+<B><a href="../../digraph/definition.html"><r><font color="blue">
+Next --Digraph </font></r></a></B>
+<BR>
+<BR>
+<a href="../../schedule/schedule.html#day18"><r><font color="blue">
+Back to Schedule </font></r></a></B>
+<BR>
+<a href="../../web_course.html"><r><font color="blue">
+Back to Table of Contents </font></r></a></B>
+
+
+
+
+</body>
+</html>
+
+

@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<!--Converted with LaTeX2HTML 96.1 (Feb 5, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+
+<HEAD>
+<TITLE>No Title</TITLE>
+</HEAD>
+<BODY LANG="EN">
+<H5><P align="Right">Induction</P></H5>
+<h2><B>Mathematical Induction Example 2 --- Sum of Squares</B></h2>
+<BR> 
+<B>Problem:</B> For any natural number <B><I>n</I></B> ,
+<B><I>1<SUP>2</SUP></I> + <I>2<SUP>2</SUP></I> + ... + <I>n<SUP>2</sup></I> = <I>n( n + 1 )( 2n + 1 )/6</I></B>. 
+<BR>
+<BR>
+<B>Proof:</B> <BR>
+<B>Basis Step:</B>
+If <B><I>n</I> = <I>0</I></B>,
+then <B><I>LHS</I> = <I>0<SUP>2</SUP></I> = <I>0</I></B>, and <B><I>RHS</I> = <i>0 * (0 + 1)(2*0 + 1)/6 = 0</I> .</B>
+<BR>
+Hence <B><I>LHS</I> = <I>RHS</I>. </B>
+<BR>
+<B>Induction</B>: Assume that  for an arbitrary natural number <B><I>n</I></B>, 
+<BR>
+<B><I>1<SUP>2</SUP></I> + <I>2<SUP>2</SUP></I> + ... + <I>n<SUP>2</sup></I> = <I>n( n + 1 )( 2n + 1 )/6</I></B>. 
+-------- <font color="green">
+<I>Induction Hypothesis</I></font><BR>
+To prove this for <B><I>n</I>+<I>1</I>,</B>  &nbsp; first try to express <B><I>LHS</I></B> for
+<B><I>n</I>+<I>1</I></B> &nbsp; in terms of <B><I>LHS</I></B>
+for <B><I>n</I>,</B> &nbsp; and use the induction hypothesis. <BR>
+Here let us try  <BR>
+&nbsp; &nbsp;&nbsp; &nbsp;<B><I>LHS</I></B> for <B><i>n + 1</I> = </B>
+<B><I>1<SUP>2</SUP></I> + <I>2<SUP>2</SUP></I> + ... + <I>n<SUP>2</sup></I> + <I>(n + 1)<SUP>2</sup></I> =</B>
+<B>( <I>1<SUP>2</SUP></I> + <I>2<SUP>2</SUP></I> + ... + <I>n<SUP>2</sup></I> ) + <I>(n + 1)<SUP>2</sup></I> </B>
+<BR>
+Using the induction hypothesis, the last expression can be rewritten as <BR>
+&nbsp; &nbsp;&nbsp; &nbsp;<B><I>n( n + 1 )( 2n + 1 )/6</I> + <I>(n + 1)<SUP>2</sup></I> </B>
+<BR>
+Factoring <B>(<I>n + 1</I>)/6 </B> out, we get <BR>
+ &nbsp; &nbsp;&nbsp; &nbsp;<B>( <I>n</I> + <I>1</I> )( <I>n</I>( <I>2n</I> + <I>1</I> ) + <I>6</I> ( <I>n</I> + <I>1</I> ) )/<I>6</I></B>
+<BR>
+ &nbsp; &nbsp;&nbsp; &nbsp;<B> = ( <I>n</I> + <I>1</I> )( <I>2n<SUP>2</SUP></I> + <I>7n</I>  + <I>6</I> )/<I>6</I></B>
+<BR>
+ &nbsp; &nbsp;&nbsp; &nbsp;<B> = ( <I>n</I> + <I>1</I> )( <I>n</I> + <I>2</I> )( <I>2n</I> + <I>3</I> )/<I>6</I> ,</B>
+<BR>
+which is equal to the <B><I>RHS</I></B> for <B><I>n</I>+<I>1</I>.</B>
+<BR>
+<BR>
+Thus <B><I>LHS</I> = <I>RHS</I></B> for <B><I>n</I>+<I>1</I>.</B>
+<BR>
+<BR>
+<B>End of Proof.</B>
+<BR>
+
+</BODY>
+</HTML>

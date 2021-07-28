@@ -1,0 +1,166 @@
+<html>
+	<body>
+		<h2>Zermelo-Fraenkel Set Theory</h2>
+
+	Zermelo-Fraenkel set theory is a theory based on the firstl order 
+	predicate logic. The members of its universe of discourse are sets, 
+	which are characterized by the axioms given below. 
+	There is a binary relation between members of the universe, 
+	set membership: set <I>a</I> is a member of
+	set <I>b</I> 
+	written as <I>a</I> &isin; <i>b</I>.
+	Following are the axioms of Zermelo-Fraenkel. They together characterize 'sets'.
+	Except the regularity axiom they are basically the same assumpotions that are 
+	made in the naive set theory. The regularity axiom is the one that eliminates
+	inconsistencies found in the naive set theory such as Russell's paradox.
+
+<p>	
+	A reader with familiarity with <a href="http://www.cs.odu.edu/~toida/nerzic/content/logic/pred_logic/intr_to_pred_logic.html`">the first order logic</a> should have no trouble in understanding the follwoing presentation. 
+</p>
+
+		<h3>Axioms of ZF</h3>
+		<blockquote> <strong>Extensionality</strong>:
+			<br>
+<BR>
+			&forall;<em>x</em>&forall;<em>y</em>[&forall;<em>z</em>[<em>z</em>&isin;<em>x</em> &harr; <em>z</em>&isin;<em>y</em>] 
+			&rarr; <em>x</em>=<em>y</em>] 
+</blockquote>
+<!--
+<BR>
+<BR>
+--->
+<p>
+This axiom states that two sets 
+are <B><em>equal</em></B> when they have the same members.
+</p>
+<BR>
+		<blockquote> <strong>Null Set</strong>:
+			<br>
+<BR>
+			&exist;<em>x</em>~&exist;<em>y</em>[<em>y</em> &isin; <em>x</em>] 
+</blockquote>
+<!--
+<BR>
+<BR>
+--->
+<p>
+			This axiom asserts the existence of the <B><em>null (empty) set</em></B>.
+<BR>
+			It can be proven from this axiom and the previous axiom that such a set is 
+			unique. We denote it by &phi;.</p>
+<BR>
+		<blockquote> <strong>Pairs</strong>:
+			<br>
+			<br>
+			&forall;<em>x</em>&forall;<em>y</em>&exist;<em>z</em>&forall;<em>w</em>[<em>w</em>&isin;<em>z</em> &harr; [<em>w</em>=<em>x</em>
+			&or; <em>w</em>=<em>y</em>]] 
+</blockquote>
+<!--
+<BR>
+<BR>
+--->
+		<p>
+			This axiom states that given any sets <em>x</em> and <em>y</em>, there 
+			exists 
+a set which has only <em>x</em>
+			and <em>y</em> as its members.
+<BR>
+			It can be proven that there is a unique such set for each given <em>x</em> and
+			<em>y</em>. We call it a <B><em>pair (set)</em></B> and denote it by {<em>x</em>,<em>y</em>}. </p>
+<BR>
+		<p>
+		<blockquote> <strong>Unions</strong>:
+			<br>
+			<br>
+			&forall;<em>x</em>&exist;<em>y</em>&forall;<em>z</em>[<em>z</em>&isin;<em>y</em> &harr; &exist;<em>w</em>[<em>w</em>&isin;<em>x</em>
+			&and; <em>z</em>&isin;<em>w</em>]] 
+</blockquote>
+<p>
+
+<!--
+<BR><BR>
+--->
+			This axiom states that for any given set <em>x</em>, there is a set <em>y</em>
+			which has as its members all of the members of all of the members of <em>x</em>.
+	Such a set <em>y</em> is called a <B><em>union</em></B> of <em>x</em>.
+			It can be proven that there is a unique union of any set <em>x</em>. 
+			We denote it by &cup;<em>x</em>.</p>
+<p>For excample let <em>x</em> = {{1,2}, {3}, {4}, {5,6,7}}. Then  <em>y</em> = &cup;<em>x</em> = {1,2,3,4,5,6,7}.</p>
+	
+<p>
+	For any sets <em>x</em> and <em>y</em>, we write &cup; { <em>x</em>,  <em>y</em>} also
+as  <B><em>x</em> &cup;  <em>y</em></B>. Note that this is the union of two sets  <em>x</em> and <em>y</em>
+as known from the naive set theory. 
+</p>
+<BR>
+
+		<p> For any set <em>x</em>, a set <em>y</em> is called a <B><em>subset</em></B> of <EM>x</EM> if 
+		every member of <em>y</em> is a member of <em>x</em>. We write  <B><em>y</em> &sube; <em>x</em></B> 
+to denote that <em>y</em> is a subset of <em>x</em>.
+
+		<p>
+			The next axiom states that for any set <em>x</em>, there is a set <em>y</em> which 
+			contains as its members every set whose members are also elements of <em>x</em>, 
+			i.e., <em>y</em> contains all of the subsets of <em>x</em>. Such a set <EM>y</EM> is called a <B><em>power set</em></B> of <em>x</em>.</p>
+		<blockquote> <strong>Power Set</strong>:
+			<br>
+			<br>
+			&forall;<em>x</em>&exist;<em>y</em>&forall;<em>z</em>[<em>z</em>&isin;<em>y</em> &harr; &forall;<em>w</em>[<em>w</em>&isin;<em>z</em>
+			&rarr; <em>w</em>&isin;<em>x</em>)] </blockquote>
+		<p>
+			It can be proven that a set has a unique power set. We denote the power set of a set <EM>x</em> by <img src="../symbols_sets/cal_p.gif" >(<em>x</em>). 
+<BR>
+		<p>
+			The next axiom asserts the existence of an infinite set, i.e., a set with an 
+			infinite number of members:</p>
+		<blockquote> <strong>Infinity</strong>:
+			<br>
+			&exist;<em>x</em>[&phi; &isin; <em>x</em> &nbsp; &and; &nbsp; &forall; <em>y</em>[<em>y</em> &isin; <em>x</em> &rarr; &cup;{<em>y</em>,{<em>y</em>}}&isin; <em>x</em>]], where &phi; denotes the empty set.
+		</blockquote>
+		<p>
+			The Axiom of Infinity asserts that there is a set <em>x</em> which 
+			contains &phi; as a member and that anytime <em>y</em> is a member 
+			of <em>x</em>, <em>y</em> &cup; {<em>y</em>} is also a member of <em>x</em>. 
+			Thus, this axiom guarantees the existence of a set of the following 
+			form:</p>
+		<blockquote> {&phi;, &nbsp; {&phi;}, &nbsp; {&phi;, {&phi;}}, &nbsp; {&phi;, {&phi;},  &nbsp; {&phi;, {&phi;}}}, &nbsp; ... } </blockquote>
+<BR>
+		<p>
+			The next axiom puts some restriction on the kind of members a set can have.
+		It eliminates the Russell's paradox among others.
+
+		</p>
+		<blockquote> <strong>Regularity</strong>:
+			<br>
+			&forall;<em>x</em>[<em>x</em> &ne; &phi; &rarr; &exist; <em>y</em>[<em>y</em> &isin; <em>x</em> &and; &forall; <em>z</em>[<em>z</em> &isin; <em>x</em>
+			&rarr; ~<em>z</em>&isin;<em>y</em>]]] </blockquote>
+		<p>This axiom asserts that every non-empty set x contains an element y which is disjoint from x. 
+		Thus it rules out among the sets the existence of x such that x = {x}. 
+		Infinitely descending chains of sets such as ... x2 &isin; x1 &isin; x0 are not allowed either.
+		</p>
+
+		<p>
+			The final axiom of ZF is the Replacement Schema. Suppose that P(<em>x</em>,<em>y</em>) 
+			is a <a href="http://www.cs.odu.edu/~toida/nerzic/content/logic/pred_logic/construction/wff_intro.html`
+">wff</a> (well formed formula) with <em>x</em> and <em>y</em> free, and which may or may not have 
+			other free variables. Also, let P(<em>s</em>,<em>r)</em> be the result 
+			of substituting <em>s</em> and <em>r</em> for <em>x</em> and <em>y</em>, 
+			respectively, in P(<em>x</em>,<em>y</em>). Then every instance of the following 
+			wff is an axiom:</p>
+		<blockquote> <strong>Replacement Schema</strong>:<br>
+			&forall;<em>x</em>&exist;!<em>y</em>[P(<em>x</em>,<em>y</em> &rarr;
+			&forall;<em>u</em>&exist;<em>v</em>&forall;<em>r</em>[<em>r</em>&isin;<em>v</em> &harr; 
+			&exist;<em>s</em>[<em>s</em>&isin;<em>u</em>
+			&and; P(<em>s</em>,<em>r</em>)]]]
+		</blockquote>
+		<p>
+			In English it states the following: Suppose that P(x,y) is a formula which relates each 
+			set <em>x</em> to a unique set <em>y</em>. Then given a set <em>u</em>, 
+			we can form a new set <em>v</em> (hence such a set exists) by collecting all of the sets to which 
+			the members of <em>u</em> are uniquely related by P.</p>
+		<p> 	It is called a schema because it collectively represents infinite number of axioms 
+			of the same form.
+		</p>
+
+	</body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<!--Converted with LaTeX2HTML 96.1 (Feb 5, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+
+<HEAD>
+<TITLE>No Title</TITLE>
+</HEAD>
+<BODY LANG="EN">
+<H5><P align="Right">Induction</P></H5>
+<center>
+<h2><B>Program Correctness using Induction</B></h2>
+</center>
+<BR>
+<BR>
+<h3><font color="green">Subjects to be Learned </font></h3>
+<UL>
+<LI>Proof of program correctness using induction
+</ul>
+<h3><font color="green">Contents </font></h3>
+Loops in an algorithm/program can be proven correct using mathematical induction.
+In general it involves something called "loop invariant" and it is very difficult 
+to prove the correctness of a loop. 
+Here we are goin to give a few examples to convey the basic idea of correctness
+proof of loop algorithms.
+<BR> 
+<BR> 
+First consider the following piece of code that computes the square of a natural number:
+<BR>
+(We do not compute the square this way but this is just to illustrate the concept of loop invariant 
+and its proof by induction.)
+<BR>
+<BR>
+<B>
+SQUARE Function: SQ(n) 
+<BR>
+<BR>
+S &lt;- 0
+<BR>
+i &lt;- 0
+<BR>
+while i &lt; n
+<BR>
+&nbsp; &nbsp; 
+S  &lt;- S + n
+<BR>
+&nbsp; &nbsp; 
+i &lt;- i + 1
+<BR>
+return S
+<BR>
+<BR>
+
+</B>
+
+Let us first see how this code computes the square of a natural number.
+For example let us compute 3 <SUP>2</sup> using it.
+<BR>
+<BR>
+First S &lt;- 0 and i &lt;- 0 give S = 0 and i = 0 initially. 
+<BR>
+Since i  &lt; 3, the while loop is entered.
+<BR>
+&nbsp; &nbsp;
+S &lt;- 0 + 3
+<BR>
+&nbsp; &nbsp;
+i &lt;- 0 + 1
+<BR>
+producing S = 3 and i = 1.
+<BR>
+<BR>
+Since i  &lt; 3, the while loop is entered the second time.
+<BR>
+&nbsp; &nbsp;
+S &lt;- 3 + 3
+<BR>
+&nbsp; &nbsp;
+i &lt;- 1 + 1
+<BR>
+producing S = 6 and i = 2.
+<BR>
+<BR>
+Since i  &lt; 3, the while loop is entered the third time.
+<BR>
+&nbsp; &nbsp;
+S &lt;- 6 + 3
+<BR>
+&nbsp; &nbsp;
+i &lt;- 2 + 1
+<BR>
+producing S = 9 and i = 3.
+<BR>
+Since i = 3, the while loop is not entered any longer, 
+S = 9 is returned and the algorithm is terminted.
+<BR>
+<BR>
+In general to compute n<SUP>2</SUP> by this algorithm, n is added n times.
+<BR>
+<BR>
+To prove that the algorithm is correct, 
+let us first note that the algorithm stops after a finite numbe of steps.
+For i increases one by one from 0 and n is a natural number. Thus i eventually becomes equal to n.
+<BR>
+<BR>
+Next, to prove that it computes n<SUP>2</sup>, we show that after going through
+the loop k times, S = k*n and i = k hold. This statement is called a loop invariant and mathematical 
+induction can be used to prove it.
+<BR><BR>
+Proof by induction.
+<BR>
+Basis Step: k = 0. When k = 0, that is when the loop is not entered, 
+S = 0 and i = 0. Hence S = k*n and i = k hold. 
+<BR>
+Induction Hypothesis: For an arbitrary value m of k, S = m * n and i = m hold
+after going through the loop m times. 
+<BR>
+Inductive Step: When the loop is entered (m + 1)-st time, S = m*n and i = m
+at the beginning of the loop. Inside the loop,
+<BR>
+&nbsp; &nbsp;
+S &lt;- m*n + n
+<BR>
+&nbsp; &nbsp;
+i &lt;- i + 1
+<BR>
+producing S = (m + 1)*n and i = m + 1.
+<BR>
+<BR>
+Thus S = k*n and i = k hold for any natural number k.
+<BR>
+<BR>
+Now, when the algorithm stops, i = n. Hence the loop will have been entered n times.
+Thus S = n*n = n<SUP>2</sup>. Hence the algorithm is correct.
+<BR>
+<BR>
+The next example is an algorithm to compute the factorial of a positive integer.
+<BR>
+<BR>
+<B>
+FACTORIAL Function: FAC(n)
+<BR>
+<BR>
+i &lt;- 1
+<BR>
+F &lt;- 1
+<BR>
+while i &lt; = n
+<BR>
+&nbsp; &nbsp;
+F  &lt;- F * i
+<BR>
+&nbsp; &nbsp;
+i &lt;- i + 1
+<BR>
+return F
+<BR>
+<BR>
+
+</B>
+
+Let us first see how this code computes the factorial of a positive integer.
+For example let us compute 3 !.
+<BR>
+<BR>
+First i &lt;- 1 and F &lt;- 1 give i = 1 and F = 1 initially.
+<BR>
+Since i  &lt; 3, the while loop is entered.
+<BR>
+&nbsp; &nbsp;
+F &lt;- 1 * 1
+<BR>
+<BR>
+&nbsp; &nbsp;
+i &lt;- 1 + 1
+<BR>
+producing F = 1 and i = 2.
+<BR>
+<BR>
+Since i  &lt; 3, the while loop is entered the second time.
+<BR>
+&nbsp; &nbsp;
+F &lt;- 1 * 2
+<BR>
+&nbsp; &nbsp;
+i &lt;- 2 + 1
+<BR>
+producing F = 2 and i = 3.
+<BR>
+<BR>
+Since i = 3, the while loop is entered the third time.
+<BR>
+&nbsp; &nbsp;
+F &lt;- 2 * 3
+<BR>
+&nbsp; &nbsp;
+i &lt;- 3 + 1
+<BR>
+producing F = 6 and i = 4.
+<BR>
+Since i = 4, the while loop is not entered any longer,
+F = 6 is returned and the algorithm is terminted.
+<BR>
+<BR>
+To prove that the algorithm is correct,
+let us first note that the algorithm stops after a finite numbe of steps.
+For i increases one by one from 1 and n is a positive integer. 
+Thus i eventually becomes equal to n.
+<BR>
+<BR>
+Next, to prove that it computes n !, we show that after going through
+the loop k times, F = k ! and i = k + 1 hold. This is a loop invariant and 
+again we are going to use mathematical
+induction to prove it. 
+<BR><BR>
+Proof by induction.
+<BR>
+Basis Step: k = 1. When k = 1, that is when the loop is entered the first time,
+F = 1 * 1 = 1 and i = 1 + 1 = 2. Since 1! = 1, F = k! and  i = k + 1 hold.
+<BR>
+Induction Hypothesis: For an arbitrary value m of k, F = m! and i = m + 1 hold
+after going through the loop m times.
+<BR>
+Inductive Step: When the loop is entered (m + 1)-st time, F = m! and i = (m+1) 
+at the beginning of the loop. Inside the loop,
+<BR>
+&nbsp; &nbsp;
+F &lt;- m!* (m + 1)
+<BR>
+&nbsp; &nbsp;
+i &lt;- (m + 1) + 1
+<BR>
+producing F = (m + 1)! and i = (m + 1) + 1.
+<BR>
+<BR>
+Thus F = k! and i = k + 1 hold for any positive integer k.
+<BR>
+<BR>
+Now, when the algorithm stops, i = n + 1. Hence the loop will have been entered n times.
+Thus F = n! is returned. Hence the algorithm is correct.
+<BR><BR>
+<BR>
+<B><a href="second_principle.html"><r><font color="blue">
+Next -- Second Principle of Mathematical Induction </font></r></a></B>
+<BR>
+<BR>
+<a href="../schedule/schedule.html#day17"><r><font color="blue">
+Back to Schedule </font></r></a></B>
+<BR>
+<a href="../web_course.html"><r><font color="blue">
+Back to Table of Contents </font></r></a></B>
+
+
+
+</BODY>
+</HTML>

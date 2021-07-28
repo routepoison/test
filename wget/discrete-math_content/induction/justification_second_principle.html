@@ -1,0 +1,136 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<!--Converted with LaTeX2HTML 96.1 (Feb 5, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+
+<HEAD>
+<TITLE>No Title</TITLE>
+<META NAME="description" CONTENT="No Title">
+<META NAME="keywords" CONTENT="induction">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<LINK REL=STYLESHEET HREF="induction.css">
+</HEAD>
+<BODY LANG="EN">
+<H5><P align="Right">Induction</P></H5>
+<center>
+<h2><B> Justification of Second Principle</B></h2>
+</center>
+<BR> 
+<BR>
+
+
+<!--
+<h3><font color="green">Subjects to be Learned </font></h3>
+<UL>
+<LI>second principle of mathematical induction
+</ul>
+<h3><font color="green">Contents </font></h3>
+--->
+
+
+The <a href="second_principle.html" target="main"><r><font color="blue"><B>second principle of induction</B></font></r></a> 
+can also be used to prove assertions of the form
+<IMG
+ WIDTH="8" HEIGHT="10" 
+ SRC="../symbols_sets/all.gif">
+<B><I>x P(x)</I></B> .
+This form of induction does not require the basis step, and in the inductive step
+<B><I> P(n)</I></B> is proved assuming that
+&nbsp; <B><I> P(k)</I></B> &nbsp; holds for all &nbsp; <B><I>k</I> 
+&lt; <I>n</I> .
+</B> 
+<BR>
+<BR>
+To see that this method is correct, note that the differences between the first and the second principles are
+that the basis step is missing in the second principle and that the induction hypothesis assumes that
+&nbsp; <B><I> P(k)</I></B> &nbsp; holds for all &nbsp; <B><I>k</I> &lt; <I>n</I>.</B>
+<BR>
+<BR>
+Thus all we need to show to justify the second principle is that the basis case is implicitly included 
+in a proof by the second principle.
+<BR>
+<BR>
+Suppose that 
+<B>
+<IMG
+ WIDTH="8" HEIGHT="10"
+ SRC="../symbols_sets/all.gif"> <I>n</I> [
+<IMG
+ WIDTH="8" HEIGHT="10"
+ SRC="../symbols_sets/all.gif"> <I>k</I> [ <I>k </I> &lt; <I>n</I>
+<IMG
+ WIDTH="10" HEIGHT="10"
+ SRC="../symbols_sets/imp.gif">
+<I>P(k)</I> ]
+<IMG
+ WIDTH="10" HEIGHT="10"
+ SRC="../symbols_sets/imp.gif">
+<I>P(n)</I> ] 
+</B>
+has been proven. We are going to show that this implies <I>P</I>(0).
+<BR>
+<BR>
+Let us consider the statement for <I>n</I> = 0 (or the smallest value being considered for <I>n</I>): 
+&nbsp; 
+<IMG
+ WIDTH="8" HEIGHT="10"
+ SRC="../symbols_sets/all.gif"> <I>k</I> [ <I>k </I> &lt; 0
+<IMG
+ WIDTH="10" HEIGHT="10"
+ SRC="../symbols_sets/imp.gif">
+<I>P(k)</I> ]
+<IMG
+ WIDTH="10" HEIGHT="10"
+ SRC="../symbols_sets/imp.gif">
+<I>P</I>(0), which is a true statement after a proof by the second principle.
+<BR>
+In this statement, <I>k </I> &lt; 0 is false because 0 is the smallest value that is 
+being considered. &nbsp; Hence 
+[ <I>k </I> &lt; 0
+<IMG
+ WIDTH="10" HEIGHT="10"
+ SRC="../symbols_sets/imp.gif">
+<I>P(k)</I> ]
+is true for all values of <I>k </I> under consideration.
+Hence for <IMG
+ WIDTH="8" HEIGHT="10"
+ SRC="../symbols_sets/all.gif"> <I>k</I>  [ <I>k </I> &lt; 0
+<IMG
+ WIDTH="10" HEIGHT="10"
+ SRC="../symbols_sets/imp.gif">
+<I>P(k)</I> ]
+<IMG
+ WIDTH="10" HEIGHT="10"
+ SRC="../symbols_sets/imp.gif">
+<I>P</I>(0) ]
+to hold true, <I>P</I>(0) must be true, which is the basis case.
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<B><a href="second_principle.html"><r><font color="blue">
+Back to Second Principle </font></r></a></B>
+<BR>
+<BR>
+<B><a href="../relation/intr_to_relation.html"><r><font color="blue">
+Next -- Introduction to Relation </font></r></a></B>
+<BR>
+<BR>
+<a href="../schedule/schedule.html#day17"><r><font color="blue">
+Back to Schedule </font></r></a></B>
+<BR>
+<a href="../web_course.html"><r><font color="blue">
+Back to Table of Contents </font></r></a></B>
+
+
+
+
+
+
+
+
+
+</BODY>
+</HTML>

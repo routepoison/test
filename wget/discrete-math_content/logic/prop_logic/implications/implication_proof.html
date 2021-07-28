@@ -1,0 +1,357 @@
+<HTML>
+<HEAD>
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-2022-jp">
+   <META NAME="GENERATOR" CONTENT="Mozilla/4.02 [en] (X11; I; SunOS 5.5 sun4m) [Netscape]">
+   <TITLE> Introduction to Propositional Logic </TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+
+<h5><DIV ALIGN=right>Propositional Logic</DIV></h5>
+
+<center>
+<H2>
+Proof of Implications</H2>
+</center>
+<BR><BR>
+<h3><font color="green">Subjects to be Learned</font></h3>
+<ul>
+<li>Proving implications using truth table
+<li>Proving implications using tautologies
+</ul>
+<h3><font color="green">Contents</font></h3>
+<B>1.</B> All the implications in&nbsp;<A HREF="./implication.html" target="main"><r><font color=blue>Implications</r></A></FONT>
+can be proven to hold by constructing truth tables and showing that they are
+always true.
+
+<P>For example consider the first implication "addition":&nbsp; P&nbsp;<IMG SRC="../symbols/ImpT.gif" >
+(P&nbsp;<IMG SRC="../symbols/or.gif" > Q).
+<BR>To prove that this implication holds,&nbsp; let us first construct
+a truth table for the proposition P&nbsp;<IMG SRC="../symbols/or.gif" > Q.
+<BR><BR>
+<TABLE ALIGN=LEFT BORDER clospan="15" >
+<TR>
+<TH>P&nbsp;</TH>
+
+<TH>Q</TH>
+
+<TH>(P&nbsp;<IMG SRC="../symbols/or.gif" > Q)&nbsp;</TH>
+</TR>
+
+<TR>
+<TD>F&nbsp;</TD>
+
+<TD>F</TD>
+
+<TD ALIGN=CENTER>F&nbsp;</TD>
+</TR>
+
+<TR>
+<TD>F&nbsp;</TD>
+
+<TD>T</TD>
+
+<TD ALIGN=CENTER>T&nbsp;</TD>
+</TR>
+
+<TR>
+<TD>T&nbsp;</TD>
+
+<TD>F</TD>
+
+<TD ALIGN=CENTER>T&nbsp;</TD>
+</TR>
+
+<TR>
+<TD>T&nbsp;</TD>
+
+<TD>T</TD>
+
+<TD ALIGN=CENTER>T&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<BR>&nbsp;
+<BR>&nbsp;
+<BR>&nbsp;
+<BR>&nbsp;
+<BR>&nbsp;
+<BR>&nbsp;
+<BR>&nbsp;
+
+<P>Then by the definition of&nbsp;<IMG SRC="../symbols/imp.gif" >,&nbsp;&nbsp; we
+can add a column for P&nbsp;<IMG SRC="../symbols/imp.gif" > 
+(P&nbsp;<IMG SRC="../symbols/or.gif" >
+Q)
+to obtain the following truth table.
+<BR><BR>
+<TABLE ALIGN=LEFT BORDER clospan="15" >
+<TR>
+<TH>P&nbsp;</TH>
+
+<TH>Q</TH>
+
+<TH>(P&nbsp;<IMG SRC="../symbols/or.gif" > Q)&nbsp;</TH>
+
+<TH>P&nbsp;<IMG SRC="../symbols/imp.gif" > (P&nbsp;<IMG SRC="../symbols/or.gif" > Q)</TH>
+</TR>
+
+<TR>
+<TD>F&nbsp;</TD>
+
+<TD>F</TD>
+
+<TD ALIGN=CENTER>F&nbsp;</TD>
+
+<TD ALIGN=CENTER>T&nbsp;</TD>
+</TR>
+
+<TR>
+<TD>F&nbsp;</TD>
+
+<TD>T</TD>
+
+<TD ALIGN=CENTER>T&nbsp;</TD>
+
+<TD ALIGN=CENTER>T&nbsp;</TD>
+</TR>
+
+<TR>
+<TD>T&nbsp;</TD>
+
+<TD>F</TD>
+
+<TD ALIGN=CENTER>T&nbsp;</TD>
+
+<TD ALIGN=CENTER>T&nbsp;</TD>
+</TR>
+
+<TR>
+<TD>T&nbsp;</TD>
+
+<TD>T</TD>
+
+<TD ALIGN=CENTER>T&nbsp;</TD>
+
+<TD ALIGN=CENTER>T&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<BR>&nbsp;
+<BR>&nbsp;
+<BR>&nbsp;
+<BR>&nbsp;
+<BR>&nbsp;
+<BR>&nbsp;
+<BR>&nbsp;
+
+<P>The first row in the rightmost column results since P is false,&nbsp;
+and the others in that column follow since (P&nbsp;<IMG SRC="../symbols/or.gif" >
+Q) is true.
+<BR>
+<BR>
+The rightmost column shows that 
+P&nbsp;<IMG SRC="../symbols/imp.gif" >
+(P&nbsp;<IMG SRC="../symbols/or.gif" >
+Q)
+is always true.
+<BR>
+<BR>
+<B>2.</B> Some of the implications can also be proven by using identities and implications 
+that have already been proven.
+<BR>
+<BR>
+For example suppose that 
+the identity
+"exportation": 
+<BR>
+<B>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[(X <img src=../../../../symbols/and.gif> Y) <img src=../../../../symbols/imp.gif> Z]
+<img src=../../../../symbols/EqvT.gif>
+[X <img src=../../../../symbols/imp.gif> (Y <img src=../../../../symbols/imp.gif> Z)] ,
+</B>
+<BR>
+and 
+the implication
+ "hypothetical syllogism": 
+<BR>
+<B>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[(P <img src=../../../../symbols/imp.gif> Q)
+<img src=../../../../symbols/and.gif>
+(Q <img src=../../../../symbols/imp.gif> R)]
+<img src=../../../../symbols/ImpT.gif>
+(P <img src=../../../../symbols/imp.gif> R)
+</B>
+<BR>
+have been proven. Then the implication No. 7:
+<BR>
+<B>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(P <img src=../../../../symbols/imp.gif> Q)
+<img src=../../../../symbols/ImpT.gif>
+[(Q <img src=../../../../symbols/imp.gif> R)
+<img src=../../../../symbols/imp.gif>
+(P <img src=../../../../symbols/imp.gif> R)]
+</B>
+<BR>
+can be proven by applying the "exportation" to the "hypothetical syllogism" as 
+follows<B>:</B>
+<BR>
+<BR>
+Consider &nbsp; <B>(P <img src=../../../../symbols/imp.gif> Q) ,&nbsp; (Q <img src=../../../../symbols/imp.gif> R)&nbsp; ,
+</B>
+and 
+&nbsp; <B>(P <img src=../../../../symbols/imp.gif> R)</B> &nbsp;  in the "hypothetical syllogism" as 
+<B>X, &nbsp; Y</B>&nbsp; and &nbsp; <B>Z</B>&nbsp;  of
+the "exportation", respectively. 
+<BR>
+Then since &nbsp; <B>[ (X <img src=../../../../symbols/and.gif> Y ) 
+<img src=../../../../symbols/imp.gif> Z ]
+<img src=../../../../symbols/EqvT.gif>
+[ X <img src=../../../../symbols/imp.gif> ( Y <img src=../../../../symbols/imp.gif> Z ) ]
+</B>
+&nbsp; implies &nbsp; <B>[ ( X <img src=../../../../symbols/and.gif> Y ) 
+<img src=../../../../symbols/imp.gif> Z ]
+<img src=../../../../symbols/ImpT.gif>
+[ X <img src=../../../../symbols/imp.gif> ( Y 
+<img src=../../../../symbols/imp.gif> Z ) ] ,
+</B>
+&nbsp; the implication of No. 7 follows.
+<BR>
+<BR>
+Similarly the <B>modus ponens</B> (implication No. 3) can be proven as follows<B>:</B>
+<BR>
+Noting that 
+<B>
+( P
+<img src=../../../../symbols/imp.gif>
+Q )
+<img src=../../../../symbols/EqvT.gif>
+( <img src=../../../../symbols/not.gif>  P
+<img src=../../../../symbols/or.gif>
+Q ) ,</B>
+<BR>
+<B>
+ &nbsp; &nbsp; P
+<img src=../../../../symbols/and.gif>
+( P
+<img src=../../../../symbols/imp.gif>
+Q )
+<BR>
+ &nbsp; &nbsp; <img src=../../../../symbols/EqvT.gif>
+P
+<img src=../../../../symbols/and.gif>
+( <img src=../../../../symbols/not.gif>  P
+<img src=../../../../symbols/or.gif>
+Q ) </B>
+<BR>
+ &nbsp; &nbsp; <img src=../../../../symbols/EqvT.gif>
+<B>
+( P
+<img src=../../../../symbols/and.gif>
+<img src=../../../../symbols/not.gif>  P )
+<img src=../../../../symbols/or.gif>
+ ( P
+<img src=../../../../symbols/and.gif>
+Q )</B> &nbsp; &nbsp; --- &nbsp; by the distributive law
+<BR>
+<B>
+ &nbsp; &nbsp; <img src=../../../../symbols/EqvT.gif>
+F
+<img src=../../../../symbols/or.gif>
+ ( P
+<img src=../../../../symbols/and.gif>
+Q )
+<BR>
+ &nbsp; &nbsp; <img src=../../../../symbols/EqvT.gif>
+  ( P
+<img src=../../../../symbols/and.gif>
+Q )
+<BR>
+ &nbsp; &nbsp; <img src=../../../../symbols/ImpT.gif>
+Q
+</B>
+<BR>
+<BR>
+Also the <B>exportation</B> (identity No. 20), 
+<B>
+&nbsp; ( P <img src=../../../../symbols/imp.gif> ( Q <img src=../../../../symbols/imp.gif> R ) )
+&nbsp; <img src=../../../../symbols/EqvT.gif> 
+&nbsp; ( P <img src=../../../../symbols/and.gif> Q ) 
+<img src=../../../../symbols/imp.gif> R ) </B>
+&nbsp; can be proven using identities as follows<B>:</B>
+<BR>
+<B>
+&nbsp; &nbsp; ( P <img src=../../../../symbols/imp.gif> ( Q <img src=../../../../symbols/imp.gif> R ) )
+&nbsp; <img src=../../../../symbols/EqvT.gif>
+&nbsp; <img src=../../../../symbols/not.gif>  P 
+<img src=../../../../symbols/or.gif>
+( Q <img src=../../../../symbols/imp.gif> R )
+<BR>
+&nbsp; &nbsp; <img src=../../../../symbols/EqvT.gif>
+&nbsp; <img src=../../../../symbols/not.gif>  P
+<img src=../../../../symbols/or.gif>
+( <img src=../../../../symbols/not.gif> Q 
+<img src=../../../../symbols/or.gif> R )
+<BR>
+&nbsp; &nbsp; <img src=../../../../symbols/EqvT.gif>
+&nbsp; ( <img src=../../../../symbols/not.gif>  P
+<img src=../../../../symbols/or.gif>
+ <img src=../../../../symbols/not.gif> Q )
+<img src=../../../../symbols/or.gif> R
+<BR>
+&nbsp; &nbsp; <img src=../../../../symbols/EqvT.gif>
+&nbsp; <img src=../../../../symbols/not.gif> ( P
+<img src=../../../../symbols/and.gif> Q )
+<img src=../../../../symbols/or.gif> R
+<BR>
+&nbsp; &nbsp; <img src=../../../../symbols/EqvT.gif>
+&nbsp;( P
+<img src=../../../../symbols/and.gif> Q )
+<img src=../../../../symbols/imp.gif> R
+</B>
+
+<BR>
+<BR>
+<B>3.</B> Some of them can be proven by noting that a proposition in an implication
+can be replaced by an equivalent
+proposition without affecting its value. 
+<BR>
+<BR>
+For example by substituting 
+<B>
+( <img src=../../../../symbols/not.gif>Q <img src=../../../../symbols/imp.gif>
+<img src=../../../../symbols/not.gif> P )
+</B>
+for <B>( P <img src=../../../../symbols/imp.gif> Q ) , </B>
+since they are equivalent being contrapositive to each other, <B>modus tollens</B> 
+(the implication No. 4)<B>:</B> 
+<B>
+[ ( P <img src=../../../../symbols/imp.gif> Q ) <img src=../../../../symbols/and.gif>
+<img src=../../../../symbols/not.gif> Q ]
+<img src=../../../../symbols/ImpT.gif>
+&nbsp; <img src=../../../../symbols/not.gif> P </B>,
+reduces to the modus ponens:
+<B>
+[ X <img src=../../../../symbols/and.gif> ( X <img src=../../../../symbols/imp.gif> Y ) ]
+<img src=../../../../symbols/ImpT.gif>
+Y.
+</B>
+&nbsp; Hence if the modus ponens and the "contrapositive" in the "Identities" have been proven,
+then the modus tollens follows from them.
+
+<BR>
+<BR>
+<BR>
+<B><a href="../../pred_logic/intr_to_pred_logic.html"><r><font color="blue">
+Next -- Why Predicate Logic ? </font></r></a></B>
+<BR>
+<BR>
+<a href="../../../schedule/schedule.html#day6"><r><font color="blue">
+Back to Schedule </font></r></a></B>
+<BR>
+<a href="../../../web_course.html"><r><font color="blue">
+Back to Table of Contents </font></r></a></B>
+
+
+</BODY>
+<!-- Exercises  -->
+</HTML>

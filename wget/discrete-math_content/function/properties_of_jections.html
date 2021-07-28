@@ -1,0 +1,227 @@
+
+<html>
+<head>
+<title> Properties of Jections </title>
+ 
+<!-- Written by: Toida, 24-October-2007 -->
+ 
+</head>
+ 
+<body bgcolor = "white" text="black">  <! this is light gray > 
+<!--  
+<body bgcolor = "#efd230">  <! This is yellowish.>
+<body bgcolor = "#efeffe">  <! this is light gray > 
+<body bgcolor = "pink">  <! this is pink > 
+--->  
+ 
+<h5><p align="Right"> Jections</p></h5>
+<h2><p align="CENTER"> Properties of Surjections, Injections and Bijections</p></h2>
+<BR>
+<BR>
+
+<!--
+<h3><font color="green">Subjects to be Learned </font></h3>
+<UL>
+<LI>function
+<LI>domain, codomain
+<LI>image 
+<LI>image of set
+<LI>range 
+<LI>sum of functions
+<LI>product of functions
+<LI>one-to-one function (injection)
+<LI>onto function (surjection)
+<LI>one-to-one onto function (bijection)
+<LI>inverse function
+<LI>composite function
+</ul>
+<h3><font color="green">Contents </font></h3>
+--->
+
+
+Some properties of surjections, injections and bijections are presented with proofs here.
+<BR>
+Below <em>f</em> is a function from a set <EM>A</em> to a set <em>B</em>, and
+<em>g</em> is a function from the set <EM>B</em> to a set <em>C</em>.
+<BR>
+<BR>
+<strong>Property 1: &nbsp;
+		If <em>f</em> and <em>g</em> are surjections, then <em>fg</em> is a surjection.
+</strong> 
+<BR>
+<BR>
+<strong>Proof of Property 1</strong>:
+<blockquote> 
+Let <em>z</em> an arbitrary element in  <em>C</em>. 
+<BR>
+Then since <em>f</em> is a surjection, there is an element <em>y</em> in <em>B</em>
+such that <em>z</em> = <em>f(y)</em>.
+<BR>
+Then  since <em>g</em> is a surjection, there is an element <em>x</em> in <em>A</em> 
+such that <em>y</em> = <em>g(x)</em>.
+
+<BR>
+Hence by the definition of composite function, <em>z</em> = <em>f(g(x))</em>, that is <em>z</em> = <em>fg(x)</em>.
+<BR>
+Hence <em>fg</em> is a surjection.
+<BR>
+QED
+</blockquote>
+<BR>
+<BR>
+<BR>
+<strong>Property 2: &nbsp;
+                If <em>f</em> and <em>g</em> are injections, then <em>fg</em> is an injection.
+</strong>
+<BR>
+<BR>
+<strong>Proof of Property 2</strong>:
+<blockquote>
+Let <em>x<sub>1</sub></em> and <em>x<sub>2</sub></em> be arbitrary elements in <em>A</em>.
+<BR>
+Suppose that  <em>f(g(x<SUB>1</sub>))</em> = <em>f(g(x<SUB>2</sub>))</em>.
+<BR>
+Then since <em>f</em> is an injection, <em>g(x<SUB>1</sub>)</em> = <em>g(x<SUB>2</sub>)</em>.
+<BR>
+Then since <em>g</em> is an injection, x<SUB>1</sub> = x<SUB>2</sub>.
+<BR>
+That is for any pair of elements x<SUB>1</sub> and x<SUB>2</sub> in <em>A</em> 
+if <em>f(g(x<SUB>1</sub>))</em> = <em>f(g(x<SUB>2</sub>))</em>, then x<SUB>1</sub> = x<SUB>2</sub>.
+<BR>
+Hence 
+<em>fg</em> is an injection.
+<BR>
+QED
+</blockquote>
+<BR>
+<BR>
+<BR>
+<strong>Property 3: &nbsp;
+                If <em>f</em> and <em>g</em> are bijections, then <em>fg</em> is a bijection.
+</strong>
+<BR>
+<BR>
+<strong>Proof of Property 3</strong>:
+<BR>
+Obviously this follows from Properties 1 and 2.
+
+<BR>
+<BR>
+<BR>
+<strong>Property 4: &nbsp;
+                If <em>fg</em> is a surjection, then <em>f</em> is a surjection.
+</strong>
+<BR>
+<BR>
+<strong>Proof of Property 4</strong>:
+<blockquote>
+Let <em>z</em> an arbitrary element in  <em>C</em>.
+<BR>
+Then since <em>fg</em> is a surjection, there is an element <em>x</em> in <em>A</em>
+such that <em>z</em> = <em>f(g(x))</em>.
+<BR>
+By the definition of <em>fg</em>, there is an element <em>y</em> in <em>B</em> such that
+<em>y</em> =  <em>g(x)</em> and <em>z</em> =  <em>f(y)</em>.
+<BR>
+Hence for an arbitrary element <em>z</em> in <em>C</em>, 
+there is an element <em>y</em> in <em>B</em> such that
+ <em>z</em> =  <em>f(y)</em>.
+<BR>
+Hence <em>f</em> is a surjection.
+<BR>
+QED
+ 
+ 
+</blockquote>
+<BR>
+<BR>
+<BR>
+<strong>Property 5: &nbsp;
+                If <em>fg</em> is an injection, then <em>g</em> is an injection.
+</strong>
+<BR>
+<BR>
+<strong>Proof of Property 5</strong>:
+<BR>
+<blockquote>
+Proof is left as an exercise.
+</blockquote>
+<BR>
+<BR>
+<BR>
+<strong>Property 6: &nbsp;
+                If <em>fg</em> is a bijection, then <em>f</em> is a surjection 
+		and <em>g</em> is an injection.
+</strong>
+<BR>
+<BR>
+<strong>Proof of Property 6</strong>:
+<BR>
+Obviously this follows from Properties 4 and 5.
+<BR>
+<BR>
+<BR>
+Below 
+<em>f</em> is a function from a set <EM>A</em> to a set <em>B</em>,
+<em>S</em> &sube; <em>A</em>, and <em>T &sube; B</em>.
+
+<BR>
+<BR>
+<strong>Property 7: &nbsp;
+                If <em>f</em> is a bijection, then 
+	<em>f( S </em> &cap; <em>T )</em> = <em>f(S)</em> &cap; <em>f(T)
+ </em>
+
+</strong>
+<BR>
+<BR>
+<strong>Proof of Property 7</strong>:
+<blockquote>
+Since <em>f( S </em> &cap; <em>T )</em> &sube; <em>f(S)</em> &cap; <em>f(T)</em>
+for a function <em>f</em>, we need to prove that <em>f(S)</em> &cap; <em>f(T)</em>
+&sube; <em>f( S </em> &cap; <em>T )</em> for a bijection <em>f</em>.
+<BR>
+<BR>
+Let <em>y</em> be an arbitrary element of  <em>f(S)</em> &cap; <em>f(T)</em>.
+<BR>
+<BR>
+Then there is an element <em>x<SUB>1</sub></em> in <em>S</em> 
+and an element  <em>x<sub>2</SUB></em> in <em>T</em> 
+such that <em>y</em> = <em>f(x<SUB>1</sub>)</em> = <em>f(x<sub>2</SUB>)</em>.
+<BR>
+<BR>
+Since <em>f</em> is a bijection, it is an injection.
+<BR>
+Hence if <em>f(x<SUB>1</sub>)</em> = <em>f(x<sub>2</SUB>)</em>, 
+then <em>x<sub>1</SUB></em> = <em>x<sub>2</SUB></em>.
+<BR>
+Hence 
+<em>x<sub>1</SUB></em> (= <em>x<sub>2</SUB></em>) &isin; <em>S </em> &cap; <em>T</em>.
+<BR>
+Hence 
+<em>y</em> (= <em>f(x<SUB>1</sub>)</em> = <em>f(x<SUB>2</sub>)</em>) &isin; <em>f( S </em> &cap; <em>T )</em>. 
+<BR>
+Hence 
+<em>f(S)</em> &cap; <em>f(T)</em>
+&sube; <em>f( S </em> &cap; <em>T )</em> if <em>f</em> is a bijection.
+<BR>
+<BR>
+QED
+</blockquote>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<a href="../schedule/schedule.html#day23"><r><font color="blue">
+Back to Schedule </font></r></a></B>
+<BR>
+<a href="../web_course.html"><r><font color="blue">
+Back to Table of Contents </font></r></a></B>
+
+
+
+</body
+</html>
+
+

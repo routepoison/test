@@ -1,0 +1,222 @@
+<HTML>
+ 
+<!-- <body bgcolor="#ffffff" text="black" link="blue" vlink="#00bb77">  --->
+<!-- <body bgcolor="#ffffff" text="black" link="blue" vlink="3355dd"> --->
+<body bgcolor="#ffffff" text="black" link="blue" vlink="blue">
+ 
+ 
+<title>Practice Questions on Recursive Definition </title>
+ 
+<H5><P align="Right">Recursive Definition </P></H5>
+
+<center>
+<h2>More Examples on Recursive Definition of Set</h2> 
+</center>
+<BR>
+<BR>
+<B>Example 1.</B> Recursively define the set <B><I>S</I></B> = 
+<B>{<I>n</I><SUP>2</sUP> |</B> <B><I>n</I></B> is a natural number greater 
+than <B>0}</B>, that is <B><I>S</I></B> = <B>{1, 4, 9, 16, ... }</B>.<br>
+<br>
+<B><I>S</I></B> is the set that is defined by the following clauses:
+<BR><B>Basis Clause:</B> <B>1</B> is in <B><I>S</I></B>.
+<BR><B>Inductive Clause:</B> If <B><I>x</I></B>
+in <B><I>S</I></B>, then <B><I>x</I> + 2<I>x</I><SUP>1/2</sUP> + 1</B> is 
+in <B><I>S</I></B>.
+<br>
+<B>Extremal Clause:</B> Nothing is in <B><I>S</I></B>unless it is obtained 
+from the Basis and Inductive Clauses.
+<BR><BR>
+How do we get <B><I>x</I> + 2<I>x</I><SUP>1/2</sUP> + 1</B> in the 
+Inductive Clause ?
+<BR>
+Since <B><I>S</I> = {1, 4, 9, 16, ... }</B>and its elements can be ordered
+<B>1, 4, 9, ..., <I>n</I><SUP>2</sUP></B> , for the <B><I>n</I></B>-th element,
+which is <B><I>n</I><SUP>2</sUP></B>, the next element is 
+<B><I>(n+1)</I><SUP>2</sUP></B>. Hence if we let <B><I>x</I></B> be the 
+<B><I>n</I></B>-th element, then <B><I>x</I> = <I>n</I></B><SUP>2</sUP>.
+Hence <B><I>n</I> = <I>x</I><SUP>1/2</sUP></B>. But the element next to <B><I>x</I></B> is 
+<B><I>(n+1)</I><SUP>2</sUP></B> which is equal to <B><I>n</I><SUP>2</sUP> +
+2<I>n</I> + 1</B>. By substituting <B><I>n</I> = <I>x</I><SUP>1/2</sUP></B> into that 
+we obtain <B><I>x</I> + 2<I>x</I><SUP>1/2</sUP> + 1</B>.
+<BR>
+<BR>
+<B>Example 2.</B> Recursively define the set <B><I>T</I> = {2<SUP>n</sUP> - 2 | 
+<I>n</I></B> is a natural number greater than <B>0}</B>, that is <B><I>T</I> = 
+{0, 2, 6, 14, 30, ... }</B>.
+<br>
+<br>
+<B><I>T</I></B> is the set that is defined by the following clauses:
+<BR><B>Basis Clause:</B> <B>0</B> is in <B><I>T</I></B>.
+<BR><B>Inductive Clause:</B> If <B><I>x</I></B> isin <B><I>T</I></B>, 
+then <B>2<I>x</I> + 2</B> is in <B><I>T</I></B>.
+<br><B>Extremal Clause:</B> Nothing is in <B><I>T</I></B>
+unless it is obtained from the Basis and Inductive Clauses.<BR><BR>
+How do we get <B>2<I>x</I> + 2</B> in the Inductive Clause ?
+<BR>
+Since <B><I>T</I> = {0, 2, 6, 14, ... }</B> and its elements can be ordered
+<B>0, 2, 6, ..., 2<SUP>n</sUP> - 2</B>, for the <B><I>n</I></B>-th element,
+which is <B>2<SUP>n</sUP> - 2</B>, the next element is <B>2<SUP>n+1</sUP> - 2</B>. 
+Hence if we let <B><I>x</I></B> be the <B><I>n</I></B>-th element, then 
+<B><I>x</I> = 2<SUP>n</sUP> - 2</B>. Now <B>2<SUP>n+1</sUP> - 2 = 2*2<SUP>n</sUP> - 2 
+= 2*(2<SUP>n</sUP> - 2) + 2 = 2<I>x</I> + 2</B>.
+
+<BR>
+<BR>
+<B>Example 3.</B> Recursively define the set of strings <B><I>U</I> = 
+{<I>a</I><SUP>n</SUP><I>b</I><I>c</I><SUP>n</SUP> |
+n</B> is a natural number<B>}</B>, that is <B><I>U</I></B> is the set <B>{<I>b</I></B>, 
+<B><I>a</I></B><B><I>b</I></B><B><I>c</I></B>, 
+<B><I>a</I></B><B><I>a</I></B><B><I>b</I></B><B><I>c</I></B><B><I>c</I>, ... }</B>.
+<br>
+<br>
+Since the simplest element in <B><I>U</I></B> is <B><I>b</I></B>, let us select
+<B><I>b</I></B> as the basis element. Then from <B><I>b</I></B> we can obtain
+<B><I>a</I></B><B><I>b</I></B><B><I>c</I></B> by prepending <B><I>a</I></B>
+and appending <B><I>c</I></B> to it. Similarly
+<B><I>a</I></B><B><I>a</I></B><B><I>b</I></B><B><I>c</I></B><B><I>c</I></B>
+can be obtained from <B><I>a</I></B><B><I>b</I></B><B><I>c</I></B> by
+prepending <B><I>a</I></B>
+and appending <B><I>c</I></B> to it. Similarly for the rest of the elements of 
+the set <B><I>U</I></B>. Thus <B><I>U</I></B> is the set that satisfy the following clauses:
+<BR>
+<B>Basis Clause:</B> <B><I>b</I></B> is in <B><I>U</I></B>.
+<BR><B>Inductive Clause:</B> If <B><I>x</I></B> is in <B><I>U</I></B>, then
+<B><I>a</I></B><B><I>x</I></B><B><I>c</I></B> is in <B><I>U</I></B>.
+<BR>
+<B>Extremal Clause:</B> Nothing is in <B><I>U</I></B>
+unless it is obtained from the Basis and Inductive Clauses.<BR><BR>
+<BR>
+<BR>
+<B>Example 4.</B> Recursively define the set <B><I>V</I> = {<I>x</I> | <I>x</I></B> 
+is a natural number and <IMG HEIGHT=27 ALIGN=MIDDLE SRC="imgs/lfloor/lfloor.png"><B><I>x</I>/2</B><IMG HEIGHT=27 ALIGN=MIDDLE SRC="imgs/rfloor/rfloor.png"> is even<B>}</B>, 
+that is <B><I>x</I> = {0, 4, 8, 12, 16, ... }</B>.
+Note that  <IMG HEIGHT=27 ALIGN=MIDDLE SRC="imgs/lfloor/lfloor.png"><B><I>x</I></B><IMG HEIGHT=27 ALIGN=MIDDLE SRC="imgs/rfloor/rfloor.png"> denotes the largest integer 
+that is not larger than <B><I>x</I></B>. If <B><I>x</I></B> is nonnegative as in this 
+example, it is the integer part of <B><I>x</I></B>.
+<br>
+<br>
+Since <B>0</B> is the smallest element of <B><I>x</I></B>, let us select <B>0</B>
+as the basis element of <B><I>V</I></B>. For the inductive clause note that
+for <IMG HEIGHT=27 ALIGN=MIDDLE SRC="imgs/lfloor/lfloor.png"><B><I>x</I></B><IMG HEIGHT=27 ALIGN=MIDDLE SRC="imgs/rfloor/rfloor.png"> to increase by <B>2</B> to the next 
+even number, <B><I>x</I></B> needs to grow by <B>4</B>. Hence we have the following 
+definition for <B><I>V</I></B>:
+<BR>
+<B><I>V</I></B> is the set that is defined by the following clauses:
+<BR><B>Basis Clause:</B> <B>0</B> is in <B><I>V</I></B>.
+<BR>
+<B>Inductive Clause:</B> If <B><I>x</I></B> is in <B><I>V</I></B>, then
+<B><I>x</I>  + 1</B> is in <B><I>V</I></B>.
+<BR>
+<B>Extremal Clause:</B> Nothing is in <B><I>V</I></B>
+unless it is obtained from the Basis and Inductive Clauses.<BR>
+<BR>
+We have defined four sets recursively. However, we are at this point not exactly
+sure whether or not those definitions correctly define the sets. To verify those 
+definitions, that is, to check whether or not the elements of each set have the
+specified properties, we can use proof by induction. 
+Let us try to verify the definition of Example 1. 
+<BR>
+<BR>
+<B>Verification of Definition of set <I>S</I>:</B>
+<BR>
+To verify the definition of Example 1 we are going to prove by 
+<a href=http://www.cs.odu.edu/~toida/nerzic/390teched/language/gen_ind/gen_ind.html 
+target="main"><r><font color="blue">(general) induction </font></r></a>that the elements 
+of the set <B><I>S</I></B> is in the form 
+<B><I>n</I><SUP>2</sUP></B>, where <B><I>n</I></B> is a natural number greater 
+than <B>0</B>.
+<BR>
+In the Basis Step we prove that the element in the basis, that is <B>1</B> in this case, 
+has the property. Then in the Inductive Step we prove that if an arbitrary
+element,say <B><I>x</I></B>, has the property, then the element generated from
+<B><I>x</I></B> has the property.
+<BR>
+<B>Basis Step:</B> Since <B>1 = 1<SUP>2</SUP></B>, the basis element <B>1</B> of the set 
+<B><I>S</I></B> is of the form <B><I>n</I><SUP>2</sUP></B>, where <B><I>n</I></B> is a 
+natural number greater than <B>0</B>.
+<BR>
+<B>Inductive Step:</B> Let <B><I>x</I></B> be an arbitrary element of <B><I>S</I></B> and 
+<B><I>x</I> = <I>n</I><SUP>2</sUP></B> for some 
+natural number <B><I>n</I></B>. Then the element generated from 
+<B><I>x</I></B> by the Inductive Clause of the definition of 
+<B><I>S</I></B> is <B><I>x</I> + 2<I>x</I><SUP>1/2</sUP> + 1</B>.
+<BR>
+We are trying to show that <B><I>x</I> + 2<I>x</I><SUP>1/2</sUP> + 1</B>
+is of the form <B><I>n</I><SUP>2</sUP></B>. 
+<BR>
+Since <B><I>x</I> = <I>n</I><SUP>2</sUP></B>, <B><I>x</I><SUP>1/2</sUP> = <I>n</I></B>. 
+Hence
+<B><I>x</I> + 2<I>x</I><SUP>1/2</sUP> + 1 = <I>n</I><SUP>2</sUP> + 2<I>n</I> + 1 = 
+(<I>n</I> + 1)<SUP>2</sUP></B>, which is the square of a natural number 
+<B><I>n</I> + 1</B>.
+<BR>
+End of the proof.
+<BR>
+<BR>
+Next let us try to verify the definition of Example 3. 
+<BR>
+<BR>
+<B>Verification of Definition of set <I>U</I>:</B>
+<BR>
+To verify the definition of Example 3 we are going to prove by 
+<a href=http://www.cs.odu.edu/~toida/nerzic/390teched/language/gen_ind/gen_ind.html 
+target="main"><r><font color="blue">(general) induction </font></r></a>that the elements 
+of the set <B><I>U</I></B> is in the form <B><I>a</I><SUP>n</SUP><I>b</I><I>c</I><SUP>n</SUP>
+</B>, where <B><I>n</I></B> is a natural number.
+<BR>
+In the Basis Step we prove that the element in the basis, that is <B><I>b</I></B> 
+in this case, 
+has the property. Then in the Inductive Step we prove that if an arbitrary
+element, say <B><I>x</I></B>, has the property, then the element generated from
+<B><I>x</I></B> has the property.
+<BR>
+<B>Basis Step:</B> <B><I>b</I></B> is in the form 
+<B><I>a</I><SUP>n</SUP><I>b</I><I>c</I><SUP>n</SUP></B> with <B><I>n</I> = 0</B>.
+<BR>
+<B>Inductive Step:</B> Let <B><I>x</I></B> be an arbitrary element of <B><I>U</I></B> and 
+<B><I>x</I> = <I>a</I><SUP>n</SUP><I>b</I><I>c</I><SUP>n</SUP></B> for some 
+natural number <B><I>n</I></B>. Then the element generated from 
+<B><I>x</I></B> by the Inductive Clause of the definition of 
+<B><I>U</I></B> is <B><I>axc</I></B> which is equal to 
+<B><I>aa</I><SUP>n</SUP><I>b</I><I>c</I><SUP>n</SUP><I>c</I></B>, which in turn is equal to
+<B><I>a</I><SUP>(n+1)</SUP><I>b</I><I>c</I><SUP>(n+1)</SUP></B>. Hence if an arbitrary 
+element <B><I>x</I></B> has the property, then its children also have the property.  
+<BR>
+End of the proof.
+<BR>
+<BR>
+The sets of Examples 2 and 4 can also be verified similarly. They are left as exercises. 
+<br>
+<br>
+<br>
+<!--
+<h3><font color="green">Test Your Understanding of Recursive Definition </font></h3>
+Indicate which of the following statements are correct and which are not.
+<br>
+Click Yes or No , then Submit. There are two sets of questions.
+<br>
+<br>
+<br>
+<applet code="exercise.class" width=750 height=600>
+</applet>
+<BR><BR>
+<BR>
+<B><a href="../set/generalized_set_op.html"><r><font color="blue">
+Next -- Generalized Set Operations </font></r></a></B>
+<BR>
+<BR>
+<a href="../schedule/schedule.html#day14"><r><font color="blue">
+Back to Schedule </font></r></a></B>
+--->
+<BR>
+<a href="../web_course.html"><r><font color="blue">
+Back to Table of Contents </font></r></a></B>
+
+<BR>
+<BR>
+<BR>
+<BR>
+</BODY>
+</HTML>
+
