@@ -14,7 +14,7 @@ cout << "Fear me!" << endl;
 
 // E 1.2.2
 
-cout << "# --- [ Exercise 1.2.2 ] --- #\n\n"
+cout << "# --- [ Exercise 1.2.2 ] --- #\n\n";
 
 cout << "I am Blaxxon,\n\n";
 cout << "the godlike computer.\n\n ";
